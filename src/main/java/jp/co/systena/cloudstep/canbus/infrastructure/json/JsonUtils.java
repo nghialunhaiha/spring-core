@@ -39,7 +39,7 @@ public class JsonUtils {
 
     public static <T> T fromJson(String json, Class<T> type) {
         try {
-            return objectMapper.<T> readValue(json, type);
+            return objectMapper.readValue(json, type);
         } catch (Exception e) {
             throw new JsonSerializationException(e.getMessage(), e);
         }
@@ -65,7 +65,7 @@ public class JsonUtils {
 
     public static <T> T fromJsonBytes(byte[] json, Class<T> type) throws JsonSerializationException {
         try {
-            return objectMapper.<T> readValue(json, type);
+            return objectMapper.readValue(json, type);
         } catch (Exception e) {
             throw new JsonSerializationException(e.getMessage(), e);
         }
