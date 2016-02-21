@@ -1,5 +1,8 @@
 package org.spring.action.spittr.web;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +21,9 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.test.web.servlet.result.ModelResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder;
 import org.springframework.web.context.WebApplicationContext;
 
 import jp.co.systena.cloudstep.canbus.infrastructure.json.JsonUtils;
@@ -35,9 +40,32 @@ public abstract class BaseControllerTest {
 
     MockMvc mockMvc;
 
+    private List<Object> controllers;
+
     @Before
     public void setup() {
-        this.mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
+        this.mockMvc = this.mockMvcUsingWebApplicationContext(webApplicationContext);
+        // mockMvcUsingStandAlone(this.controllers);
+    }
+
+    private MockMvc mockMvcUsingWebApplicationContext(WebApplicationContext webApplicationContext) {
+        return MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
+    }
+
+    protected StandaloneMockMvcBuilder mockControllers(List<Object> controllers) {
+        return MockMvcBuilders.standaloneSetup(controllers);
+    }
+
+    protected StandaloneMockMvcBuilder mockController(Object controller) {
+        return MockMvcBuilders.standaloneSetup(controller);
+    }
+
+    protected List<Object> addController(Object controller) {
+        if (controllers == null) {
+            this.controllers = new ArrayList<>();
+        }
+        this.controllers.add(controller);
+        return this.controllers;
     }
 
     public ResultActions put(String uri, Object object) {
@@ -69,7 +97,11 @@ public abstract class BaseControllerTest {
         }
     }
 
-    public ResultMatcher assertView(String expectedViewName) {
+    public ResultMatcher view(String expectedViewName) {
         return MockMvcResultMatchers.view().name(expectedViewName);
+    }
+
+    public ModelResultMatchers model() {
+        return MockMvcResultMatchers.model();
     }
 }

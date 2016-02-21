@@ -1,6 +1,6 @@
 package org.spring.action.spitter;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Spittle {
     private Long id;
@@ -8,6 +8,14 @@ public class Spittle {
     private Date time;
     private Double lattitude;
     private Double longitude;
+
+    public Spittle(Long id, String message, Date time, Double lattitude, Double longitude) {
+        this.id = id;
+        this.message = message;
+        this.time = time;
+        this.lattitude = lattitude;
+        this.longitude = longitude;
+    }
 
     public Long getId() {
         return id;
