@@ -26,7 +26,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder;
 import org.springframework.web.context.WebApplicationContext;
 
-import jp.co.systena.cloudstep.canbus.infrastructure.json.JsonUtils;
+import jp.co.systena.cloudstep.canbus.infrastructure.json.JsonUtils_BackUp;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
@@ -71,7 +71,7 @@ public abstract class BaseControllerTest {
     public ResultActions put(String uri, Object object) {
         try {
             return mockMvc.perform(MockMvcRequestBuilders.put(uri).contentType(MediaType.APPLICATION_JSON)
-                    .content(JsonUtils.toJson(object)));
+                    .content(JsonUtils_BackUp.toJson(object)));
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -81,7 +81,7 @@ public abstract class BaseControllerTest {
     public ResultActions post(String uri, Object object) {
         try {
             return mockMvc.perform(MockMvcRequestBuilders.post(uri).contentType(MediaType.APPLICATION_JSON)
-                    .content(JsonUtils.toJson(object)));
+                    .content(JsonUtils_BackUp.toJson(object)));
         } catch (Exception e) {
             e.printStackTrace();
             return null;

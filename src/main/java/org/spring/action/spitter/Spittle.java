@@ -1,5 +1,7 @@
 package org.spring.action.spitter;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Spittle {
@@ -88,4 +90,10 @@ public class Spittle {
         return true;
     }
 
+    public static void main(String[] args) {
+        Calendar cal = Calendar.getInstance();
+        cal.get(Calendar.YEAR -100);
+        SimpleDateFormat sdf = new SimpleDateFormat("yy/MM/dd");
+        sdf.get2DigitYearStart();
+        }
 }

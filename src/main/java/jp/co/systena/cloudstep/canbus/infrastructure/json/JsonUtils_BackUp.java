@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import jp.co.systena.cloudstep.canbus.application.json.JsonSerializationException;
 
-public class JsonUtils {
+public class JsonUtils_BackUp {
     private static final ObjectMapper objectMapper = new ObjectMapper()
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
             .configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false).setSerializationInclusion(Include.NON_NULL)
