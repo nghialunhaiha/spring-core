@@ -3,6 +3,7 @@ package org.spring.action.spittr.web;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.core.json.JsonUtils_BackUp;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +26,6 @@ import org.springframework.test.web.servlet.result.ModelResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder;
 import org.springframework.web.context.WebApplicationContext;
-
-import jp.co.systena.cloudstep.canbus.infrastructure.json.JsonUtils_BackUp;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

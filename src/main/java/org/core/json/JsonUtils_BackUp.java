@@ -1,4 +1,4 @@
-package jp.co.systena.cloudstep.canbus.infrastructure.json;
+package org.core.json;
 
 import java.util.Collection;
 
@@ -8,8 +8,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-
-import jp.co.systena.cloudstep.canbus.application.json.JsonSerializationException;
 
 public class JsonUtils_BackUp {
     private static final ObjectMapper objectMapper = new ObjectMapper()

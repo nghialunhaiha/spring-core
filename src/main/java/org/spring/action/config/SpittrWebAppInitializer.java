@@ -6,7 +6,7 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] { WebConfig.class };
+        return new Class<?>[] { WebConfig.class }; // specify configuration class
     }
 
     @Override
@@ -15,8 +15,8 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
     }
 
     @Override
-    protected String[] getServletMappings() {
-        return new String[] { "/" };
+    protected String[] getServletMappings() { 
+        return new String[] { "/" }; // Map dispathcerSerlet to /
     }
 
 }

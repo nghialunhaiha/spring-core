@@ -1,4 +1,4 @@
-package jp.co.systena.cloudstep.canbus.application.json;
+package org.core.json;
 
 public class JsonSerializationException extends RuntimeException {
 

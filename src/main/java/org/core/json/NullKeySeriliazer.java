@@ -1,4 +1,4 @@
-package jp.co.systena.cloudstep.canbus.infrastructure.json;
+package org.core.json;
 
 import java.io.IOException;
 
