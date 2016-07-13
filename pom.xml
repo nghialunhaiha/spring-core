@@ -132,32 +132,32 @@
 			<version>${spring.security.version}</version>
 		</dependency>
 		<!-- Hibernate -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.hibernate</groupId> -->
-<!-- 			<artifactId>hibernate-entitymanager</artifactId> -->
-<!-- 			<version>${hibernate.version}</version> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.hibernate</groupId> -->
-<!-- 			<artifactId>hibernate-validator</artifactId> -->
-<!-- 			<version>4.2.0.Final</version> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.hibernate.common</groupId> -->
-<!-- 			<artifactId>hibernate-commons-annotations</artifactId> -->
-<!-- 			<version>4.0.1.Final</version> -->
-<!-- 			<classifier>tests</classifier> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.hibernate.javax.persistence</groupId> -->
-<!-- 			<artifactId>hibernate-jpa-2.0-api</artifactId> -->
-<!-- 			<version>1.0.1.Final</version> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.hibernate</groupId> -->
-<!-- 			<artifactId>hibernate-entitymanager</artifactId> -->
-<!-- 			<version>4.0.1.Final</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.hibernate</groupId> -->
+		<!-- <artifactId>hibernate-entitymanager</artifactId> -->
+		<!-- <version>${hibernate.version}</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.hibernate</groupId> -->
+		<!-- <artifactId>hibernate-validator</artifactId> -->
+		<!-- <version>4.2.0.Final</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.hibernate.common</groupId> -->
+		<!-- <artifactId>hibernate-commons-annotations</artifactId> -->
+		<!-- <version>4.0.1.Final</version> -->
+		<!-- <classifier>tests</classifier> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.hibernate.javax.persistence</groupId> -->
+		<!-- <artifactId>hibernate-jpa-2.0-api</artifactId> -->
+		<!-- <version>1.0.1.Final</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.hibernate</groupId> -->
+		<!-- <artifactId>hibernate-entitymanager</artifactId> -->
+		<!-- <version>4.0.1.Final</version> -->
+		<!-- </dependency> -->
 		<!-- Test Artifacts -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -218,15 +218,25 @@
 
 	</dependencies>
 	<build>
-	<resources>
-		<resource>
-			<directory>src/main/resources</directory>
-		</resource>
-		<resource>
-			<directory>src/test/resources</directory>
-		</resource>
-	</resources>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/test/resources</directory>
+			</resource>
+		</resources>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>src/main/webapp</warSourceDirectory>
+					<warName>springAngularJs</warName>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

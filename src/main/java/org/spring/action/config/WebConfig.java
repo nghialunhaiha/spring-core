@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration // spring configuration on start up
 @EnableWebMvc // enable mvc model web
-@ComponentScan("org.spring.action.spittr.web") // scans project for Spring components
+@ComponentScan("org.spring") // scans project for Spring components
 public class WebConfig extends WebMvcConfigurerAdapter {
     /**
      * Configure a JSP view resolver
