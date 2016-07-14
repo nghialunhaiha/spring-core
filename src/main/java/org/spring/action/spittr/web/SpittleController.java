@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@Controller
+//@Controller
 //@RequestMapping(value = "/spittles")
 public class SpittleController {
     private static final String MAX_LONG_AS_STRING = "9223372036854775807";
