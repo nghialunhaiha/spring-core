@@ -21,6 +21,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableTransactionManagement
+@EnableWebMvc
 // scans project for Spring components
 @ComponentScan(basePackages = { "org.spring" }, excludeFilters = {
         @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) })
@@ -33,7 +34,7 @@ public class RootConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "org.spring.action" });
+        sessionFactory.setPackagesToScan(new String[] { "org.spring.action.user" });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
@@ -53,7 +54,7 @@ public class RootConfig {
         properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
         properties.put("hibernate.show_sql", environment.getRequiredProperty("hibernate.show_sql"));
         properties.put("hibernate.format_sql", environment.getRequiredProperty("hibernate.format_sql"));
-        properties.put("hibernate.hbm2ddl.auto", environment.getRequiredProperty("hibernate.hbm2dll"));
+        properties.put("hibernate.hbm2ddl.auto", "create");
         return properties;
     }
 

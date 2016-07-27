@@ -1,31 +1,45 @@
 package org.spring.action.user;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "USER")
 public class User {
 
-    private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;
 
+    @Column(name = "NAME")
     private String username;
 
+    @Column(name = "ADDRESS")
     private String address;
 
+    @Column(name = "EMAIL")
     private String email;
 
     public User() {
-        id = 0;
+        id = "id1";
     }
 
-    public User(long id, String username, String address, String email) {
+    public User(String id, String username, String address, String email) {
         this.id = id;
         this.username = username;
         this.address = address;
         this.email = email;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -51,28 +65,6 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + (int) (id ^ (id >>> 32));
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (!(obj instanceof User))
-            return false;
-        User other = (User) obj;
-        if (id != other.id)
-            return false;
-        return true;
     }
 
     @Override

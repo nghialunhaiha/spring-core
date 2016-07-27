@@ -7,13 +7,31 @@ import org.config.BaseTest;
 import org.joda.time.LocalDate;
 import org.junit.Test;
 import org.spring.action.user.Employee;
+import org.spring.action.user.User;
 import org.spring.action.user.service.EmployeeService;
+import org.spring.action.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class EmployeeTest extends BaseTest {
 
     @Autowired
     private EmployeeService employeeService;
+
+    @Autowired
+    private UserService userService;
+
+    @Test
+    public void insertUser() {
+        User user1 = new User();
+        user1.setId("id1");
+        user1.setEmail("nasdghia@gmai.com");
+        user1.setAddress("ajsdfasd");
+        user1.setUsername("userName");
+
+        userService.saveUser(user1);
+
+        userService.findAllUsers().stream().forEach(System.out::println);
+    }
 
     @Test
     public void insert() {

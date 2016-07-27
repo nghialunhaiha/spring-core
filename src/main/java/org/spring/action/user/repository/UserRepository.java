@@ -1,16 +1,15 @@
-package org.spring.action.user.service;
+package org.spring.action.user.repository;
 
 import java.util.List;
 
 import org.spring.action.user.User;
 
-public interface UserService {
-
+public interface UserRepository {
     User findById(String id);
 
     User findByName(String name);
 
-    void saveUser(User user);
+    void createUser(User user);
 
     void updateUser(User user);
 
