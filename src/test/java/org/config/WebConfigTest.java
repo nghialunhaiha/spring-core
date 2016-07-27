@@ -1,4 +1,4 @@
-package org.spring.action.spittr.web;
+package org.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.web.WebAppConfiguration;
