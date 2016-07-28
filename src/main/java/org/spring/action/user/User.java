@@ -12,8 +12,9 @@ import javax.persistence.Table;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    @Column(name = "UID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     @Column(name = "NAME")
     private String username;
@@ -25,21 +26,21 @@ public class User {
     private String email;
 
     public User() {
-        id = "id1";
+        id = 0;
     }
 
-    public User(String id, String username, String address, String email) {
-        this.id = id;
+    public User(long id, String username, String address, String email) {
+        this.id = 0;
         this.username = username;
         this.address = address;
         this.email = email;
     }
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 

@@ -2,36 +2,34 @@ package org.spring.action.user.service;
 
 import java.util.List;
 
+import org.spring.action.user.Employee;
+import org.spring.action.user.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.spring.action.user.Employee;
-import org.spring.action.user.repository.EmployeeDao;
 
-@Service("employeeService")
-@Transactional
-public class EmployeeServiceImpl implements EmployeeService{
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
 
-	@Autowired
-	private EmployeeDao dao;
-	
-	public void saveEmployee(Employee employee) {
-		dao.saveEmployee(employee);
-	}
+    @Autowired
+    private EmployeeRepository employeeRepository;
 
-	public List<Employee> findAllEmployees() {
-		return dao.findAllEmployees();
-	}
+    public void saveEmployee(Employee employee) {
+        employeeRepository.saveEmployee(employee);
+    }
 
-	public void deleteEmployeeBySsn(String ssn) {
-		dao.deleteEmployeeBySsn(ssn);
-	}
+    public List<Employee> findAllEmployees() {
+        return employeeRepository.findAllEmployees();
+    }
 
-	public Employee findBySsn(String ssn) {
-		return dao.findBySsn(ssn);
-	}
+    public void deleteEmployeeBySsn(String ssn) {
+        employeeRepository.deleteEmployeeBySsn(ssn);
+    }
 
-	public void updateEmployee(Employee employee){
-		dao.updateEmployee(employee);
-	}
+    public Employee findBySsn(String ssn) {
+        return employeeRepository.findBySsn(ssn);
+    }
+
+    public void updateEmployee(Employee employee) {
+        employeeRepository.updateEmployee(employee);
+    }
 }

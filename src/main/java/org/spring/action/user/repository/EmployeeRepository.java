@@ -1,14 +1,14 @@
-package org.spring.action.user.service;
+package org.spring.action.user.repository;
 
 import java.util.List;
 
 import org.spring.action.user.Employee;
 
-public interface EmployeeService {
+public interface EmployeeRepository {
 
     void saveEmployee(Employee employee);
 
-    List<Employee> findAllEmployees();
+    List<org.spring.action.user.Employee> findAllEmployees();
 
     void deleteEmployeeBySsn(String ssn);
 

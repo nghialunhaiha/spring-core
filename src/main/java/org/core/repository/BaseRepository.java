@@ -104,4 +104,11 @@ public abstract class BaseRepository<T> {
         return (T) getCurrentActiveSession().get(clazz, id);
     }
 
+    // public void persist(Object entity) {
+    // getCurrentActiveSession().persist(entity);
+    // }
+
+    // public void delete(Object entity) {
+    // getCurrentActiveSession().delete(entity);
+    // }
 }
