@@ -25,8 +25,11 @@
       }
 
     </style>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!--      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+     <link href="<c:url value='/static/css/bootstrap.min.css' />" rel="stylesheet"></link>
      <link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
+<!--      <link href="../static/css/bootstrap.min.css />" rel="stylesheet" type="text/css" /> -->
+<!--      <link href="../static/css/app.css />" rel="stylesheet" type="text/css" /> -->
   </head>
   <body ng-app="myApp" class="ng-cloak">
       <div class="generic-container" ng-controller="UserController as ctrl">
@@ -111,7 +114,8 @@
           </div>
       </div>
       
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+<!--       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script> -->
+      <script src="<c:url value='/static/js/angular-1.4.6.js' />"></script>
       <script src="<c:url value='/static/js/app.js' />"></script>
       <script src="<c:url value='/static/js/service/user_service.js' />"></script>
       <script src="<c:url value='/static/js/controller/user_controller.js' />"></script>

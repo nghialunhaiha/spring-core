@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.findAllUsers();
     }
 
-    public User findById(String id) {
+    public User findById(long id) {
         return userRepository.findById(id);
     }
 
@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
         userRepository.updateUser(user);
     }
 
-    public void deleteUserById(String id) {
+    public void deleteUserById(long id) {
         userRepository.deleteUserById(id);
     }
 

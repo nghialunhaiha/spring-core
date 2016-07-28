@@ -100,7 +100,7 @@ public abstract class BaseRepository<T> {
         }
     }
 
-    protected T findById(String id, Class<T> clazz) {
+    protected T findById(Long id, Class<T> clazz) {
         return (T) getCurrentActiveSession().get(clazz, id);
     }
 

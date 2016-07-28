@@ -5,7 +5,7 @@ import java.util.List;
 import org.spring.action.user.User;
 
 public interface UserRepository {
-    User findById(String id);
+    User findById(long id);
 
     User findByName(String name);
 
@@ -13,7 +13,7 @@ public interface UserRepository {
 
     void updateUser(User user);
 
-    void deleteUserById(String id);
+    void deleteUserById(long id);
 
     List<User> findAllUsers();
 

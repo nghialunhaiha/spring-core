@@ -1,9 +1,6 @@
 package org.config;
 
 import org.junit.runner.RunWith;
-import org.spring.action.config.RootConfig;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.annotation.DirtiesContext.ClassMode;
 import org.springframework.test.context.ContextConfiguration;

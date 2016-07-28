@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 public class UserRepositoryImpl extends BaseRepository<User> implements UserRepository {
 
     @Override
-    public User findById(String id) {
+    public User findById(long id) {
         return findById(id, User.class);
     }
 
@@ -30,7 +30,7 @@ public class UserRepositoryImpl extends BaseRepository<User> implements UserRepo
     }
 
     @Override
-    public void deleteUserById(String id) {
+    public void deleteUserById(long id) {
         User userToDelete = findById(id, User.class);
         delete(getCurrentActiveSession(), userToDelete);
     }
