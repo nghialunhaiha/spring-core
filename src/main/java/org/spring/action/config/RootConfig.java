@@ -25,7 +25,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @ComponentScan(basePackages = { "org.spring" }, excludeFilters = {
         @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) })
 @PropertySource(value = { "classpath:application.properties" })
-@EnableWebMvc // enable mvc model web
 public class RootConfig {
     @Autowired
     private Environment environment;

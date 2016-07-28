@@ -1,6 +1,7 @@
 package org.spring.action.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
@@ -9,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration // spring configuration on start up
+@ComponentScan("org.spring")
 @EnableWebMvc // enable mvc model web
 public class WebConfig extends WebMvcConfigurerAdapter {
     /**
