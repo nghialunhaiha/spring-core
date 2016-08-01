@@ -43,13 +43,26 @@
 			<version>${spring-framework.version}</version>
 		</dependency>
 
-		<!-- Spring context -->
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework</groupId> -->
-		<!-- <artifactId>spring-context</artifactId> -->
-		<!-- <version>${spring-framework.version}</version> -->
-		<!-- </dependency> -->
+		<!-- caching -->
+		<!-- caching-ehCache -->
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.9.0</version>
+		</dependency>
 
+		<!-- caching-Spring caching framework inside this -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
+		<!-- caching-Support for Ehcache and others -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.1.9.RELEASE</version>
+		</dependency>
 		<!-- Spring JDBC Support -->
 
 		<!-- <dependency> -->
@@ -131,6 +144,7 @@
 			<artifactId>spring-security-config</artifactId>
 			<version>${spring.security.version}</version>
 		</dependency>
+
 		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -201,12 +215,25 @@
 			<artifactId>jackson-annotations</artifactId>
 			<version>2.7.1</version>
 		</dependency>
-		<!-- Mockito -->
+		<!-- spring-mongo -->
 		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-core</artifactId>
-			<version>${mockito.version}</version>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>1.8.2.RELEASE</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+
+		<!-- Mockito -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.mockito</groupId> -->
+		<!-- <artifactId>mockito-core</artifactId> -->
+		<!-- <version>${mockito.version}</version> -->
+		<!-- </dependency> -->
 
 		<!-- Joda-Time -->
 		<dependency>

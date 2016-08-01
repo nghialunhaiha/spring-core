@@ -32,7 +32,7 @@ public class UserRepositoryImpl extends BaseRepository<User> implements UserRepo
     @Override
     public void deleteUserById(long id) {
         User userToDelete = findById(id, User.class);
-        delete(getCurrentActiveSession(), userToDelete);
+        delete(userToDelete);
     }
 
     @Override

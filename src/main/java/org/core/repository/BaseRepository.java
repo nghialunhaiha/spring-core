@@ -7,7 +7,6 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
 
 @SuppressWarnings("unchecked")
 public abstract class BaseRepository<T> {
@@ -32,6 +31,7 @@ public abstract class BaseRepository<T> {
             }
         }
         throw new HibernateException("-----------------Session can not be create.-----------------");
+
     }
 
     protected List<T> list(Session session, Class<T> clazz) {
@@ -39,27 +39,31 @@ public abstract class BaseRepository<T> {
     }
 
     // update
-    @Transactional
     protected void update(Session session, Object object) {
         try {
+            session.beginTransaction();
             session.update(object);
+            session.getTransaction().commit();
         } catch (Exception e) {
             session.getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
 
-    @Transactional
     protected void update(Object object) {
         try {
-            getCurrentActiveSession().update(object);
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.update(object);
+            session.getTransaction().commit();
+            session.close();
         } catch (Exception e) {
-            getCurrentActiveSession().getTransaction().rollback();
+            // TODO: handle exception
+            // getCurrentActiveSession().getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
 
-    @Transactional
     protected void saveOrUpdate(Session session, Object object) throws HibernateException {
         try {
             session.saveOrUpdate(object);
@@ -69,7 +73,6 @@ public abstract class BaseRepository<T> {
         }
     }
 
-    @Transactional
     // add - isert
     protected void create(Session session, Object object) throws HibernateException {
         try {
@@ -80,22 +83,26 @@ public abstract class BaseRepository<T> {
         }
     }
 
-    @Transactional
     protected void create(Object object) throws HibernateException {
         try {
-            getCurrentActiveSession().save(object);
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
+            session.save(object);
+            session.getTransaction().commit();
+            session.close();
         } catch (Exception e) {
-            getCurrentActiveSession().getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
 
-    @Transactional
-    protected void delete(Session session, Object object) throws HibernateException {
+    protected void delete(Object object) throws HibernateException {
         try {
+            Session session = sessionFactory.openSession();
+            session.beginTransaction();
             session.delete(object);
+            session.getTransaction().commit();
+            session.close();
         } catch (Exception e) {
-            session.getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
