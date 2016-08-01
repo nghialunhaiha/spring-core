@@ -31,7 +31,6 @@ public abstract class BaseRepository<T> {
             }
         }
         throw new HibernateException("-----------------Session can not be create.-----------------");
-
     }
 
     protected List<T> list(Session session, Class<T> clazz) {
@@ -39,34 +38,29 @@ public abstract class BaseRepository<T> {
     }
 
     // update
-    protected void update(Session session, Object object) {
+    protected T update(Session session, T object) {
         try {
-            session.beginTransaction();
             session.update(object);
-            session.getTransaction().commit();
+            return object;
         } catch (Exception e) {
             session.getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
 
-    protected void update(Object object) {
+    protected T update(T object) {
         try {
-            Session session = sessionFactory.openSession();
-            session.beginTransaction();
-            session.update(object);
-            session.getTransaction().commit();
-            session.close();
+            sessionFactory.getCurrentSession().update(object);
+            return object;
         } catch (Exception e) {
-            // TODO: handle exception
-            // getCurrentActiveSession().getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
 
-    protected void saveOrUpdate(Session session, Object object) throws HibernateException {
+    protected T saveOrUpdate(Session session, T object) throws HibernateException {
         try {
             session.saveOrUpdate(object);
+            return object;
         } catch (Exception e) {
             session.getTransaction().rollback();
             throw new HibernateException(e);
@@ -74,35 +68,31 @@ public abstract class BaseRepository<T> {
     }
 
     // add - isert
-    protected void create(Session session, Object object) throws HibernateException {
+    protected T create(Session session, T object) throws HibernateException {
         try {
             session.save(object);
+            return object;
         } catch (Exception e) {
             session.getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
 
-    protected void create(Object object) throws HibernateException {
+    protected T create(T object) throws HibernateException {
         try {
-            Session session = sessionFactory.openSession();
-            session.beginTransaction();
-            session.save(object);
-            session.getTransaction().commit();
-            session.close();
+            getCurrentActiveSession().save(object);
+            return object;
         } catch (Exception e) {
+            getCurrentActiveSession().getTransaction().rollback();
             throw new HibernateException(e);
         }
     }
 
     protected void delete(Object object) throws HibernateException {
         try {
-            Session session = sessionFactory.openSession();
-            session.beginTransaction();
-            session.delete(object);
-            session.getTransaction().commit();
-            session.close();
+            getCurrentActiveSession().delete(object);
         } catch (Exception e) {
+            getCurrentActiveSession().getTransaction().rollback();
             throw new HibernateException(e);
         }
     }

@@ -26,7 +26,6 @@ public class User {
     private String email;
 
     public User() {
-        id = 0;
     }
 
     public User(long id, String username, String address, String email) {
