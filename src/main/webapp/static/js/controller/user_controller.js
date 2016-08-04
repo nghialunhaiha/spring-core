@@ -12,6 +12,7 @@ App.controller('UserController', [
                 email : ''
             };
             self.users = [];
+            self.searchText = '';
 
             self.fetchAllUsers = function() {
                 UserService.fetchAllUsers().then(function(d) {
@@ -19,6 +20,14 @@ App.controller('UserController', [
                 }, function(errResponse) {
                     console.error('Error while fetching Currencies');
                 });
+            };
+
+            self.findWithKey = function(searchText) {
+                console.error(self.fetchAllUsers);
+                UserService.findWithKey(searchText).then(self.fetchAllUsers,
+                        function(errResponse) {
+                            console.error('Error when search with key input.')
+                        });
             };
 
             self.createUser = function(user) {
@@ -44,6 +53,14 @@ App.controller('UserController', [
 
             self.fetchAllUsers();
             // in User Registration Form
+            /*
+             * HANDLE submit, action in form.
+             */
+            self.search= function() {
+                console.log('Search data with key: ', self.searchText);
+                self.findWithKey(self.searchText);
+            };
+
             self.submit = function() {
                 if (self.user.id == null) {
                     console.log('Saving New User', self.user);
@@ -68,7 +85,7 @@ App.controller('UserController', [
             self.remove = function(id) {
                 console.log('id to be deleted', id);
                 if (self.user.id === id) {// clean form if the user to be
-                                            // deleted is shown there.
+                    // deleted is shown there.
                     self.reset();
                 }
                 self.deleteUser(id);

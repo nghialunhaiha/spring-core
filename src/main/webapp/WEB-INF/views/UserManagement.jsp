@@ -44,9 +44,9 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <form ng-submit="ctrl.submit()" name="searchBox" class="form-horizontal">
+                    <form ng-keyup="$event.keyCode == 13 && ctrl.search()" name="searchBox" class="form-horizontal">
                         <div class="panel-heading">
-                            <input type="search" class="form-control" placeholder="Search text">
+                            <input type="text" ng-model="crtl.searchText" class="form-control" placeholder="Search text">
                         </div>
                     </form>
                 </div>
@@ -123,7 +123,7 @@
                     <tbody>
                         <tr ng-repeat="u in ctrl.users">
                             <td><span ng-bind="u.id"></span></td>
-                            <td><span ng-bind="u.username"></span></td>
+                            <td><span ng-bind="u.username"></span></td> 
                             <td><span ng-bind="u.address"></span></td>
                             <td><span ng-bind="u.email"></span></td>
                             <td>

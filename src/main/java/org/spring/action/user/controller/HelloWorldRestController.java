@@ -1,5 +1,8 @@
 package org.spring.action.user.controller;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import org.spring.action.user.User;
@@ -13,6 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -110,6 +114,26 @@ public class HelloWorldRestController {
 
         userService.deleteAllUsers();
         return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
+    }
+
+    @RequestMapping(value = "/search/{searchText}", method = RequestMethod.GET)
+    public ResponseEntity<List<User>> searhUsers(@PathVariable("searchText") String searchText) {
+        System.out.println("\n\n Searching with key:" + searchText);
+        if (!searchText.equals("nghialun")) {
+            return new ResponseEntity<List<User>>(Collections.emptyList(), HttpStatus.OK);
+        }
+        // List<User> users = userService.findAllUsers();
+        List<User> users = new ArrayList<>();
+        if (users.isEmpty()) {
+            return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);
+        }
+
+        User user = new User();
+        user.setAddress("asdljahldkjashflahflahfladkjshfladkjsfhalfjhlahfj");
+        user.setId(1);
+        user.setEmail("asdasdf@gmail.com");
+        users.add(user);
+        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
 
 }

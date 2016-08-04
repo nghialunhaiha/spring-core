@@ -54,6 +54,27 @@ App.factory('UserService', ['$http', '$q', function($http, $q){
 										return $q.reject(errResponse);
 									}
 							);
+			},
+			
+			findWithKey: function(searchText) {
+			    var data = {
+			            searchText:searchText
+			           };
+
+			    var config = {
+			            params: data,
+			            headers : {'Accept' : 'application/json'}
+			           };
+
+			    return $http.get('http://localhost:8080/springAngularJs/search/'+ searchText).then(
+			            function(response) {
+			                return response.data;
+			            }, function(errResponse) {
+			                console.error(errResponse);
+			                console.error('Error while searching user');
+                            return $q.reject(errResponse);
+			            }
+			    );
 			}
 		
 	};
