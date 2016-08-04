@@ -1,13 +1,9 @@
 package org.spring.action.user.repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.criteria.Expression;
-
 import org.core.repository.BaseRepository;
-import org.hibernate.Criteria;
-import org.hibernate.Query;
+import org.hibernate.SQLQuery;
 import org.spring.action.user.User;
 import org.springframework.stereotype.Repository;
 
@@ -19,16 +15,18 @@ public class UserRepositoryImpl extends BaseRepository<User> implements UserRepo
         return findById(id, User.class);
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public List<User> findByName(String name) {
-        List<User> users = new ArrayList<>();
         // Criteria criteria = getCurrentActiveSession().createCriteria(User.class);
         // criteria.add(org.hibernate.criterion.Expression.gt)
 
-        Query query = getCurrentActiveSession().createSQLQuery("select * from user where user.NAME = ?").setString(0,
-                name);
-        users = query.list();
-        return users;
+        String sql = "select * from user where user.NAME = ?";
+        SQLQuery query = getCurrentActiveSession().createSQLQuery(sql);
+        query.setString(0, name);
+        query.addEntity(User.class);
+
+        return query.list();
     }
 
     @Override

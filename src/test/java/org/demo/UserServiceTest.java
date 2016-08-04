@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.config.BaseTest;
 import org.core.json.JsonUTils;
+import org.junit.Assert;
 import org.junit.Test;
 import org.spring.action.user.User;
 import org.spring.action.user.service.UserService;
@@ -36,7 +37,7 @@ public class UserServiceTest extends BaseTest {
         userService.updateUser(userCreated);
         userService.updateUser(user2);
         System.out.println(JsonUTils.toJson(userService.findById(1)));
-        
+
         userService.deleteUserById(1);
     }
 
@@ -44,5 +45,26 @@ public class UserServiceTest extends BaseTest {
         System.out.println("\n============================");
         userService.findAllUsers().stream().forEach(System.out::println);
         System.out.println("============================\n");
+    }
+
+    @Test
+    public void findByName() {
+        User user1 = new User();
+        user1.setEmail("nasdghia@gmai.com");
+        user1.setAddress("ajsdfasd");
+        user1.setUsername("userName");
+
+        userService.saveUser(user1);
+
+        user1.setUsername("name2");
+        userService.saveUser(user1);
+        user1.setUsername("name3");
+        userService.saveUser(user1);
+        user1.setUsername("name2");
+        userService.saveUser(user1);
+
+        List<User> users = userService.findByName("name2");
+        Assert.assertEquals(2, users.get(0).getId());
+        Assert.assertEquals(4, users.get(1).getId());
     }
 }
