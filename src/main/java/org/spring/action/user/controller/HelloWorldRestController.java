@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
+@RequestMapping("/springAngularJs/")
 public class HelloWorldRestController {
 
     @Autowired
@@ -29,7 +30,7 @@ public class HelloWorldRestController {
         List<User> users = userService.findAllUsers();
         if (users.isEmpty()) {
             return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);// You many decide to return
-                                                                         // HttpStatus.NOT_FOUND
+            // HttpStatus.NOT_FOUND
         }
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
