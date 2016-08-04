@@ -44,9 +44,11 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <form ng-keyup="$event.keyCode == 13 && ctrl.search()" name="searchBox" class="form-horizontal">
+                    <form name="searchBox" class="form-horizontal" ng-keyup=" $event.keyCode == 13 && ctrl.search()">
                         <div class="panel-heading">
-                            <input type="text" ng-model="crtl.searchText" class="form-control" placeholder="Search text">
+                            <!-- if in form we do not have $event.keyCode == 13 -> action will alway be handle while typing -->
+                            <input  type="text" ng-model="ctrl.searchText" class="form-control"
+                                placeholder="Search by name">
                         </div>
                     </form>
                 </div>
@@ -123,7 +125,7 @@
                     <tbody>
                         <tr ng-repeat="u in ctrl.users">
                             <td><span ng-bind="u.id"></span></td>
-                            <td><span ng-bind="u.username"></span></td> 
+                            <td><span ng-bind="u.username"></span></td>
                             <td><span ng-bind="u.address"></span></td>
                             <td><span ng-bind="u.email"></span></td>
                             <td>

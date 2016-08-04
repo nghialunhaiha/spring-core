@@ -2,6 +2,7 @@ package org.spring.action.user.service;
 
 import java.util.List;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.spring.action.user.User;
 import org.spring.action.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.findById(id);
     }
 
-    public User findByName(String name) {
+    public List<User> findByName(String name) {
         return userRepository.findByName(name);
     }
 
@@ -40,7 +41,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public boolean isUserExist(User user) {
-        return findByName(user.getUsername()) != null;
+        return !CollectionUtils.isEmpty(findByName(user.getUsername()));
     }
 
     public void deleteAllUsers() {

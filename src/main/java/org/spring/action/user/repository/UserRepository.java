@@ -7,7 +7,7 @@ import org.spring.action.user.User;
 public interface UserRepository {
     User findById(long id);
 
-    User findByName(String name);
+    List<User> findByName(String name);
 
     void createUser(User user);
 

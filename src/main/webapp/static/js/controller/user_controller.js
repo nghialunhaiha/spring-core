@@ -17,17 +17,20 @@ App.controller('UserController', [
             self.fetchAllUsers = function() {
                 UserService.fetchAllUsers().then(function(d) {
                     self.users = d;
+                    console.log('data return when get all data:' + d);
                 }, function(errResponse) {
                     console.error('Error while fetching Currencies');
                 });
             };
 
             self.findWithKey = function(searchText) {
-                console.error(self.fetchAllUsers);
-                UserService.findWithKey(searchText).then(self.fetchAllUsers,
-                        function(errResponse) {
-                            console.error('Error when search with key input.')
-                        });
+                UserService.findWithKey(searchText).then(function(data) {
+                    // self.fetchAllUsers,
+                    self.users = data;
+                    console.log('data return when using search :' + data);
+                }, function(errResponse) {
+                    console.error('Error when search with key input.')
+                });
             };
 
             self.createUser = function(user) {
@@ -56,9 +59,11 @@ App.controller('UserController', [
             /*
              * HANDLE submit, action in form.
              */
-            self.search= function() {
-                console.log('Search data with key: ', self.searchText);
-                self.findWithKey(self.searchText);
+            self.search = function() {
+                if (self.searchText == null || self.searchText == '') {
+                    console.error('Search text input is empty.')
+                } else
+                    self.findWithKey(self.searchText);
             };
 
             self.submit = function() {
