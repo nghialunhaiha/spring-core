@@ -17,6 +17,7 @@
     <meta content="" name="description"/>
     <meta content="" name="author"/>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="<c:url value='/static/css/header.css' />" rel="stylesheet"/>
 </head>
 <body>
     <c:import url="led-front/header.jsp"/>

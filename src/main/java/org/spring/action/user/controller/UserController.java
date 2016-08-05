@@ -2,6 +2,7 @@ package org.spring.action.user.controller;
 
 import java.util.List;
 
+import org.core.controller.BaseController;
 import org.spring.action.user.User;
 import org.spring.action.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
-@RequestMapping("/springAngularJs/")
-public class HelloWorldRestController {
+//@RequestMapping("/springAngularJs/")
+public class UserController  extends BaseController{
 
     @Autowired
     UserService userService; // Service which will do all data retrieval/manipulation work
