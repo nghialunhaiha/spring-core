@@ -1,11 +1,14 @@
+.my-container {
+
+}
 .text-contact-marquee {
 	position: absolute;
 	white-space: nowrap;
-	margin-bottom:;
+	/*margin-bottom:;*/
 }
 
 .slide-show {
-	height: 330px;
+	height: 300px;
 	width: 100%;
 	background-color: rgba(51, 109, 69, 0.46);
 }
@@ -19,7 +22,7 @@
 
 .prd-item-border {
 	height: 406px;
-	width: 305px;
+	width: 282px;
 	border: thin #57b23d solid;
 	border-top: 5px solid #57b23d;
 	margin: 0 auto;
