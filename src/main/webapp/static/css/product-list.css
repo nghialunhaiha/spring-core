@@ -1,35 +1,40 @@
-.product-item-container{
-/*chua co*/
+.product-item-container {
+    /*chua co*/
 }
+
 .product-list {
-	margin-top: 52px;
-	height: 95px;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 52px;
+    height: 95px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-@media ( min-width : 768px) {
-	.product-list {
-		max-width: 100%;
-	}
+@media ( min-width: 768px) {
+    .product-list {
+        max-width: 100%;
+    }
 }
 
-@media ( min-width : 992px) {
-	.product-list {
-		max-width: 100%;
-	}
+@media ( min-width: 992px) {
+    .product-list {
+        max-width: 100%;
+    }
 }
 
 .prt-list-menu {
-	margin: 2px 140px;
-	margin-left: 250px;
-	padding: 10px;
+    margin: 2px 140px;
+    margin-left: 250px;
+    padding: 10px;
 }
 
 .prt-list-menu-text {
-	margin-top: 18px;
-	color: white;
-	font-size: 1.4em;
-	font-weight: bold;
-	text-transform: capitalize;
+    margin-top: 18px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-panel {
+    width: 100%;
 }
