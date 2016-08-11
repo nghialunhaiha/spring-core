@@ -1,0 +1,60 @@
+.logo {
+    border: 1px solid #c9302c;
+    height: 95px;
+
+}
+
+.top-menu-column {
+    margin-right: 4px;
+}
+
+.top-menu-column:last-child {
+    margin-right: 0;
+}
+
+.top-menu-item {
+    margin: 8px 2px;
+}
+
+.header-image {
+    height: 170px;
+    width: 100%;
+    background-color: #4cae4c;
+    z-index: 10;
+    margin-bottom: 1px;
+}
+
+.menu-wrapper {
+    height: 100px;
+    /*background-color: #5cb85c;*/
+}
+
+.top-nav {
+    opacity: 0.9;
+}
+
+.menu-fixed-top,
+.menu-fixed-bottom {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.menu-fixed-top {
+    background: rgba(115, 115, 115, 0.91);
+    height: 100px;
+    margin-bottom: -80px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    z-index: 150;
+}
+
+.menu-fixed-top a, p {
+    color: #ffffff;
+}
+
+.menu-fix-top-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

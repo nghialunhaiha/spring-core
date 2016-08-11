@@ -33,7 +33,10 @@
     <div class="row">
         <c:import url="main-page-product-items.jsp"></c:import>
     </div>
+    <div class = "row">
 
+
+    </div>
     <!--FOOTER-->
     <c:import url="footer.jsp"></c:import>
 

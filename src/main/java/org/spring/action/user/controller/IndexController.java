@@ -15,7 +15,7 @@ public class IndexController extends BaseController{
 
     @RequestMapping(value = "/home/", method = RequestMethod.GET)
     public String getHomePage(){
-        return "home";
+        return "index";
     }
 
 }
