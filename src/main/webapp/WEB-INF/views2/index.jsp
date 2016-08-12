@@ -18,12 +18,13 @@
 
         <%--close header--%>
     </div>
-    <div class="row">
+    <div class="row prd-item-wrapper">
         <c:import url="main-page.jsp"></c:import>
     </div>
     <%--close main-page--%>
 
     <div class="row">
+        <%--may be not need in container--%>
         <%--footer--%>
         <c:import url="footer.jsp"></c:import>
         <%--close footer--%>
