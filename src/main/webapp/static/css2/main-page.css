@@ -1,0 +1,140 @@
+.main-page {
+    margin-top: 10px;
+    border: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1240px) {
+    .main-page {
+        width: 1240px;
+    }
+}
+
+/*@media (min-width: 992px) {*/
+    /*.main-page {*/
+        /*width: 970px;*/
+    /*}*/
+/*}*/
+
+/*wrapper cua ca 1 cuc to dung*/
+.prd-item-wrapper {
+    border: 1px dashed rgba(21, 80, 255, 0.93);
+    height: 488px;
+}
+
+.prd-item-list {
+    margin-bottom: 32px;
+}
+
+/*Top MENU of product-items*/
+.prd-menu-item {
+    background-color: #5bc0de;
+    height: 14%;
+}
+
+.categories-list {
+    list-style: none;
+    list-style-type: none;
+    margin-left: -5px;
+    background-color: #fff;
+    margin-left: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .12);
+    z-index: 1;
+    padding-left: 16.666666666666665%;
+}
+
+.category-item {
+    float: left;
+    height: 78px;
+    width: 16.666666666666664%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-right: 10px;
+    border: 1px solid;
+}
+
+.category-item h2 {
+    font-weight: 400;
+    line-height: 1.4;
+    color: #111;
+}
+
+.category-item .category-item-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    margin-top: -16px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.categories-list .sub-category-item {
+    /* width: 108px; */
+    border: 1px dashed;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 16.666666666666664%;
+}
+
+/*Danh sach sarn pham cua cong ty gi gi day*/
+/*AFTER Top MENU of product-items*/
+.prd-item-hight-light {
+    height: 86%;
+}
+
+.prd-item-left {
+    background-color: #2e6da4;
+    height: 100%;
+}
+
+.prd-item-center {
+    height: 100%;
+}
+
+.prd-item-center .prd-item-center-top {
+    background-color: rgba(255, 248, 155, 0.43);
+    height: 60%;
+}
+
+.prd-item-center .prd-item-center-bottom {
+    height: 40%;
+}
+
+.prd-sale-item {
+    /*chua implement*/
+    border:1px solid rgba(246, 35, 255, 0.43);
+    height:100%;
+}
+.prd-sale-item span {
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.prd-item-right {
+    background: #2e6da4;
+    height: 100%;
+}
+
+.prd-item-right .prd-list-rgh-item:first-child {
+    margin-top: 5px;
+}
+
+.prd-item-right .prd-list-rgh-item {
+    height: 20%;
+    background-color: #dff0d8;
+    margin-bottom: 3px;
+}
+
+.prd-item-right .prd-list-rgh-item:last-child {
+    margin-bottom: 0;
+}

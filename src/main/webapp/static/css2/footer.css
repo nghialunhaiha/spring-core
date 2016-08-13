@@ -1,0 +1,17 @@
+.footer-wrapper {
+    background-color: #f7f7f7;
+    border-top: 1px solid #f0f0f0;
+
+}
+
+/*FOOTER BOTTOM*/
+.footer-bottom {
+    background-color: #d6d6d6;
+    height: 35px;
+}
+
+@media (min-width: 1240px) {
+    .footer-bottom {
+        width: 1240px;
+    }
+}
