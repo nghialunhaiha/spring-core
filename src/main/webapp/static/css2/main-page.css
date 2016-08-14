@@ -19,11 +19,12 @@
 
 /*wrapper cua ca 1 cuc to dung*/
 .prd-item-wrapper {
-    border: 1px dashed rgba(21, 80, 255, 0.93);
     height: 488px;
 }
 
+
 .prd-item-list {
+    border: 1px solid rgba(204, 204, 204, 0.46);
     margin-bottom: 32px;
 }
 
@@ -56,6 +57,7 @@
     top: 0;
     margin-right: 10px;
     border: 1px solid;
+    background-color: rgba(187, 214, 120, 0.79);
 }
 
 .category-item h2 {
@@ -76,8 +78,7 @@
 }
 
 .categories-list .sub-category-item {
-    /* width: 108px; */
-    border: 1px dashed;
+    border-right: 1px solid rgba(204, 204, 204, 0.46);
     float: left;
     padding-left: 10px;
     padding-right: 10px;
@@ -91,7 +92,7 @@
 }
 
 .prd-item-left {
-    background-color: #2e6da4;
+    background-color: #dff0d8;
     height: 100%;
 }
 
@@ -109,8 +110,7 @@
 }
 
 .prd-sale-item {
-    /*chua implement*/
-    border:1px solid rgba(246, 35, 255, 0.43);
+    border-right: 1px solid rgba(204, 204, 204, 0.46);
     height:100%;
 }
 .prd-sale-item span {
@@ -121,8 +121,9 @@
 }
 
 .prd-item-right {
-    background: #2e6da4;
     height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .prd-item-right .prd-list-rgh-item:first-child {

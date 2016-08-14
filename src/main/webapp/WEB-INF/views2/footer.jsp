@@ -37,10 +37,52 @@
                 <div class="row">Liên hệ: 01659963576</div>
             </div>
         </div>
+        <hr>
         <div class="row footer-bottom">
-            &#9400; 2016 - Site Built By Mr. NghiaLun. <a href="https://www.facebook.com/profile.php?id=100012634626562"
-                                                          target="_blank">Link fanpage face</a>
+            <div class="col-md-12">
+                <div class="span12">
+                    &#9400; 2016 - Site Built By Mr. NghiaLun. <a
+                        href="https://www.facebook.com/profile.php?id=100012634626562"
+                        target="_blank">Link fanpage face</a>
+                </div>
+                <div clas="span12">
+                    Email: ledsimba.vietnam@gmail.com
+                </div>
+                <div clas="span12">
+                    Hot line: 123456789.
+                </div>
+                <div clas="span12">
+                    Skype: nghiadeptrai
+                </div>
+                <div clas="span12">
+                    Mã số doanh nghiệp: 0104918404 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp lần đầu ngày 20/09/2010. Đăng ký thay đổi lần thứ 29 do Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh ngày 28 tháng 12 năm 2015.
+
+
+                </div>
+
+            </div>
         </div>
     </div>
+    <%--CLOSE container of footer with some col--%>
 
+    <%--<script>--%>
+    <%--$(document).ready(function () {--%>
+    <%--$(window).resize(function () {--%>
+    <%--var $c = $('.container'),--%>
+    <%--$w = $('.footer-bottom'),--%>
+    <%--totalWidth = $('.footer-wrapper').outerWidth(),--%>
+    <%--wellWidth = $c.outerWidth(),--%>
+    <%--diff = totalWidth - wellWidth,--%>
+    <%--marg = -Math.floor(diff / 2) + 'px';--%>
+    <%--$w.each(function () {--%>
+    <%--$(this).css({--%>
+    <%--'margin-left': marg,--%>
+    <%--'margin-right': marg--%>
+    <%--});--%>
+    <%--})--%>
+    <%--});--%>
+    <%--$(window).resize();--%>
+    <%--});--%>
+
+    <%--</script>--%>
 </div>

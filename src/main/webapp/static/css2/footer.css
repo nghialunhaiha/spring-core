@@ -1,17 +1,19 @@
 .footer-wrapper {
     background-color: #f7f7f7;
     border-top: 1px solid #f0f0f0;
-
+    margin-top: 12px;
 }
 
 /*FOOTER BOTTOM*/
 .footer-bottom {
+    margin-top: 10px;
     background-color: #d6d6d6;
-    height: 35px;
+    /*height: 35px;*/
+    display:inline-block;
 }
 
-@media (min-width: 1240px) {
-    .footer-bottom {
-        width: 1240px;
-    }
-}
+/*@media (min-width: 1240px) {*/
+    /*.footer-bottom {*/
+        /*width: 1240px;*/
+    /*}*/
+/*}*/

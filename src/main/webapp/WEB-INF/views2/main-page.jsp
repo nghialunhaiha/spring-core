@@ -71,7 +71,10 @@
         </div>
         <div class="row prd-item-hight-light">
             <div class="col-md-2 prd-item-left">
-                danh sach khasch hang
+                chua biet cai gi o day luon
+                <br>
+                hh
+
                 <%----%>
             </div>
             <%--khung o giua--%>
