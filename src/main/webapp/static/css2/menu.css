@@ -4,7 +4,7 @@
 
 .logo {
     border: 1px solid #c9302c;
-    height: 95px;
+    height: 100%;
 
 }
 
@@ -21,9 +21,9 @@
 }
 
 .header-image {
-    height: 170px;
+    height: 36px;
     width: 100%;
-    background-color: #4cae4c;
+    background-color: rgb(238, 238, 238);
     z-index: 10;
     margin-bottom: 1px;
 }
@@ -46,18 +46,24 @@
 }
 
 .menu-fixed-top {
-    background: rgba(115, 115, 115, 0.91);
-    height: 100px;
+    background-color: rgb(255, 255, 255);
+    height: 85px;
     margin-bottom: -80px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    margin-bottom: 2px;
     z-index: 150;
 }
 
 .menu-fixed-top a, p {
-    color: #ffffff;
+    color: #333333;
+    height: 39px;
+    /* line-height: 39px; */
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 700;
 }
 
-.menu-fix-top-scrolled {
+.menu-fixed-top-scrolled {
     position: fixed;
     width: 100%;
     top: 0;

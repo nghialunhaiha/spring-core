@@ -12,11 +12,10 @@
     <link href="<c:url value = '/static/css2/main-page.css'/>" rel="stylesheet"/>
     <link href="<c:url value = '/static/css2/footer.css'/>" rel="stylesheet"/>
 </head>
-<body>
+<body style = "background-color: #eee;">
 
-<div class="row top-menu-wrapper">
-    <c:import url="menu.jsp"></c:import>
-</div>
+<c:import url="menu.jsp"></c:import>
+
 <div class="container main-page">
     <div class="row prd-item-wrapper">
         <div class="col-md-12 col-xs-12 col-sm-12">
@@ -28,13 +27,13 @@
     </div>
 
 </div>
-<%--close container, main-page--%>
 
-<%--footer--%>
 <c:import url="footer.jsp"></c:import>
-<%--</div>--%>
+<%--FOOTER--%>
+
 <script src="<c:url value = '/static/js/angular-1.4.6.js'/>"></script>
 <script src="<c:url value = '/static/js/app.js'/>"></script>
+
 </body>
 <%--main-page--%>
 </html>
