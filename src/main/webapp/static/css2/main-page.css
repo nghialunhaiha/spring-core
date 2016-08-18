@@ -12,16 +12,15 @@
 }
 
 /*@media (min-width: 992px) {*/
-    /*.main-page {*/
-        /*width: 970px;*/
-    /*}*/
+/*.main-page {*/
+/*width: 970px;*/
+/*}*/
 /*}*/
 
 /*wrapper cua ca 1 cuc to dung*/
 .prd-item-wrapper {
     height: 488px;
 }
-
 
 .prd-item-list {
     border: 1px solid rgba(204, 204, 204, 0.46);
@@ -30,7 +29,8 @@
 
 /*Top MENU of product-items*/
 .prd-menu-item {
-    background-color: #5bc0de;
+    /*background-color: #5bc0de;*/
+    background-color: #bfb2ff;
     height: 14%;
 }
 
@@ -111,11 +111,12 @@
 
 .prd-sale-item {
     border-right: 1px solid rgba(204, 204, 204, 0.46);
-    height:100%;
+    height: 100%;
 }
+
 .prd-sale-item span {
-    position:absolute;
-    left:50%;
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
@@ -139,3 +140,73 @@
 .prd-item-right .prd-list-rgh-item:last-child {
     margin-bottom: 0;
 }
+
+/************************/
+/*VERSION 2*/
+/************************/
+.prd-main-category {
+    border-top: 1px solid #9E7D71;
+    height: 553px;
+    margin-bottom: 35px;
+}
+
+.prd-left-categories {
+    height: 100%;
+}
+
+.prd-left-categories .main-menu {
+    height: 20%;
+    background-color: rgba(161, 206, 116, 0.56);
+}
+
+.prd-recommend-item {
+    background-color: rgba(206, 206, 206, 0.56);
+    height: 100%;
+}
+
+.prd-center-box {
+    height: 100%;
+}
+
+.prd-top-item {
+    height: 50%;
+    background-color: rgba(148, 206, 57, 0.56);
+}
+
+.prd-center-under {
+    height: 50%;
+}
+
+.prd-center-under-left {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid rgba(205, 205, 205, 0.56);
+    border-top: 1px solid rgba(205, 205, 205, 0.56);
+}
+
+.prd-center-under-right {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid rgba(205, 205, 205, 0.56);
+    border-top: 1px solid rgba(205, 205, 205, 0.56);
+}
+
+.prd-right-list {
+    height: 100%;
+}
+
+.prd-rigt-top {
+    height: 50%;
+    border-bottom: 1px solid rgba(205, 205, 205, 0.56);
+}
+
+.prd-rigt-bottom {
+    height: 50%;
+}
+
+.my-link:hover {
+    -webkit-box-shadow: 1px 3px 11px 2px rgba(143, 143, 143, 1);
+    -moz-box-shadow: 1px 3px 11px 2px rgba(143, 143, 143, 1);
+    box-shadow: 1px 3px 11px 2px rgba(143, 143, 143, 1);
+}
+
