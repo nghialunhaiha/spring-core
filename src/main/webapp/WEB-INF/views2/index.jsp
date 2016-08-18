@@ -12,10 +12,23 @@
     <link href="<c:url value = '/static/css2/main-page.css'/>" rel="stylesheet"/>
     <link href="<c:url value = '/static/css2/footer.css'/>" rel="stylesheet"/>
 </head>
-<body style = "background-color: #eee;">
+<body style="background-color: #eee;">
 
 <c:import url="menu.jsp"></c:import>
+<div class="container">
+    <div class="row">
+        <ul class="a" style="list-style-type: none">
+            <li><a href="http://tobiasahlin.com/blog/how-to-animate-box-shadow/">link box shadow css, effect with
+                css3</a></li>
+            <li><a href="http://jsfiddle.net/tetgG/">too easy box shadow</a></li>
+            <li><a href="http://zurb.com/library"> libraries</a></li>
+            <li><a href="http://zurb.com/building-blocks/image-hover-effects"> hover image effect</a></li>
 
+        </ul>
+
+
+    </div>
+</div>
 <div class="container main-page">
     <div class="row prd-item-wrapper">
         <div class="col-md-12 col-xs-12 col-sm-12">

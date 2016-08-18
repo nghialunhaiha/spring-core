@@ -145,9 +145,10 @@
 /*VERSION 2*/
 /************************/
 .prd-main-category {
-    border-top: 1px solid #9E7D71;
+    border-top: 3px solid #9E7D71;
     height: 553px;
     margin-bottom: 35px;
+    border-bottom: 1px solid #fffeff;
 }
 
 .prd-left-categories {
@@ -156,7 +157,8 @@
 
 .prd-left-categories .main-menu {
     height: 20%;
-    background-color: rgba(161, 206, 116, 0.56);
+    /*background-color: rgba(161, 206, 116, 0.56);*/
+    border-bottom: 1px solid rgba(205, 205, 205, 0.56);
 }
 
 .prd-recommend-item {

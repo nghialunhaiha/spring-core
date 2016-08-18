@@ -3,13 +3,13 @@
 
 <div class="row prd-main-category">
     <div class="col-md-2 prd-left-categories">
-        <div class=" row main-menu">
+        <div class=" row main-menu my-link">
 
         </div>
         menu will be here
     </div>
     <%--MENU--%>
-    <div class="col-md-4 prd-recommend-item">
+    <div class="col-md-4 prd-recommend-item my-link">
         recomend item
     </div>
     <%--recomend, hight light item--%>
