@@ -153,13 +153,33 @@
 
 .prd-left-categories {
     height: 100%;
+    background-color: rgb(255, 255, 255);
 }
 
 .prd-left-categories .main-menu {
     height: 20%;
     /*background-color: rgba(161, 206, 116, 0.56);*/
+    margin-bottom: 10px;
     border-bottom: 1px solid rgba(205, 205, 205, 0.56);
 }
+
+.prd-left-inner-menu {
+    padding:0;
+}
+.prd-left-inner-menu-list {
+    padding:0;
+}
+
+.prd-left-inner-menu li {
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+/*************************/
+/*************************/
+/*CLOSE LEFT MENU PANEL*/
+/*************************/
+/*************************/
 
 .prd-recommend-item {
     background-color: rgba(206, 206, 206, 0.56);

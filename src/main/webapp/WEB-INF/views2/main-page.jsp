@@ -6,7 +6,16 @@
         <div class=" row main-menu my-link">
 
         </div>
-        menu will be here
+        <div class="row prd-left-inner-menu" >
+            <div class="col-md-12 prd-left-inner-menu-list">
+                <ul>
+                    <li><a class="active" href="#home">link to inner menu 1</a></li>
+                    <li><a href="#news">link to inner menu 2</a></li>
+                    <li><a href="#contact">link to inner menu 2</a></li>
+                    <li><a href="#about">link to inner menu 3</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <%--MENU--%>
     <div class="col-md-4 prd-recommend-item my-link">
