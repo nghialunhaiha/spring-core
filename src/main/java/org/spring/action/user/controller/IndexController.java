@@ -18,4 +18,8 @@ public class IndexController extends BaseController{
         return "index";
     }
 
+    @RequestMapping(value = "/test-list-prds/", method = RequestMethod.GET)
+    public String getPrdCategoryPage(){
+        return "products-category";
+    }
 }
