@@ -4,7 +4,9 @@
 <div class="row prd-main-category">
     <div class="col-md-2 prd-left-categories">
         <div class=" row main-menu my-link">
-
+            <a href="#">
+                Main menu 1
+            </a>
         </div>
         <div class="row prd-left-inner-menu" >
             <div class="col-md-12 prd-left-inner-menu-list">
@@ -13,6 +15,14 @@
                     <li><a href="#news">link to inner menu 2</a></li>
                     <li><a href="#contact">link to inner menu 2</a></li>
                     <li><a href="#about">link to inner menu 3</a></li>
+                    <li><a href="#about">link to inner menu 4</a></li>
+                    <li><a href="#about">link to inner menu 5</a></li>
+                    <li><a href="#about">link to inner menu 6</a></li>
+                    <li><a href="#about">link to inner menu 7</a></li>
+                    <li><a href="#about">link to inner menu 8</a></li>
+                    <li><a href="#about">link to inner menu 9</a></li>
+                    <li><a href="#about">link to inner menu 10</a></li>
+                    <li><a href="#about">link to inner menu 11</a></li>
                 </ul>
             </div>
         </div>

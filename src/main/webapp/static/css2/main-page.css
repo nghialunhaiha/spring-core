@@ -1,6 +1,6 @@
 .main-page {
     margin-top: 10px;
-    border: solid;
+    /*border: solid;*/
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -161,6 +161,11 @@
     /*background-color: rgba(161, 206, 116, 0.56);*/
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(205, 205, 205, 0.56);
+    display: block;
+    font-size: 20px;
+    line-height:28px;
+    text-align: center;
+    font-weight:700;
 }
 
 .prd-left-inner-menu {
@@ -171,9 +176,13 @@
 }
 
 .prd-left-inner-menu li {
-    list-style: none;
-    margin-top: 3px;
-    margin-bottom: 8px;
+     list-style: none;
+     margin-top: 3px;
+     margin-bottom: 14px;
+ }
+
+.prd-left-inner-menu li:last-child {
+    margin-bottom: 0;
 }
 /*************************/
 /*************************/

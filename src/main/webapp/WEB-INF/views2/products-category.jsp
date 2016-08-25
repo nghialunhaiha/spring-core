@@ -3,7 +3,7 @@
 <%@ page session="false" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>list san pham theo inner menu</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -49,6 +49,44 @@
                 <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
                     <div class="item"><%--moi item se dc design o day--%>
                         <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+                            <a href="#">
+                                <img src="<c:url value = '/static/imgs/220x220.jpg'/>">
+                             <%--<script src="<c:url value = '/static/js/app.js'/>"></script>--%>
+                            </a>
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <%------------------------------------------------%>
+                <%------------------------------------------------%>
+                <%--MOI THE LI SE DC THAY THE BANG THE NG-REPEAT--%>
+                <%------------------------------------------------%>
+                <%------------------------------------------------%>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
 
                         </div>
                         <div class="info"><%--mo ta cho san pham--%>
@@ -74,13 +112,391 @@
                         <%--close item info--%>
                     </div>
                 </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
+                <li class="list-item list-item-first"><%--wrapper bao quanh ben ngoai cua moi item--%>
+                    <div class="item"><%--moi item se dc design o day--%>
+                        <div class="img img-border"><%--anh se hien thi o day 220x220--%>
+
+                        </div>
+                        <div class="info"><%--mo ta cho san pham--%>
+                            <div class="hotproduct-info"><%--mo ta cho hot product: san pham moi nhat nam 2016, danh cho toa nha cao cap ^^--%>
+
+                            </div>
+                            <div class="price"><%--price--%>
+
+                            </div>
+                            <div class="shipping-info"><%--shipping info--%>
+
+                            </div>
+                            <div class="rate-history"><%--rate history--%>
+
+                            </div>
+                            <%----%>
+                        </div>
+                        <%--close item info--%>
+
+                        <div class="info-more"><%--mo ta cho san pham ma nhieu thong tin hon--%>
+                            <%--thong tin them phai hien thi o day--%>
+                        </div>
+                        <%--close item info--%>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </div>
 
 </div>
 
-<c:import url="footer.jsp"></c:import>
+<%--<c:import url="footer.jsp"></c:import>--%>
 <%--FOOTER--%>
 
 <script src="<c:url value = '/static/js/angular-1.4.6.js'/>"></script>
