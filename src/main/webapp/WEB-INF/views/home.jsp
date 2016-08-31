@@ -42,7 +42,7 @@
 
 </div>
 
-<script src="<c:url value = '/static/js/angular-1.4.6.js'/>"></script>
+<script src="<c:url value = '/static/js/angular.js'/>"></script>
 <script src="<c:url value = '/static/js/app.js'/>"></script>
 </body>
 </html>
