@@ -8549,7 +8549,8 @@ strong.search-count {
     font-size: 14px
 }
 .list-item h3 a {
-    overflow: hidden: white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
     color: #036
 }
@@ -14109,7 +14110,8 @@ a.selected .beonsale {
     border-bottom: 1px solid #eee;
     overflow-x: hidden;
     overflow-y: scroll;
-    scrollbar-highlight-color: #333 width: 170px;
+    scrollbar-highlight-color: #333;
+    width: 170px;
     max-height: 200px
 }
 .list-box-multiple::-webkit-scrollbar {
