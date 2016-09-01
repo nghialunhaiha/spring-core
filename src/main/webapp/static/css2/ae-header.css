@@ -129,11 +129,11 @@
     width: 7px;
     height: 4px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -300px 0;
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -300px 0;*/
     border: 0 none
 }
 .ng-switcher .country-selector .link-fake-selector-mover {
-    background: url(/ae-header/20160804125608/buyer/common/img/refineby_slect_over.gif) no-repeat right top
+    /*background: url(/ae-header/20160804125608/buyer/common/img/refineby_slect_over.gif) no-repeat right top*/
 }
 .ng-switcher .country-selector .link-fake-selector .country-text {
     display: block;
@@ -442,7 +442,7 @@
     width: 8px;
     height: 5px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -350px -50px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -350px -50px*/
 }
 .nav-global .ng-switcher-language .switcher-sub {
     width: 240px;
@@ -602,7 +602,7 @@
     width: 7px;
     height: 15px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -4px -250px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -4px -250px*/
 }
 .ui-autocomplete .store-name:hover {
     text-decoration: underline;
@@ -611,19 +611,19 @@
 .ui-autocomplete .store-logo-no-exist {
     display: inline-block;
     height: 18px;
-    background: url(/ae-header/20160804125608/buyer/common/img/ic_store.png);
+    /*background: url(/ae-header/20160804125608/buyer/common/img/ic_store.png);*/
     width: 18px;
     vertical-align: middle
 }
 .country-flag {
-    background: transparent url(/ae-header/20160804125608/node_modules/@alife/omega-country-flag/img/sprites_countryFlag_s_fix_2.png) no-repeat
+    /*background: transparent url(/ae-header/20160804125608/node_modules/@alife/omega-country-flag/img/sprites_countryFlag_s_fix_2.png) no-repeat*/
 }
 .css_flag {
     display: block;
     float: left;
     padding: 0 0 0 25px;
     line-height: 15px;
-    background: url(/ae-header/20160804125608/node_modules/@alife/omega-country-flag/img/sprites_countryFlag_s_fix_2.png) no-repeat
+    /*background: url(/ae-header/20160804125608/node_modules/@alife/omega-country-flag/img/sprites_countryFlag_s_fix_2.png) no-repeat*/
 }
 .css_ae {
     background-position: 0 -78px
@@ -1486,7 +1486,7 @@
     vertical-align: middle;
     font-weight: 700;
     color: #fff;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -200px 0
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -200px 0*/
 }
 .sm-level-A0 {
     background-position: -200px -200px
@@ -1535,7 +1535,7 @@
     right: 0;
     overflow: hidden;
     text-indent: 999rem;
-    background: url(/ae-header/20160804125608/node_modules/@alife/omega-newuser/close.png) no-repeat;
+    /*background: url(/ae-header/20160804125608/node_modules/@alife/omega-newuser/close.png) no-repeat;*/
     z-index: 10;
     cursor: pointer
 }
@@ -1556,7 +1556,7 @@
     display: block;
     width: 25px;
     height: 25px;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -597px -196px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -597px -196px*/
 }
 .site-notice-header .site-notice-container {
     text-align: center;
@@ -1635,7 +1635,7 @@
     width: 8px;
     height: 5px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -350px -50px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -350px -50px*/
 }
 .nav-global .ng-sub-list {
     display: none;
@@ -1730,7 +1730,7 @@
     width: 10px;
     height: 18px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -450px -200px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -450px -200px*/
 }
 .hm-left {
     position: relative;
@@ -1770,7 +1770,7 @@
     min-width: 810px
 }
 .me-header .me-icons {
-    background-image: url(/ae-header/20160804125608/buyer/common/img/me-icons.png)!important;
+    /*background-image: url(/ae-header/20160804125608/buyer/common/img/me-icons.png)!important;*/
     background-repeat: no-repeat
 }
 .me-header .logo {
@@ -1795,8 +1795,8 @@
     height: 44px;
     text-indent: -999em;
     overflow: hidden;
-    background-image: url(/ae-header/20160804125608/buyer/common/img/ae-logo-1x.png);
-    background-image: -webkit-image-set(url(/ae-header/20160804125608/buyer/common/img/ae-logo-1x.png) 1x, url(/ae-header/20160804125608/buyer/common/img/ae-logo-2x.png) 2x);
+    /*background-image: url(/ae-header/20160804125608/buyer/common/img/ae-logo-1x.png);*/
+    /*background-image: -webkit-image-set(url(/ae-header/20160804125608/buyer/common/img/ae-logo-1x.png) 1x, url(/ae-header/20160804125608/buyer/common/img/ae-logo-2x.png) 2x);*/
     background-repeat: no-repeat
 }
 .site-logo {
@@ -1819,8 +1819,8 @@
     text-indent: -999em;
     margin: 0 auto;
     overflow: hidden;
-    background-image: url(/ae-header/20160804125608/buyer/common/img/logo-new-1x.png);
-    background-image: -webkit-image-set(url(/ae-header/20160804125608/buyer/common/img/logo-new-1x.png) 1x, url(/ae-header/20160804125608/buyer/common/img/logo-new-2x.png) 2x);
+    /*background-image: url(/ae-header/20160804125608/buyer/common/img/logo-new-1x.png);*/
+    /*background-image: -webkit-image-set(url(/ae-header/20160804125608/buyer/common/img/logo-new-1x.png) 1x, url(/ae-header/20160804125608/buyer/common/img/logo-new-2x.png) 2x);*/
     background-repeat: no-repeat
 }
 .site-logo .logo-slogan {
@@ -1882,7 +1882,7 @@
     width: 8px;
     height: 5px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -350px -50px;
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -350px -50px;*/
     z-index: 2
 }
 .searchbar-form .search-cate-title {
@@ -1953,7 +1953,7 @@
     top: 0;
     width: 50px;
     height: 40px;
-    background: #e62e04 url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -587px 8px;
+    /*background: #e62e04 url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -587px 8px;*/
     border-radius: 0 3px 3px 0
 }
 .me-header .searchbar-form .search-button {
@@ -2020,7 +2020,7 @@
     width: 28px;
     height: 28px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -100px -50px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -100px -50px*/
 }
 .nav-cart:hover a:before {
     background-position: -100px 0
@@ -2187,7 +2187,7 @@
 .header .nav-wishlist>a:before {
     width: 28px;
     height: 24px;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat 0 -50px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat 0 -50px*/
 }
 .header .nav-wishlist:hover>a:before {
     background-position: 0 0
@@ -2212,7 +2212,7 @@
 .me-header .nav-wishlist>a:before {
     height: 22px;
     width: 22px;
-    background: url(/ae-header/20160804125608/buyer/common/img/me-icons.png) no-repeat 0 -310px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/me-icons.png) no-repeat 0 -310px*/
 }
 .me-header .nav-wishlist-ctn,
 .me-header .nav-wishlist>a:after {
@@ -2348,7 +2348,7 @@
     height: 28px;
     top: 29px;
     left: 7px;
-    background: #fff url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -50px -50px
+    /*background: #fff url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -50px -50px*/
 }
 .header .nav-user-account:hover .user-account-info:before {
     background-position: -50px 0
@@ -2372,7 +2372,7 @@
     height: 26px;
     top: 26px;
     left: 5px;
-    background: #fff url(/ae-header/20160804125608/buyer/common/img/me-avatar.png) no-repeat
+    /*background: #fff url(/ae-header/20160804125608/buyer/common/img/me-avatar.png) no-repeat*/
 }
 .me-header .user-account-info .account-name {
     width: auto;
@@ -2444,7 +2444,7 @@
     width: 26px;
     height: 26px;
     vertical-align: middle;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -400px 0
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -400px 0*/
 }
 .flyout-user-signIn .flyout-signIn-type .nus-icon:hover {
     background-position: -400px -50px
@@ -2602,7 +2602,7 @@
     padding-left: 40px
 }
 .new-categories-main .cl-item .cate-name span:before {
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat 0 -100px;
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat 0 -100px;*/
     display: block;
     position: absolute;
     left: 10px;
@@ -2827,7 +2827,7 @@
     width: 9px;
     height: 13px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -3000px -50px;
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -3000px -50px;*/
     vertical-align: top
 }
 .sub-cate-items dt a {
@@ -2972,7 +2972,7 @@
     width: 46px;
     height: 40px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -500px -50px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -500px -50px*/
 }
 .header-categories .categories-title {
     overflow: hidden;
@@ -2996,7 +2996,7 @@
     width: 22px;
     height: 10px;
     overflow: hidden;
-    background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -600px -50px;
+    /*background: url(/ae-header/20160804125608/buyer/common/img/header-sprite.png) no-repeat -600px -50px;*/
     z-index: 10
 }
 .unfold-categories:after {
@@ -3190,7 +3190,7 @@
 .browser-upgrade-tip .browser-icon,
 .browser-upgrade-tip .message .view-more,
 .browser-upgrade-tip .title {
-    background: url(/ae-header/20160804125608/buyer/common/img/browser-upgrade-sprite.png) no-repeat
+    /*background: url(/ae-header/20160804125608/buyer/common/img/browser-upgrade-sprite.png) no-repeat*/
 }
 .browser-upgrade-tip .title {
     font-size: 14px;
@@ -3268,7 +3268,7 @@
     cursor: pointer;
     top: 6px;
     right: 6px;
-    background: url(/ae-header/20160804125608/buyer/common/img/ui-window-close.png) no-repeat 0 -2px
+    /*background: url(/ae-header/20160804125608/buyer/common/img/ui-window-close.png) no-repeat 0 -2px*/
 }
 .browser-upgrade-tip .close:hover {
     background-position: 0 -51px
@@ -3322,16 +3322,16 @@
     background-repeat: no-repeat
 }
 .browser-upgrade-dialog .list li span.browser-ie {
-    background-image: url(/ae-header/20160804125608/buyer/common/img/ie-icon.jpg)
+    /*background-image: url(/ae-header/20160804125608/buyer/common/img/ie-icon.jpg)*/
 }
 .browser-upgrade-dialog .list li span.browser-chrome {
-    background-image: url(/ae-header/20160804125608/buyer/common/img/chrome-icon.jpg)
+    /*background-image: url(/ae-header/20160804125608/buyer/common/img/chrome-icon.jpg)*/
 }
 .browser-upgrade-dialog .list li span.browser-firefox {
-    background-image: url(/ae-header/20160804125608/buyer/common/img/firefox-icon.jpg)
+    /*background-image: url(/ae-header/20160804125608/buyer/common/img/firefox-icon.jpg)*/
 }
 .browser-upgrade-dialog .list li span.browser-opera {
-    background-image: url(/ae-header/20160804125608/buyer/common/img/opera-icon.jpg)
+    /*background-image: url(/ae-header/20160804125608/buyer/common/img/opera-icon.jpg)*/
 }
 .browser-upgrade-dialog .text {
     margin-left: 10px

@@ -22,4 +22,9 @@ public class IndexController extends BaseController{
     public String getPrdCategoryPage(){
         return "products-category";
     }
+
+    @RequestMapping(value = "/prd-list/", method = RequestMethod.GET)
+    public String getPrdList(){
+        return "prd-list";
+    }
 }
