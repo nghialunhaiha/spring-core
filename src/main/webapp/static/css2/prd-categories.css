@@ -54,11 +54,11 @@
     }
 }
 
-@media (min-width: 120px) {
-    .prd-categories-list .list-item {
-        width: 33.3%;
-    }
-}
+/*@media (min-width: 120px) {*/
+    /*.prd-categories-list .list-item {*/
+        /*width: 33.3%;*/
+    /*}*/
+/*}*/
 
 .main-list-items {
 

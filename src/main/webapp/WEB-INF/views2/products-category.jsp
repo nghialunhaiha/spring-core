@@ -128,7 +128,7 @@
 <%--<c:import url="footer.jsp"></c:import>--%>
 <%--FOOTER--%>
 
-<script src="<c:url value = '/static/js/angular.js'/>"></script>
+<script src="<c:url value = '/static/js/angular.js'></c:url>"></script>
 <script src="<c:url value = '/static/js/controller/products-category.js'/>"></script>
 
 </body>
