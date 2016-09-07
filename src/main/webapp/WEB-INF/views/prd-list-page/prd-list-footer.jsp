@@ -1,5 +1,5 @@
 <!--ams-region-start 571-->
-<link href="../../static/css2/me-footer.css" rel="stylesheet" type="text/css">
+
 <div class="site-footer">
     <div class="container">
         <div class="sf-aliexpressInfo clearfix">

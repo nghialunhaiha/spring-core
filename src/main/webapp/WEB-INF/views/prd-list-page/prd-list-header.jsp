@@ -1,5 +1,5 @@
 <!--<script type="application/javascript" src = "../../static/js/ae-header.js"></script>-->
-<link href="../../static/css2/ae-header.css" rel="stylesheet" type="text/css">
+
 <div class="top-lighthouse" data-spm="1000001" id="top-lighthouse">
     <div class="top-lighthouse-wrap container">
         <div class="nav-global" id="nav-global" data-widget-cid="widget-9">

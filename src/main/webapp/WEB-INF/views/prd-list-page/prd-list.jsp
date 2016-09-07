@@ -13,9 +13,11 @@
     <meta name="google-translate-customization" content="8daa66079a8aa29e-f219f934a1051f5a-ge19f8e1eaa3bf94b-e">
     <meta name="robots" content="follow,noindex">
 
-    <script src="<c:url value = '/static/js/jquery-2.2.4.js'/>"></script>
-    <script src="<c:url value = '/static/js/3.3.7_bootstrap.min.js'/>"></script>
-    <link rel="stylesheet" href="<c:url value='/static/css2/bootstrap.min.css'/> ">
+    <script src="<c:url value = '/static/assert/js/jquery-2.2.4.js'/>"></script>
+    <script src="<c:url value = '/static/assert/js/3.3.7_bootstrap.min.js'/>"></script>
+    <link rel="stylesheet" href="<c:url value='/static/assert/css/bootstrap.min.css'/> ">
+    <link href="<c:url value='/static/prd-list-page/css/me-footer.css'/> " rel="stylesheet" type="text/css">
+    <link href="<c:url value='/static/prd-list-page/css/ae-header.css'/> " rel="stylesheet" type="text/css">
     <%--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--%>
     <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>--%>
     <%--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
@@ -32,7 +34,7 @@
     <link rel="dns-prefetch" href="http://us.ynuf.alipay.com/">
     <link rel="shortcut icon" type="image/x-icon"
           href="http://i00.i.aliimg.com/images/eng/wholesale/icon/aliexpress.ico">
-    <link rel="stylesheet" type="text/css" media="all" href="../../static/css2/saved_resource.css">
+    <link rel="stylesheet" type="text/css" media="all" href="<c:url value='/static/prd-list-page/css/saved_resource.css'/> ">
 
 </head>
 
@@ -57,7 +59,7 @@
     </div>
 </div>
 
-<script src="<c:url value = '/static/js/angular.js'></c:url>"></script>
+<script src="<c:url value = '/static/assert/js/angular.js'></c:url>"></script>
 <c:import url="prd-list-footer.jsp"/>
 <!--<script src="/static/js/controller/products-category.js"></script>-->
 </body>

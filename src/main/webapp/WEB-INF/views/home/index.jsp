@@ -8,9 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link href="<c:url value = '/static/css2/menu.css'/>" rel="stylesheet"/>
-    <link href="<c:url value = '/static/css2/main-page.css'/>" rel="stylesheet"/>
-    <link href="<c:url value = '/static/css2/footer.css'/>" rel="stylesheet"/>
+    <link href="<c:url value = '/static/home/css/menu.css'/>" rel="stylesheet"/>
+    <link href="<c:url value = '/static/home/css/main-page.css'/>" rel="stylesheet"/>
+    <link href="<c:url value = '/static/home/css/footer.css'/>" rel="stylesheet"/>
 </head>
 <body style="background-color: #eee;">
 
@@ -44,8 +44,8 @@
 <c:import url="footer.jsp"></c:import>
 <%--FOOTER--%>
 
-<script src="<c:url value = '/static/js/angular-1.4.6.js'/>"></script>
-<script src="<c:url value = '/static/js/app.js'/>"></script>
+<script src="<c:url value = '/static/assert/js/angular-1.4.6.js'/>"></script>
+<script src="<c:url value = '/static/home/js/app.js'/>"></script>
 
 </body>
 <%--main-page--%>
