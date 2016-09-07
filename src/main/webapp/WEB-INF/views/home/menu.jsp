@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="row logo top-menu-column">
-                        <a href="#"> Website name!!!</a>
+                        <a href="/home"> Website name!!!</a>
                     </div>
 
                 </div>

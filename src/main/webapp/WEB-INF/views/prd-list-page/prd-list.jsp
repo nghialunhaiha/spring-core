@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="d" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page session="false" %>
 <html>
 
@@ -18,6 +17,7 @@
     <link rel="stylesheet" href="<c:url value='/static/assert/css/bootstrap.min.css'/> ">
     <link href="<c:url value='/static/prd-list-page/css/me-footer.css'/> " rel="stylesheet" type="text/css">
     <link href="<c:url value='/static/prd-list-page/css/ae-header.css'/> " rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="all" href="<c:url value='/static/prd-list-page/css/saved_resource.css'/>">
     <%--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--%>
     <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>--%>
     <%--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
@@ -34,7 +34,7 @@
     <link rel="dns-prefetch" href="http://us.ynuf.alipay.com/">
     <link rel="shortcut icon" type="image/x-icon"
           href="http://i00.i.aliimg.com/images/eng/wholesale/icon/aliexpress.ico">
-    <link rel="stylesheet" type="text/css" media="all" href="<c:url value='/static/prd-list-page/css/saved_resource.css'/> ">
+
 
 </head>
 
