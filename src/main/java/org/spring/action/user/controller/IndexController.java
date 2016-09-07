@@ -15,7 +15,12 @@ public class IndexController extends BaseController{
 
     @RequestMapping(value = "/home/", method = RequestMethod.GET)
     public String getHomePage(){
-        return "index";
+        return "/home/index";
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String getHome(){
+        return "/home/index";
     }
 
     @RequestMapping(value = "/test-list-prds/", method = RequestMethod.GET)
@@ -25,6 +30,6 @@ public class IndexController extends BaseController{
 
     @RequestMapping(value = "/prd-list/", method = RequestMethod.GET)
     public String getPrdList(){
-        return "prd-list";
+        return "/prd-list-page/prd-list";
     }
 }
