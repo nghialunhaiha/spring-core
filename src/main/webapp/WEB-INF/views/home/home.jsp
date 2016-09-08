@@ -1,87 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page session="false" %>
-<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" style="height: 100%;">
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="data-spm" content="2114">
     <meta http-equiv="content-language" content="en">
-    <title>AliExpress.com - Online Shopping for Electronics, Fashion, Home &amp; Garden, Toys &amp; Sports, Automobiles
-        from China.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="keywords"
-          content="Aliexpress, Online shopping, Shopping Online, Online Marketing, Automotive, Phones, Accessories, Computers, Electronics, Fashion, Beauty, Health, Home, Garden, Toys , Sports, Weddings, Events">
-    <meta name="description"
-          content="Online Shopping for Cheap Automotive, Phones Accessories, Computers Electronics, Fashion, Beauty Health, Home Garden, Toys Sports, Weddings Events from China; Shopping on Aliexpress |the world&#39;s Online Marketing place.">
-    <meta name="google-translate-customization" content="8daa66079a8aa29e-f219f934a1051f5a-ge19f8e1eaa3bf94b-e">
-    <meta name="google-site-verification" content="QA2U2PdACQWH8Pnb1m41Y02xvRLq3uvpU1s31tuQgKU">
-    <meta property="og:title"
-          content="Find Quality Wholesalers, Suppliers, Manufacturers, Buyers and Products from Our Award-Winning International Trade Site. Wholesale Products from China Wholesalers at Aliexpress.com.">
-    <meta property="og:type" content="site">
-    <meta property="og:url" content="//www.aliexpress.com">
-    <meta property="og:image" content="//i.alicdn.com/ae-header/20150924192652/buyer/common/img/logo-new-1x.png">
-    <meta property="og:site_name" content="Aliexpress">
-    <meta property="fb:admins" content="100001353684210,644984273">
-    <meta property="fb:page_id" content="335963307560">
-    <meta property="fb:app_id" content="176044105761845">
-    <link rel="dns-prefetch" href="http://dmtracking2.alibaba.com/">
-    <link rel="dns-prefetch" href="http://i.alicdn.com/">
-    <link rel="dns-prefetch" href="http://ae01.alicdn.com/">
+    <title>LEDSimba</title>
 
-    <link rel="shortcut icon" type="image/x-icon"
-          href="http://ae01.alicdn.com/images/eng/wholesale/icon/aliexpress.ico">
-    <link rel="search" type="application/opensearchdescription+xml"
-          href="http://www.aliexpress.com/plugins/opensearch/opensearch.xml" title="Aliexpress Shopping">
-    <link rel="alternate" hreflang="en" href="https://m.aliexpress.com/" media="only screen and (max-width: 640px)">
-    <link href="android-app:https://com.alibaba.aliexpresshd/aliexpress/deeplink/home/www/en" hreflang="en"
-          rel="alternate">
-    <link rel="alternate" hreflang="id" href="https://id.aliexpress.com/">
-    <link rel="alternate" hreflang="en" href="https://www.aliexpress.com/">
-    <link rel="alternate" hreflang="ar" href="https://ar.aliexpress.com/">
-    <link rel="alternate" hreflang="de" href="https://de.aliexpress.com/">
-    <link rel="alternate" hreflang="es" href="https://es.aliexpress.com/">
-    <link rel="alternate" hreflang="fr" href="https://fr.aliexpress.com/">
-    <link rel="alternate" hreflang="it" href="https://it.aliexpress.com/">
-    <link rel="alternate" hreflang="ja" href="https://ja.aliexpress.com/">
-    <link rel="alternate" hreflang="ko" href="https://ko.aliexpress.com/">
-    <link rel="alternate" hreflang="nl" href="https://nl.aliexpress.com/">
-    <link rel="alternate" hreflang="pt" href="https://pt.aliexpress.com/">
-    <link rel="alternate" hreflang="ru" href="https://ru.aliexpress.com/">
-    <link rel="alternate" hreflang="th" href="https://th.aliexpress.com/">
-    <link rel="alternate" hreflang="tr" href="https://tr.aliexpress.com/">
-    <link rel="alternate" hreflang="vi" href="https://vi.aliexpress.com/">
-    <link rel="alternate" hreflang="he" href="https://he.aliexpress.com/">
-    <%--<link rel="stylesheet" type="text/css" href="./index_files/saved_resource(1)">--%>
-    <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/saved_resource(1)'/>">
-
+    <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/ae-header.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/saved_resource(1).css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/translateelement.css'/>">
-    <%--<link type="text/css" rel="stylesheet" charset="UTF-8" href="./index_files/translateelement.css">--%>
+
 </head>
-<body data-spm="11010108" class="device-desktop" style="position: relative; min-height: 100%; top: 0px;">
+<body data-spm="11010108" class="device-desktop">
 
 <input type="hidden" id="isHome" value="true">
-<div class="index-page">
-    <input type="hidden" id="web-info:ws-reg-ori" value="home">
-    <input type="hidden" id="userDeviceType" value="">
-    <input type="hidden" id="userCountryCode" value="VN">
-    <input type="hidden" id="userCountryName" value="VIETNAM">
-    <input type="hidden" id="isResponstiveHeader" value="true">
-    <input type="hidden" id="month" value="9">
-    <input type="hidden" id="day" value="5">
-
-    <input type="hidden" id="isSeller" value="false">
-
-    <!--ams-cdp-resource-start 60-->
-
-    <!--ams-cdp-resource-end 60-->
+<div class="index-page header-scroll-fixed">
 
     <!--ams-region-start 580-->
-    <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/ae-header.css'/>">
-    <%--<link href="./index_files/ae-header.css" rel="stylesheet" type="text/css">--%>
+
     <div class="top-lighthouse" data-spm="1000001" id="top-lighthouse">
         <div class="top-lighthouse-wrap container">
-            <div class="nav-global" id="nav-global" data-widget-cid="widget-11">
+            <div class="nav-global" id="nav-global" data-widget-cid="widget-9">
                 <div class="ng-item ng-bp"><a href="http://www.aliexpress.com/buyerprotection/index.html"
                                               rel="nofollow">Buyer Protection</a></div>
 
@@ -126,57 +69,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="ng-item ng-switcher ng-switcher-language" data-role="language-pannel">
-                    <a id="switcher-language-info" data-role="menu" class="switcher-info switcher-language notranslate"
-                       rel="nofollow" href="javascript:void(0)">Language</a>
-                    <div class="switcher-sub notranslate" data-role="content">
-                        <ul class="switcher-site-list" data-role="site-list">
-                            <li><a data-site="rus" href="http://ru.aliexpress.com/">Сайт на русском</a></li>
-                            <li><a data-site="bra" href="http://pt.aliexpress.com/">Site Brasil (Português)</a></li>
-                            <li><a data-site="esp" href="http://es.aliexpress.com/">Sitio en español</a></li>
-                            <li><a data-site="fra" href="http://fr.aliexpress.com/">Site France</a></li>
-                            <!--li><a data-site="ita" href="http://it.aliexpress.com/">Site Italia (Italiano)</a></li>
-                            <li><a data-site="idn" href="http://id.aliexpress.com/">Versi Bahasa Indonesia</a></li>
-                            <li><a data-site="deu" href="http://de.aliexpress.com/">Deutsch</a></li>
-                            <li><a data-site="nld" href="http://nl.aliexpress.com/">Netherlands</a></li>
-                            <li><a data-site="deu" href="http://de.aliexpress.com/">Deutsch</a></li>
-                            <li><a data-site="tur" href="http://tr.aliexpress.com/">Site Türkiye (Türk)</a></li>
-                            <li><a data-site="isr" href="http://he.aliexpress.com/">אתר ישראלי (בעברית)</a></li>
-                            <li><a data-site="jpn" href="http://ja.aliexpress.com/">日本語</a></li>
-                            <li><a data-site="ara" href="http://ar.aliexpress.com/">الموقع العربية</a></li>
-                            <li><a data-site="tha" href="http://th.aliexpress.com/">ภาษาไทย</a></li>
-                            <li><a data-site="vnm" href="http://vi.aliexpress.com/">tiếng Việt</a></li>
-                            <li><a data-site="kor" href="http://ko.aliexpress.com/">한국어</a></li-->
-                        </ul>
-                        <span class="google-trans-btn" data-role="google-translate" style="display: block;"><div
-                                class="" id="site-nav-google-translate">
-                            <div id="google_translate_element">
-                                <div class="skiptranslate goog-te-gadget" dir="ltr">
-                                    <div id=":0.targetLanguage" class="goog-te-gadget-simple"
-                                         style="padding: 0px; border: 0px; height: 21px; line-height: 17px; background-color: transparent;">
-                                        <img src="./index_files/cleardot.gif" class="goog-te-gadget-icon" alt=""
-                                             style="width: 10px; height: 10px; background: url(&quot;http://i02.i.aliimg.com/wimg/buyer/single/google-translate-logo.png&quot;) 0px 0px no-repeat;"><span
-                                            style="vertical-align: middle;"><a role="menu" class="goog-te-menu-value"
-                                                                               href="javascript:void(0)"
-                                                                               style="font-weight: 400; font-size: 12px;"><span
-                                            style="color: rgb(51, 51, 51);">Select Language</span><img
-                                            src="./index_files/cleardot.gif" alt="" width="1" height="1"></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></span>
-                    </div>
-                </div>
+                <div class="ng-item ng-goto-globalsite"><a data-role="goto-globalsite"
+                                                           class="link-goto-globalsite notranslate" rel="nofollow"
+                                                           href="http://www.aliexpress.com/">Go to Global Site
+                    (English)</a></div>
             </div>
         </div>
     </div>
 
     <!--ams-region-end 580-->
 
-    <div class="header header-outer-container" id="header" data-spm="1000002">
+    <div class="header header-outer-container" id="header" data-spm="1000002" style="position: fixed; top: 0px;">
         <div class="header-wrap container">
             <div class="hm-left">
-                <div class="header-categories" id="header-categories" data-widget-cid="widget-9">
+                <div class="header-categories" id="header-categories" data-widget-cid="widget-7">
                     <span class="categories-title">CATEGORIAS</span>
                     <i class="balloon-arrow"></i>
                 </div>
@@ -189,7 +95,7 @@
                 <!--ams-region-start 570-->
                 <div class="nav-cart nav-cart-box"><a
                         href="http://shoppingcart.aliexpress.com/shopcart/shopcartDetail.htm" rel="nofollow"><span
-                        class="text hidden-sm">Cart</span></a><span class="cart-number" id="nav-cart-num">0</span></div>
+                        class="text hidden-sm">Cart</span></a><span class="cart-number" id="nav-cart-num">3</span></div>
 
                 <div class="nav-wishlist"><a href="http://my.aliexpress.com/wishlist/wish_list_product_list.htm"
                                              rel="nofollow"><span class="text hidden-sm">Wish List</span></a>
@@ -200,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="nav-user-account" id="nav-user-account" data-widget-cid="widget-10">
+                <div class="nav-user-account" id="nav-user-account" data-widget-cid="widget-8">
                     <div class="user-account-info" data-role="user-account-top">
                         <div class="user-account-inner hidden-sm"><span class="account-unsigned" data-role="unsigned"><a
                                 data-role="sign-link"
@@ -210,8 +116,8 @@
                                                                                            rel="nofollow">Join</a></span>
                             <span class="account-name" data-role="username">&nbsp;</span>
 
-                            <div class="myaliexpress" data-role="myaliexpress"><span data-role="myaliexpress-link">My AliExpress</span><b>(0)</b>
-                            </div>
+                            <div class="myaliexpress" data-role="myaliexpress"><span data-role="myaliexpress-link">My AliExpress</span><b
+                                    style="display: inline;">(2)</b></div>
                         </div>
                     </div>
 
@@ -220,7 +126,7 @@
                                 href="http://login.aliexpress.com/xman/xlogout.htm" rel="nofollow">Sign Out</a></div>
 
                         <div class="flyout-user-signIn" data-role="user-signIn" style="display: block;">
-                            <p class="flyout-welcome-text" data-role="flyout-welcome">Welcome to AliExpress.com</p>
+                            <p class="flyout-welcome-text" data-role="flyout-welcome">Welcome back, Nghia</p>
 
                             <p><a class="sign-btn" data-role="sign-link"
                                   href="http://login.aliexpress.com/express/mulSiteLogin.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F"
@@ -244,7 +150,11 @@
                                    href="http://us.ae.aliexpress.com/wsuser/buyerJoin/expressJoinIndex.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F"
                                    rel="nofollow">Join Free</a></dd>
                         </dl>
-                        <div class="flyout-remind-list" id="flyout-remind-list"></div>
+                        <div class="flyout-remind-list" id="flyout-remind-list"><p><a rel="nofollow"
+                                                                                      href="http://shoppingcart.aliexpress.com/shopcart/shopcartDetail.htm"><b>(1)</b>Items
+                            in your Cart now cost less!</a></p>
+                            <p><a rel="nofollow" href="http://message.aliexpress.com/message/messagecenter_list.htm"><b>(1)</b>Message
+                                unread</a></p></div>
                         <ul class="flyout-quick-entry" data-role="quick-entry">
                             <li><a href="http://home.aliexpress.com/index.htm?tracelog=ws_topbar" rel="nofollow">My
                                 AliExpress</a></li>
@@ -269,26 +179,53 @@
             </div>
             <div class="hm-middle">
                 <form id="form-searchbar" class="searchbar-form" action="http://www.aliexpress.com/wholesale"
-                      method="get" data-widget-cid="widget-6">
+                      method="get" data-widget-cid="widget-4">
                     <input type="hidden" id="catId" name="catId" value="0">
                     <input type="hidden" id="historyTab">
                     <input type="hidden" id="historySearchInput">
                     <input type="hidden" id="historySearchCountry">
                     <input type="hidden" id="initiative_id" name="initiative_id" value="">
                     <div class="searchbar-operate-box">
-                        <div id="search-cate" class="search-category hidden-sm notranslate">
+                        <div id="search-cate" class="search-category hidden-sm">
                             <div class="search-cate-title"><span id="search-category-value"
                                                                  class="search-category-value">All Categories</span>
                             </div>
-                        </div>
+                            <select id="search-dropdown-box" class="search-cate notranslate">
+                                <option value="0">All Categories</option>
+                                <option value="100003109">Women's Clothing &amp; Accessories</option>
+                                <option value="100003070">Men's Clothing &amp; Accessories</option>
+                                <option value="509">Phones &amp; Telecommunications</option>
+                                <option value="7">Computer &amp; Office</option>
+                                <option value="44">Consumer Electronics</option>
+                                <option value="1509">Jewelry &amp; Accessories</option>
+                                <option value="15">Home &amp; Garden</option>
+                                <option value="1524">Luggage &amp; Bags</option>
+                                <option value="322">Shoes</option>
+                                <option value="1501">Mother &amp; Kids</option>
+                                <option value="18">Sports &amp; Entertainment</option>
+                                <option value="66">Health &amp; Beauty</option>
+                                <option value="1511">Watches</option>
+                                <option value="26">Toys &amp; Hobbies</option>
+                                <option value="100003235">Weddings &amp; Events</option>
+                                <option value="200000875">Novelty &amp; Special Use</option>
+                                <option value="34">Automobiles &amp; Motorcycles</option>
+                                <option value="39">Lights &amp; Lighting</option>
+                                <option value="1503">Furniture</option>
+                                <option value="502">Electronic Components &amp; Supplies</option>
+                                <option value="21">Office &amp; School Supplies</option>
+                                <option value="13">Home Improvement</option>
+                                <option value="2">Food</option>
+                                <option value="30">Security &amp; Protection</option>
+                                <option value="0">In All Categories</option>
+                            </select></div>
                         <input type="submit" class="search-button" value="">
                     </div>
                     <div class="search-key-box">
                         <input type="text" placeholder="I&#39;m shopping for..." maxlength="50" autocomplete="off"
                                value="" name="SearchText" class="search-key" id="search-key">
                     </div>
-                    <div class="ui-autocomplete" data-widget-cid="widget-7"
-                         style="z-index: 99; display: none; position: absolute; left: -9999px; top: -9999px; width: 505px;">
+                    <div class="ui-autocomplete" data-widget-cid="widget-5"
+                         style="z-index: 99; display: none; position: absolute; left: -9999px; top: -9999px; width: 473px;">
                         <div class="hot-word" data-role="hot-word" id="hot-word">
 
                         </div>
@@ -323,160 +260,36 @@
                     <div class="categories-list-box"><!--ams-region-start 514-->
                         <dl class="cl-item cl-item-women" data-role="first-menu" data-spm="101">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/100003109/women-clothing-accessories.html">
-                                Women’s Clothing</a></span></dt>
-                            <dd class="sub-cate" data-path="c-women-content" data-role="first-menu-main">
-
-
-                                <!--ams-region-start 514-->
-                                <div class="sub-cate-main">
-                                    <div class="sub-cate-row">
-                                        <dl class="sub-cate-items" data-role="two-menu">
-                                            <dt>
-                                                <a href="http://www.aliexpress.com/category/100003109/women-clothing-accessories.html">Hot
-                                                    Categories</a></dt>
-                                            <dd><a href="http://www.aliexpress.com/category/200003482/dresses.html?g=y">Dresses</a><a
-                                                    href="http://www.aliexpress.com/category/200001648/blouses-shirts.html?g=y">Blouses
-                                                &amp; Shirts</a><a
-                                                    href="http://www.aliexpress.com/category/100003127/t-shirts.html?g=y">T-Shirts</a><a
-                                                    href="http://www.aliexpress.com/category/100003128/tank-tops.html?g=y">Tank
-                                                Tops</a><a
-                                                    href="http://www.aliexpress.com/category/200001092/jumpsuits-rompers.html?g=y">Jumpsuits
-                                                &amp; Rompers</a><a
-                                                    href="http://www.aliexpress.com/category/100005813/bra-brief-sets.html?g=y">Bra
-                                                &amp; Brief Sets</a></dd>
-                                        </dl>
-                                        <dl class="sub-cate-items" data-role="two-menu">
-                                            <dt>
-                                                <a href="http://www.aliexpress.com/category/200118010/bottoms.html?spm=2114.11010108.101.9.T9ZOxc&amp;g=y">Bottoms</a>
-                                            </dt>
-                                            <dd><a href="http://www.aliexpress.com/category/100005798/skirts.html?g=y">Skirts</a><a
-                                                    href="http://www.aliexpress.com/category/100003163/shorts.html?g=y">Shorts</a><a
-                                                    href="http://www.aliexpress.com/category/100003161/jeans.html?g=y">Jeans</a><a
-                                                    href="http://www.aliexpress.com/category/100003142/pants-capris.html?g=y">Pants
-                                                &amp; Capris</a><a
-                                                    href="http://www.aliexpress.com/category/200001089/leggings.html?g=y">Leggings</a>
-                                            </dd>
-                                        </dl>
-                                    </div>
-
-                                    <div class="sub-cate-row">
-                                        <dl class="sub-cate-items" data-role="two-menu">
-                                            <dt>
-                                                <a href="http://www.aliexpress.com/category/200000775/jackets-coats.html?g=y">Outwear
-                                                    &amp; Sweaters</a></dt>
-                                            <dd><a href="http://www.aliexpress.com/category/200000885/blazers.html?g=y">Blazers</a><a
-                                                    href="http://www.aliexpress.com/category/100003141/hoodies-sweatshirts.html?g=y">Hoodies
-                                                &amp; Sweatshirts</a><a
-                                                    href="http://www.aliexpress.com/category/200000926/basic-jackets.html?g=y">Basic
-                                                Jackets</a><a
-                                                    href="http://www.aliexpress.com/category/200003458/trench.html?g=y">Trench</a><a
-                                                    href="http://www.aliexpress.com/category/200000877/cardigans.html?g=y">Cardigans</a><a
-                                                    href="http://www.aliexpress.com/category/200000879/pullovers.html?g=y">Pullovers</a>
-                                            </dd>
-                                        </dl>
-                                        <dl class="sub-cate-items" data-role="two-menu">
-                                            <dt>
-                                                <a href="http://www.aliexpress.com/category/200000773/intimates.html?g=y">Intimates
-                                                    &amp; Sleepwear</a></dt>
-                                            <dd><a href="http://www.aliexpress.com/category/100005805/bras.html?g=y">Bras</a><a
-                                                    href="http://www.aliexpress.com/category/200001040/panties.html?g=y">Panties</a><a
-                                                    href="http://www.aliexpress.com/category/200001041/shapers.html?g=y">Shapers</a><a
-                                                    href="http://www.aliexpress.com/category/100005813/bra-brief-sets.html?g=y">Bra
-                                                &amp; Brief Sets</a><a
-                                                    href="http://www.aliexpress.com/category/200001001/nightgowns-sleepshirts.html?g=y">Nightgowns
-                                                &amp; Sleepshirts</a><a
-                                                    href="http://www.aliexpress.com/category/200001989/pajama-sets.html?g=y">Pajama
-                                                Sets</a></dd>
-                                        </dl>
-                                    </div>
-
-                                    <div class="sub-cate-row">
-                                        <dl class="sub-cate-items" data-role="two-menu">
-                                            <dt>
-                                                <a href="http://www.aliexpress.com/category/100003235/weddings-events.html">Weddings
-                                                    &amp; Events</a></dt>
-                                            <dd>
-                                                <a href="http://www.aliexpress.com/category/100003269/wedding-dresses.html">Wedding
-                                                    Dresses</a><a
-                                                    href="http://www.aliexpress.com/category/100005792/evening-dresses.html">Evening
-                                                Dresses</a><a
-                                                    href="http://www.aliexpress.com/category/100005791/prom-dresses.html">Prom
-                                                Dresses</a><a
-                                                    href="http://www.aliexpress.com/category/100003270/bridesmaid-dresses.html">Bridesmaid
-                                                Dresses</a><a
-                                                    href="http://www.aliexpress.com/category/100003271/flower-girl-dresses.html">Flower
-                                                Girl Dresses</a><a
-                                                    href="http://www.aliexpress.com/category/100005790/cocktail-dresses.html">Cocktail
-                                                Dresses</a></dd>
-                                        </dl>
-                                        <dl class="sub-cate-items" data-role="two-menu">
-                                            <dt>
-                                                <a href="http://www.aliexpress.com/category/200000724/accessories.html?g=y">Accessories</a>
-                                            </dt>
-                                            <dd>
-                                                <a href="http://www.aliexpress.com/category/200000750/sunglasses.html?&amp;g=y">Sunglasses</a><a
-                                                    href="http://www.aliexpress.com/category/200001996/hair-accessories.html?&amp;g=y">Headwear</a><a
-                                                    href="http://www.aliexpress.com/category/200001010/baseball-caps.html?&amp;g=y">Baseball
-                                                Caps</a><a
-                                                    href="http://www.aliexpress.com/category/200000743/scarves.html?&amp;g=y">Scarves
-                                                &amp; Wraps</a><a
-                                                    href="http://www.aliexpress.com/category/200003450/belts-cummerbunds.html?g=y">Belts</a><a
-                                                    href="http://www.aliexpress.com/category/200001020/skullies-beanies.html?&amp;g=y">Skullies
-                                                &amp; Beanies</a></dd>
-                                        </dl>
-                                    </div>
-
-                                    <div class="scp-banner"><a href="http://sale.aliexpress.com/big_sale.htm"><img
-                                            src="./index_files/TB1CU54KFXXXXcIXVXXSutbFXXX.jpg"></a></div>
-                                    <ul class="clearfix bottom-show-list">
-                                        <li><a href="http://activities.aliexpress.com/trending-style.php"><span
-                                                class="activity-name">Trending Styles</span> <span class="activity-pic"><img
-                                                src="./index_files/TB1pcNTLFXXXXapXFXXXXXXXXXX-60-60.png"></span> </a>
-                                        </li>
-                                        <li class="hidden-sm"><a
-                                                href="http://www.aliexpress.com/category/100003109/women-clothing-accessories.html?isCates=y"><span
-                                                class="activity-name">Women´s Fashion</span> <span class="activity-pic"><img
-                                                src="./index_files/TB19.p6HFXXXXcnaXXXmqjTHFXX-60-60.png"></span> </a>
-                                        </li>
-                                        <li class="hidden-sm"><a
-                                                href="http://www.aliexpress.com/category/100003235/weddings-events.html?isCates=y"><span
-                                                class="activity-name">Wedding &amp; Occasion Dresses</span> <span
-                                                class="activity-pic"><img
-                                                src="./index_files/TB1nqBRHpXXXXamXpXXmqjTHFXX-60-60.png"></span> </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--ams-region-end 514-->
-
-                            </dd>
+                                    href="http://www.aliexpress.com/category/100003109/women-clothing-accessories.html"> Women’s Clothing</a></span>
+                            </dt>
+                            <dd class="sub-cate" data-path="c-women-content" data-role="first-menu-main"></dd>
                         </dl>
                         <!--ams-region-end 514--><!--ams-region-start 515-->
                         <dl class="cl-item cl-item-men" data-role="first-menu" data-spm="102">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/100003070/men-clothing-accessories.html">Men’s
-                                Clothing</a></span></dt>
+                                    href="http://www.aliexpress.com/category/100003070/men-clothing-accessories.html">Men’s Clothing</a></span>
+                            </dt>
                             <dd class="sub-cate" data-path="c-men-content" data-role="first-menu-main"></dd>
                         </dl>
                         <!--ams-region-end 515--><!--ams-region-start 516-->
                         <dl class="cl-item cl-item-phones" data-role="first-menu" data-spm="103">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/509/phones-telecommunications.html">Phones
-                                &amp; Accessories</a></span></dt>
+                                    href="http://www.aliexpress.com/category/509/phones-telecommunications.html">Phones &amp; Accessories</a></span>
+                            </dt>
                             <dd class="sub-cate" data-path="c-phones-content" data-role="first-menu-main"></dd>
                         </dl>
                         <!--ams-region-end 516--><!--ams-region-start 517-->
                         <dl class="cl-item cl-item-computer" data-role="first-menu" data-spm="104">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/7/computer-office.html">Computer &amp;
-                                Office</a></span></dt>
+                                    href="http://www.aliexpress.com/category/7/computer-office.html">Computer &amp; Office</a></span>
+                            </dt>
                             <dd class="sub-cate" data-path="c-computer-content" data-role="first-menu-main"></dd>
                         </dl>
                         <!--ams-region-end 517--><!--ams-region-start 518-->
                         <dl class="cl-item cl-item-electronics" data-role="first-menu" data-spm="105">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/44/consumer-electronics.html">Consumer
-                                Electronics</a></span></dt>
+                                    href="http://www.aliexpress.com/category/44/consumer-electronics.html">Consumer Electronics</a></span>
+                            </dt>
                             <dd class="sub-cate" data-path="c-electronics-content" data-role="first-menu-main"></dd>
                         </dl>
                         <!--ams-region-end 518--><!--ams-region-start 519-->
@@ -512,30 +325,287 @@
                         <!--ams-region-end 522--><!--ams-region-start 523-->
                         <dl class="cl-item cl-item-sports" data-role="first-menu" data-spm="110">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/18/sports-entertainment.html">Sports &amp;
-                                Outdoors</a></span></dt>
-                            <dd class="sub-cate" data-path="c-sportsoutdoors-content" data-role="first-menu-main"></dd>
+                                    href="http://www.aliexpress.com/category/18/sports-entertainment.html">Sports &amp; Outdoors</a></span>
+                            </dt>
+                            <dd class="sub-cate" data-path="c-sportsoutdoors-content" data-role="first-menu-main">
+
+
+                                <!--ams-region-start 523-->
+                                <div class="sub-cate-main">
+                                    <div class="sub-cate-row">
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/200001115/swimming.html">Swimming</a>
+                                            </dt>
+                                            <dd><a href="http://www.aliexpress.com/category/200214496/bikinis-set.html">Bikini
+                                                Set</a><a
+                                                    href="http://www.aliexpress.com/category/200005189/one-piece-suits.html">One-Piece
+                                                Suits</a><a
+                                                    href="http://www.aliexpress.com/category/200005191/two-piece-suits.html">Two-Piece
+                                                Suits</a><a
+                                                    href="http://www.aliexpress.com/category/200215171/cover-ups.html">Cover-Ups</a><a
+                                                    href="http://www.aliexpress.com/category/200001228/men-swimwear.html">Men's
+                                                Swimwear</a><a
+                                                    href="http://www.aliexpress.com/category/200001188/children-swimwear.html">Children's
+                                                Swimwear</a></dd>
+                                        </dl>
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/200003570/cycling.html">Cycling</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="http://www.aliexpress.com/category/1204/bicycle.html">Bicycles</a><a
+                                                    href="http://www.aliexpress.com/category/122203/bicycle-frame.html">Bicycle
+                                                Frames</a><a
+                                                    href="http://www.aliexpress.com/category/122803/bicycle-light.html">Bicycle
+                                                Lights</a><a
+                                                    href="http://www.aliexpress.com/category/100002927/bicycle-helmet.html">Bicycle
+                                                Helmets</a><a
+                                                    href="http://www.aliexpress.com/category/200005098/sports-jerseys.html">Cycling
+                                                Jerseys</a><a
+                                                    href="http://www.aliexpress.com/category/200005091/cycling-eyewear.html">Cycling
+                                                Eyewear</a></dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="sub-cate-row">
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/200005276/sneakers.html">Sneakers</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="http://www.aliexpress.com/category/200100002/running-shoes.html">Running
+                                                    Shoes</a><a
+                                                    href="http://www.aliexpress.com/category/200100001/hiking-shoes.html">Hiking
+                                                Shoes</a><a
+                                                    href="http://www.aliexpress.com/category/200110013/soccer-shoes.html">Soccer
+                                                Shoes</a><a
+                                                    href="http://www.aliexpress.com/category/200102005/skateboarding-shoes.html">Skateboarding
+                                                Shoes</a><a
+                                                    href="http://www.aliexpress.com/category/200098003/dance-shoes.html">Dance
+                                                Shoes</a><a
+                                                    href="http://www.aliexpress.com/category/200096002/basketball-shoes.html">Basketball
+                                                Shoes</a></dd>
+                                        </dl>
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/100005444/fishing.html">Fishing</a>
+                                            </dt>
+                                            <dd>
+                                                <a href="http://www.aliexpress.com/category/100005451/fishing-reels.html">Fishing
+                                                    Reels</a><a
+                                                    href="http://www.aliexpress.com/category/100005453/fishing-lures.html">Fishing
+                                                Lures</a><a
+                                                    href="http://www.aliexpress.com/category/100005450/fishing-lines.html">Fishing
+                                                Lines</a><a
+                                                    href="http://www.aliexpress.com/category/100005452/fishing-rods.html">Fishing
+                                                Rods</a><a
+                                                    href="http://www.aliexpress.com/category/200110004/rod-combo.html">Rod
+                                                Combos</a><a
+                                                    href="http://www.aliexpress.com/category/100005455/fishing-tackle-boxes.html">Fishing
+                                                Tackle Boxes</a></dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="sub-cate-row">
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt>
+                                                <a href="http://www.aliexpress.com/category/200001095/sports-clothing.html">Sportswear</a>
+                                            </dt>
+                                            <dd><a href="http://www.aliexpress.com/category/200214366/jerseys.html">Jerseys</a><a
+                                                    href="http://www.aliexpress.com/category/200005078/hiking-jackets.html">Hiking
+                                                Jackets</a><a
+                                                    href="http://www.aliexpress.com/category/200214344/pants.html">Pants</a><a
+                                                    href="http://www.aliexpress.com/category/200214345/shorts.html">Shorts</a><a
+                                                    href="http://www.aliexpress.com/category/200214332/sports-bags.html">Sports
+                                                Bags</a><a
+                                                    href="http://www.aliexpress.com/category/200214370/sport-accessories.html">Sports
+                                                Accessories</a></dd>
+                                        </dl>
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt>
+                                                <a href="http://www.aliexpress.com/category/18/sports-entertainment.html">Other
+                                                    Sports Equipment</a></dt>
+                                            <dd>
+                                                <a href="http://www.aliexpress.com/category/100005433/camping-hiking.html">Camping
+                                                    &amp; Hiking</a><a
+                                                    href="http://www.aliexpress.com/category/100005471/hunting.html">Hunting</a><a
+                                                    href="http://www.aliexpress.com/category/100005322/golf.html">Golf</a><a
+                                                    href="http://www.aliexpress.com/category/100005259/fitness-body-building.html">Fitness
+                                                &amp; Bodybuilding</a><a
+                                                    href="http://www.aliexpress.com/category/100005599/skiing-snowboarding.html">Skiing
+                                                &amp; Snowboarding</a><a
+                                                    href="http://www.aliexpress.com/category/100005383/musical-instruments.html">Musical
+                                                Instruments</a></dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="scp-banner"><a href="http://sale.aliexpress.com/sporting.htm"><img
+                                            src="./index_files/HTB19DK0MVXXXXXGapXXq6xXFXXXL.jpg"></a></div>
+                                    <ul class="clearfix bottom-show-list">
+                                        <li>
+                                            <a href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160803020434&amp;SearchText=running+shoes"><span
+                                                    class="activity-name">Running Shoes</span> <span
+                                                    class="activity-pic"><img
+                                                    src="./index_files/TB1R4HfJFXXXXb3XXXXmqjTHFXX-60-60.png"></span>
+                                            </a></li>
+                                        <li class="hidden-sm"><a
+                                                href="http://www.aliexpress.com/category/200196001/self-balance-scooters.html"><span
+                                                class="activity-name">Self-Balancing Scooters</span> <span
+                                                class="activity-pic"><img
+                                                src="./index_files/HTB1w7POKFXXXXcJXVXXq6xXFXXXz.jpg"></span> </a></li>
+                                        <li class="hidden-sm"><a
+                                                href="http://www.aliexpress.com/category/1204/bicycle.html"><span
+                                                class="activity-name">Bicycle</span> <span class="activity-pic"><img
+                                                src="./index_files/TB1zRpoJFXXXXX5XVXXmqjTHFXX-60-60.png"></span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--ams-region-end 523-->
+                            </dd>
                         </dl>
                         <!--ams-region-end 523--><!--ams-region-start 524-->
                         <dl class="cl-item cl-item-beauty" data-role="first-menu" data-spm="111">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/66/health-beauty.html">Health &amp;
-                                Beauty</a></span></dt>
+                                    href="http://www.aliexpress.com/category/66/health-beauty.html">Health &amp; Beauty</a></span>
+                            </dt>
                             <dd class="sub-cate" data-path="c-healthbeauty-content" data-role="first-menu-main"></dd>
                         </dl>
                         <!--ams-region-end 524--><!--ams-region-start 525-->
                         <dl class="cl-item cl-item-autoParts" data-role="first-menu" data-spm="112">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/34/automobiles-motorcycles.html">
-                                Automobiles &amp; Motorcycles</a></span></dt>
+                                    href="http://www.aliexpress.com/category/34/automobiles-motorcycles.html"> Automobiles &amp; Motorcycles</a></span>
+                            </dt>
                             <dd class="sub-cate" data-path="c-automobiles-content" data-role="first-menu-main"></dd>
                         </dl>
                         <!--ams-region-end 525--><!--ams-region-start 526-->
                         <dl class="cl-item cl-item-homeImprovement" data-role="first-menu" data-spm="113">
                             <dt class="cate-name"><span><a
-                                    href="http://www.aliexpress.com/category/13/home-improvement.html">Home
-                                Improvement</a></span></dt>
-                            <dd class="sub-cate" data-path="c-homeimprovement-content" data-role="first-menu-main"></dd>
+                                    href="http://www.aliexpress.com/category/13/home-improvement.html">Home Improvement</a></span>
+                            </dt>
+                            <dd class="sub-cate" data-path="c-homeimprovement-content" data-role="first-menu-main">
+
+
+                                <!--ams-region-start 526-->
+                                <div class="sub-cate-main">
+                                    <div class="sub-cate-row">
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt>
+                                                <a href="http://www.aliexpress.com/category/1420/tools.html?site=glo&amp;shipCountry=RU&amp;isrefine=y">Tools</a>
+                                            </dt>
+                                            <dd><a href="http://www.aliexpress.com/category/142003/hand-tools.html">Hand
+                                                Tools</a><a
+                                                    href="http://www.aliexpress.com/category/1417/power-tools.html">Power
+                                                Tools</a><a
+                                                    href="http://www.aliexpress.com/category/100006906/power-tool-accessories.html">Power
+                                                Tool Accessories</a><a
+                                                    href="http://www.aliexpress.com/category/100006919/tool-sets.html">Tool
+                                                Sets</a><a
+                                                    href="http://www.aliexpress.com/category/1537/measurement-analysis-instruments.html">Measurement
+                                                &amp; Analysis Instruments</a></dd>
+                                        </dl>
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/39/lights-lighting.html">Indoor
+                                                Lighting</a></dt>
+                                            <dd>
+                                                <a href="http://www.aliexpress.com/category/39050502/ceiling-lights.html">Ceiling
+                                                    Lights</a><a
+                                                    href="http://www.aliexpress.com/category/200002279/pendant-lights.html">Pendant
+                                                Lights</a><a
+                                                    href="http://www.aliexpress.com/category/39050505/downlights.html">Downlights</a><a
+                                                    href="http://www.aliexpress.com/category/39050504/chandeliers.html">Chandeliers</a><a
+                                                    href="http://www.aliexpress.com/category/39050510/wall-lamps.html">Wall
+                                                Lamps</a><a
+                                                    href="http://www.aliexpress.com/category/39050508/night-lights.html">Night
+                                                Lights</a></dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="sub-cate-row">
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/6/home-appliances.html">Home
+                                                Appliances</a></dt>
+                                            <dd>
+                                                <a href="http://www.aliexpress.com/category/100000013/cleaning-appliances.html?site=glo&amp;shipCountry=RU&amp;isrefine=y">Cleaning
+                                                    Appliances</a><a
+                                                    href="http://www.aliexpress.com/category/100000050/air-conditioning-appliances.html?site=glo&amp;shipCountry=RU&amp;isrefine=y">Air
+                                                Conditioning Appliances</a><a
+                                                    href="http://www.aliexpress.com/category/100000054/water-heaters.html?site=glo&amp;shipCountry=RU&amp;isrefine=y">Water
+                                                Heaters</a><a
+                                                    href="http://www.aliexpress.com/category/100000022/laundry-appliance-parts.html?site=glo&amp;shipCountry=RU&amp;isrefine=y">Laundry
+                                                Appliances</a><a
+                                                    href="http://www.aliexpress.com/category/100000016/home-appliance-parts.html?site=glo&amp;shipCountry=ru&amp;isrefine=y">Home
+                                                Appliance Parts</a></dd>
+                                        </dl>
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/39/lights-lighting.html">LED
+                                                Lighting</a></dt>
+                                            <dd><a href="http://www.aliexpress.com/category/200002296/led-strips.html">LED
+                                                Strips</a><a
+                                                    href="http://www.aliexpress.com/category/200002289/led-downlights.html">LED
+                                                Downlights</a><a
+                                                    href="http://www.aliexpress.com/category/200002295/led-panel-lights.html">LED
+                                                Panel Lights</a><a
+                                                    href="http://www.aliexpress.com/category/200002300/led-spotlights.html">LED
+                                                Spotlights</a><a
+                                                    href="http://www.aliexpress.com/category/200002293/led-bar-lights.html">LED
+                                                Bar Lights</a></dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="sub-cate-row">
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt><a href="http://www.aliexpress.com/category/39/lights-lighting.html">Lights
+                                                &amp; Lighting</a></dt>
+                                            <dd><a href="http://www.aliexpress.com/category/150402/light-bulbs.html">Light
+                                                Bulbs</a><a
+                                                    href="http://www.aliexpress.com/category/150401/outdoor-lighting.html">Outdoor
+                                                Lighting</a><a
+                                                    href="http://www.aliexpress.com/category/390503/portable-lighting.html">Portable
+                                                Lighting</a><a
+                                                    href="http://www.aliexpress.com/category/200003009/commercial-lighting.html">Commercial
+                                                Lighting</a><a
+                                                    href="http://www.aliexpress.com/category/39050501/book-lights.html">Book
+                                                Lights</a></dd>
+                                        </dl>
+                                        <dl class="sub-cate-items" data-role="two-menu">
+                                            <dt>
+                                                <a href="http://www.aliexpress.com/category/150401/outdoor-lighting.html">Outdoor
+                                                    Lighting</a></dt>
+                                            <dd>
+                                                <a href="http://www.aliexpress.com/category/150410/flashlights-torches.html">Flashlights
+                                                    &amp; Torches</a><a
+                                                    href="http://www.aliexpress.com/category/39050207/solar-lamps.html">Solar
+                                                Lamps</a><a
+                                                    href="http://www.aliexpress.com/category/39050202/floodlights.html">Floodlights</a><a
+                                                    href="http://www.aliexpress.com/category/200003207/lighting-strings.html">String
+                                                Lights</a><a
+                                                    href="http://www.aliexpress.com/category/39050210/underwater-lights.html">Underwater
+                                                Lights</a></dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="scp-banner"><a href="http://sale.aliexpress.com/deko.htm"><img
+                                            src="./index_files/HTB1ghWkMVXXXXXdaXXXq6xXFXXXb.jpg"></a></div>
+                                    <ul class="clearfix bottom-show-list">
+                                        <li>
+                                            <a href="http://www.aliexpress.com/category/100000013/cleaning-appliances.html"><span
+                                                    class="activity-name">Cleaning Appliances</span> <span
+                                                    class="activity-pic"><img
+                                                    src="./index_files/TB1QwsiJVXXXXbsXpXXXXXXXXXX-60-60.jpg"></span>
+                                            </a></li>
+                                        <li class="hidden-sm"><a
+                                                href="http://www.aliexpress.com/category/100000011/kitchen-appliances.html"><span
+                                                class="activity-name">Kitchen Appliances</span> <span
+                                                class="activity-pic"><img
+                                                src="./index_files/TB1K43sJFXXXXXxXVXXmqjTHFXX-60-60.png"></span> </a>
+                                        </li>
+                                        <li class="hidden-sm"><a
+                                                href="http://www.aliexpress.com/category/39050502/ceiling-lights.html"><span
+                                                class="activity-name">Ceiling Lights</span> <span
+                                                class="activity-pic"><img
+                                                src="./index_files/TB1STknJFXXXXbJXVXXIpPTHFXX-60-60.jpg"></span> </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--ams-region-end 526-->
+                            </dd>
                         </dl>
                         <!--ams-region-end 526--></div>
                 </div>
@@ -550,52 +620,36 @@
                     <div class="ui-banner-slider-wrap">
                         <div class="ui-banner-slider-container" style="width: 640px;">
                             <ul class="ui-banner-slider-slider" data-role="slider"
-                                style="transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-duration: 800ms; transform: translate3d(-5760px, 0px, 0px); width: 7680px;">
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1C0RuNXXXXXcWXpXXq6xXFXXXf.jpg"
+                                style="transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-duration: 800ms; transform: translate3d(-3840px, 0px, 0px); width: 5120px;">
+                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1.WKPNXXXXXckXVXXq6xXFXXXs.jpg"
                                     style="width: 640px;"><a
-                                        href="https://en.itao.com/post/searchScreenV2.htm?q=%23FavBuy"><img alt=""
-                                                                                                            data-src="//ae01.alicdn.com/kf/HTB1C0RuNXXXXXcWXpXXq6xXFXXXf.jpg"
-                                                                                                            height="400"
-                                                                                                            src="./index_files/opacity0.png"
-                                                                                                            width="750"></a>
+                                        href="https://en.itao.com/post/searchScreenV2.htm?q=%23simwood_look"><img alt=""
+                                                                                                                  data-src="//ae01.alicdn.com/kf/HTB1.WKPNXXXXXckXVXXq6xXFXXXs.jpg"
+                                                                                                                  height="400"
+                                                                                                                  src="./index_files/opacity0.png"
+                                                                                                                  width="750"></a>
                                 </li>
-                                <li style="width: 640px;"><a href="https://www.aliexpress.com/how-to-buy"><img
-                                        data-loaded="true" src="./index_files/HTB1kk9cKXXXXXcSXXXXq6xXFXXXn.jpg" alt=""
-                                        width="750" height="400"></a></li>
+                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1jg1TNXXXXXXeapXXq6xXFXXX6.jpg"
+                                    style="width: 640px;"><a href="http://sale.aliexpress.com/auto_brand.htm"><img
+                                        alt="" data-loaded="true" height="400"
+                                        src="./index_files/HTB1jg1TNXXXXXXeapXXq6xXFXXX6.jpg" width="750"></a></li>
+                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1C4bbNXXXXXboXXXXq6xXFXXXf.jpg"
+                                    style="width: 640px;"><a href="http://sale.aliexpress.com/hairweft.htm"><img alt=""
+                                                                                                                 height="400"
+                                                                                                                 src="./index_files/HTB1C4bbNXXXXXboXXXXq6xXFXXXf.jpg"
+                                                                                                                 width="750"
+                                                                                                                 data-loaded="true"></a>
+                                </li>
+                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1PzWYNXXXXXcbXFXXq6xXFXXXV.jpg"
+                                    style="width: 640px;"><a href="http://sale.aliexpress.com/outdoor_lighting.htm"><img
+                                        alt="" height="400" src="./index_files/HTB1PzWYNXXXXXcbXFXXq6xXFXXXV.jpg"
+                                        width="750" data-loaded="true"></a></li>
                                 <li data-banner-src="//ae01.alicdn.com/kf/HTB1C38zNXXXXXbVXXXXq6xXFXXXw.jpg"
                                     style="width: 640px;"><a href="http://sale.aliexpress.com/virtual.htm"><img alt=""
-                                                                                                                data-loaded="true"
                                                                                                                 height="400"
                                                                                                                 src="./index_files/HTB1C38zNXXXXXbVXXXXq6xXFXXXw.jpg"
-                                                                                                                width="750"></a>
-                                </li>
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1570eNXXXXXaFXVXXq6xXFXXXA.jpg"
-                                    style="width: 640px;"><a href="http://sale.aliexpress.com/pairit.htm"><img alt=""
-                                                                                                               height="400"
-                                                                                                               src="./index_files/HTB1570eNXXXXXaFXVXXq6xXFXXXA.jpg"
-                                                                                                               width="750"
-                                                                                                               data-loaded="true"></a>
-                                </li>
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1mRpNNXXXXXczXXXXq6xXFXXXu.jpg"
-                                    style="width: 640px;"><a href="http://sale.aliexpress.com/nailgame.htm"><img alt=""
-                                                                                                                 height="400"
-                                                                                                                 src="./index_files/HTB1mRpNNXXXXXczXXXXq6xXFXXXu.jpg"
-                                                                                                                 width="750"
-                                                                                                                 data-loaded="true"></a>
-                                </li>
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1tf.WMVXXXXaBapXXq6xXFXXXy.jpg"
-                                    style="width: 640px;"><a href="http://sale.aliexpress.com/fallcoat.htm"><img alt=""
-                                                                                                                 height="400"
-                                                                                                                 src="./index_files/HTB1tf.WMVXXXXaBapXXq6xXFXXXy.jpg"
-                                                                                                                 width="750"
-                                                                                                                 data-loaded="true"></a>
-                                </li>
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1HH.QMVXXXXX7XVXXq6xXFXXXb.jpg"
-                                    style="width: 640px;"><a href="http://sale.aliexpress.com/bake.htm"><img alt=""
-                                                                                                             height="400"
-                                                                                                             src="./index_files/HTB1HH.QMVXXXXX7XVXXq6xXFXXXb.jpg"
-                                                                                                             width="750"
-                                                                                                             data-loaded="true"></a>
+                                                                                                                width="750"
+                                                                                                                data-loaded="true"></a>
                                 </li>
                                 <li data-banner-src="//ae01.alicdn.com/kf/HTB1CNDSMVXXXXX_XVXXq6xXFXXXl.jpg"
                                     style="width: 640px;"><a href="http://techdiscovery.aliexpress.com/"><img alt=""
@@ -604,28 +658,18 @@
                                                                                                               width="750"
                                                                                                               data-loaded="true"></a>
                                 </li>
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1qULZMVXXXXcGXpXXq6xXFXXXB.jpg"
-                                    style="width: 640px;"><a href="http://sale.aliexpress.com/lightup.htm"><img alt=""
-                                                                                                                height="400"
-                                                                                                                src="./index_files/HTB1qULZMVXXXXcGXpXXq6xXFXXXB.jpg"
-                                                                                                                width="750"
-                                                                                                                data-loaded="true"></a>
-                                </li>
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1aq76MVXXXXa5XXXXq6xXFXXXj.jpg"
-                                    style="width: 640px;"><a href="http://sale.aliexpress.com/shoes_bags.htm"><img
-                                        alt="" height="400" src="./index_files/HTB1aq76MVXXXXa5XXXXq6xXFXXXj.jpg"
-                                        width="750" data-loaded="true"></a></li>
-                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1C0RuNXXXXXcWXpXXq6xXFXXXf.jpg"
+                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1.WKPNXXXXXckXVXXq6xXFXXXs.jpg"
                                     style="width: 640px;"><a
-                                        href="https://en.itao.com/post/searchScreenV2.htm?q=%23FavBuy"><img alt=""
-                                                                                                            height="400"
-                                                                                                            src="./index_files/HTB1C0RuNXXXXXcWXpXXq6xXFXXXf.jpg"
-                                                                                                            width="750"
-                                                                                                            data-loaded="true"></a>
+                                        href="https://en.itao.com/post/searchScreenV2.htm?q=%23simwood_look"><img alt=""
+                                                                                                                  height="400"
+                                                                                                                  src="./index_files/HTB1.WKPNXXXXXckXVXXq6xXFXXXs.jpg"
+                                                                                                                  width="750"
+                                                                                                                  data-loaded="true"></a>
                                 </li>
-                                <li style="width: 640px;"><a href="https://www.aliexpress.com/how-to-buy"><img
-                                        data-loaded="true" src="./index_files/HTB1kk9cKXXXXXcSXXXXq6xXFXXXn.jpg" alt=""
-                                        width="750" height="400"></a></li>
+                                <li data-banner-src="//ae01.alicdn.com/kf/HTB1jg1TNXXXXXXeapXXq6xXFXXX6.jpg"
+                                    style="width: 640px;"><a href="http://sale.aliexpress.com/auto_brand.htm"><img
+                                        alt="" data-loaded="true" height="400"
+                                        src="./index_files/HTB1jg1TNXXXXXXeapXXq6xXFXXX6.jpg" width="750"></a></li>
                             </ul>
                             <a class="ui-banner-slider-prev" data-role="prev" style="visibility: visible;">Previous</a>
                             <a class="ui-banner-slider-next" data-role="next" style="visibility: visible;">Next</a><span
@@ -635,11 +679,7 @@
 		<span data-role="navButton" class=""></span>
 		<span data-role="navButton" class=""></span>
 		<span data-role="navButton" class=""></span>
-		<span data-role="navButton" class=""></span>
-		<span data-role="navButton" class=""></span>
-		<span data-role="navButton" class=""></span>
 		<span data-role="navButton" class="current"></span>
-		<span data-role="navButton" class=""></span>
 </span></div>
                     </div>
                 </div>
@@ -649,16 +689,16 @@
                 <div class="top-deal hidden-sm col-md-20 col-lg-20" data-spm="24">
                     <div class="top-deal-inner">
                         <div class="top-deal-product"><a href="http://brands.aliexpress.com/"><img alt=""
-                                                                                                   src="./index_files/HTB1h2RENXXXXXcTXXXXq6xXFXXXo.jpg"></a>
+                                                                                                   src="./index_files/HTB1BeXzNXXXXXXNXVXXq6xXFXXXv.jpg"></a>
                         </div>
 
                         <div class="top-deal-banner">
                             <div class="top-deal-pic"><a href="http://brands.aliexpress.com/"><img alt=""
-                                                                                                   src="./index_files/HTB1cyVNNXXXXXXJXpXXq6xXFXXX2.jpg"></a>
+                                                                                                   src="./index_files/HTB1I5JoNXXXXXcvaXXX760XFXXXI.png"></a>
                             </div>
 
                             <div class="top-deal-date"><a href="http://brands.aliexpress.com/"><span
-                                    class="up">On sale</span> <span class="down">SEP.6</span> </a></div>
+                                    class="up">On sale</span> <span class="down">SEP.7-8</span> </a></div>
                         </div>
                     </div>
                 </div>
@@ -667,7 +707,103 @@
             </div>
         </div>
     </div>
+    <!--ams-cdp-resource-start 51-->
 
+    <!--ams-cdp-resource-end 51-->
+    <!--ams-region-start 16-->  <!--ams-region-end 16-->
+
+    <!--ams-region-start 18-->
+    <div class="main-deal container">
+        <div class="today-deal-panel col-lg-15 col-md-15 today-deal-dos-new" data-currency="US $"
+             data-discounttype="{number}% off" data-spm="26" data-url="http://superdeals.aliexpress.com/en"
+             data-widget-id="101" data-widget-cid="widget-19">
+            <div class="title">
+                <h2><a href="http://superdeals.aliexpress.com/en"><strong><i>TODAY'S</i> DEALS</strong></a></h2>
+                <a class="view-more hidden-md" data-role="viewmore" href="http://superdeals.aliexpress.com/en"
+                   style="visibility: visible;"><strong><i>497</i></strong> items</a></div>
+
+            <div class="container-main clearfix">
+                <div class="end-time"><a href="http://superdeals.aliexpress.com/en"><span data-role="countdown"
+                                                                                          data-widget-cid="widget-25"
+                                                                                          style="visibility: visible;">Ends in:<i><em
+                        data-role="hour">23</em>:<em data-role="minute">23</em>:<em
+                        data-role="second">52</em></i> </span> </a></div>
+
+                <div data-role="main">
+                    <a href="http://superdeals.aliexpress.com/en">
+                        <div class="product-pic">
+                            <img src="./index_files/HTB1w9NyNXXXXXcIXpXXq6xXFXXXO.jpg_220x220.jpg">
+                        </div>
+                        <div class="price-panel">
+                            <div class="price">
+                                <span>US $112.99</span>
+                                <del>US $161.41 / piece</del>
+                            </div>
+                            <div class="discount"><span>30% off</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--dos-->
+        </div>
+
+        <div class="collections-panel col-lg-45 col-md-45 collections-dos"
+             data-bigimg="//ae01.alicdn.com/kf/HTB1vXQ0MVXXXXbDapXXq6xXFXXXI.jpg"
+             data-link="http://sale.aliexpress.com/aliexpresscollections.htm" data-other-widget-id="562" data-spm="25"
+             data-top-link="http://sale.aliexpress.com/aliexpresscollections.htm" data-top-widget-id="561"
+             data-widget-cid="widget-20">
+            <div class="collections-panel-inner clearfix">
+                <div class="title">
+                    <h2><a href="http://sale.aliexpress.com/aliexpresscollections.htm"><span>ALIEXPRESS</span>
+                        COLLECTIONS</a></h2>
+                    <a class="view-more" href="http://sale.aliexpress.com/aliexpresscollections.htm">View more</a></div>
+
+                <div class="collections col-lg-60" data-role="main">
+                    <a href="http://sale.aliexpress.com/aliexpresscollections.htm?widgetId=561&amp;collection-id=445902&amp;node-id=108229">
+                        <div class="collections-left-panel"><img src="./index_files/HTB1vXQ0MVXXXXbDapXXq6xXFXXXI.jpg"
+                                                                 alt=""></div>
+                        <div class="top-items">
+                            <div class="top-item">
+                                <img src="./index_files/HTB1yn8CNXXXXXXeXXXXq6xXFXXXx.jpg_220x220.jpg" alt="">
+                            </div>
+                            <div class="other-items">
+                                <img src="./index_files/HTB1heA1MVXXXXcVXVXXq6xXFXXXL.jpg_80x80.jpg" alt="">
+                                <img src="./index_files/HTB16jXDNXXXXXbvXXXXq6xXFXXXJ.jpg_80x80.jpg" alt="">
+                                <img src="./index_files/HTB1AUkYMVXXXXagaFXXq6xXFXXXc.jpg_80x80.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://sale.aliexpress.com/aliexpresscollections.htm?widgetId=562&amp;collection-id=445884&amp;node-id=108230">
+                        <div class="collections-right-panel hidden-sm">
+                            <div class="pic-group">
+                                <div class="pic rborder bborder">
+                                    <div class="desc">
+                                        <span class="subject"> When I Grow Up</span>
+                                    </div>
+                                </div>
+                                <div class="pic bborder">
+                                    <img class="rpic"
+                                         src="./index_files/6-Colors-Spring-Children-Hedging-Cap-Scarf-Suit-Leather-Standard-Solid-Color-Candy-Colored-Wool-Hats.jpg_140x140.jpg"
+                                         alt="">
+                                </div>
+                                <div class="pic rborder">
+                                    <img class="bpic"
+                                         src="./index_files/Belababy-Girls-Coat-Warm-2016-Baby-Winter-Long-Sleeve-Flower-Jacket-Children-Cotton-Padded-Clothes-Kids.jpg_140x140.jpg"
+                                         alt="">
+                                </div>
+                                <div class="pic">
+                                    <img class="bpic rpic"
+                                         src="./index_files/New-2016-Baby-Boys-Children-outerwear-Coat-Fashion-Kids-Jackets-for-Boy-Girls-Winter-Jacket-Warm.jpg_140x140.jpg"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+            <!--dos-->
+        </div>
+    </div>
+    <!--ams-region-end 18-->
     <!--ams-region-start 194-->
     <div class="container bestsellling-container" data-spm="26">
         <div class="bestsellling-box">
@@ -682,145 +818,144 @@
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1qEAJMVXXXXcVaXXX760XFXXX0.png"
-                                                             width="210"></span> <span class="g-price">US $142.99</span>
-                                        <del class="g-del-price">US $176.53</del>
+                                                             src="./index_files/HTB19LSqNXXXXXc6XVXX760XFXXXl.png"
+                                                             width="210"></span> <span
+                                            class="g-price">US $901.18 </span>
+                                        <del class="g-del-price">US $1099</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB18f8eNXXXXXb9XXXX760XFXXXh.png"
-                                                             width="210"></span> <span class="g-price">US $25.49</span>
-                                        <del class="g-del-price">US $29.99</del>
+                                                             src="./index_files/HTB1Io5MNXXXXXauXpXX760XFXXXA.png"
+                                                             width="210"></span> <span class="g-price">US $29.99 </span>
+                                        <del class="g-del-price">US $42.84</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1y7Q1MVXXXXcoXFXX760XFXXXp.png"
-                                                             width="210"></span> <span class="g-price">US $204.99</span>
-                                        <del class="g-del-price">US $256.24</del>
+                                                             src="./index_files/HTB1z4mlNXXXXXb5aXXX760XFXXXz.png"
+                                                             width="210"></span> <span
+                                            class="g-price">US $499.99 </span>
+                                        <del class="g-del-price">US $999.98</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1GxcZMVXXXXcqXXXX760XFXXXF.png"
-                                                             width="210"></span> <span class="g-price">US $18.99</span>
-                                        <del class="g-del-price">US $31.65</del>
+                                                             src="./index_files/HTB1hOCnNXXXXXblaXXX760XFXXX1.png"
+                                                             width="210"></span> <span
+                                            class="g-price">US $158.99 </span>
+                                        <del class="g-del-price">US $230.42</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1EplcNXXXXXapXpXX760XFXXXr.png"
-                                                             width="210"></span> <span class="g-price">US $3.99</span>
-                                        <del class="g-del-price">US $9.98</del>
+                                                             src="./index_files/HTB1ZcizNXXXXXcoXFXX760XFXXXu.png"
+                                                             width="210"></span> <span class="g-price">US $78.86 </span>
+                                        <del class="g-del-price">US $86.66</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1DvdlNXXXXXXzXXXX760XFXXXl.png"
-                                                             width="210"></span> <span class="g-price">US $69.78</span>
-                                        <del class="g-del-price">US $98.28</del>
+                                                             src="./index_files/HTB1M0KVNXXXXXaMXXXX760XFXXX3.png"
+                                                             width="210"></span> <span class="g-price">US $58.79 </span>
+                                        <del class="g-del-price">US $69.99</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1ta7WMVXXXXc6XFXX760XFXXXx.png"
-                                                             width="210"></span> <span class="g-price">US $29.26</span>
-                                        <del class="g-del-price">US $41.8</del>
+                                                             src="./index_files/HTB1MMmWNXXXXXaXXXXX760XFXXXk.png"
+                                                             width="210"></span> <span
+                                            class="g-price">US $199.99 </span>
+                                        <del class="g-del-price">US $215.04</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB14S4dNXXXXXaTXXXX760XFXXXf.png"
-                                                             width="210"></span> <span class="g-price">US $59.99</span>
-                                        <del class="g-del-price">US $70.58</del>
+                                                             src="./index_files/HTB1fmaiNXXXXXXQapXX760XFXXXX.png"
+                                                             width="210"></span> <span
+                                            class="g-price">US $222.99 </span>
+                                        <del class="g-del-price">US $297.32</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB189oRMVXXXXXsaXXX760XFXXXO.png"
-                                                             width="210"></span> <span class="g-price">US $17.6</span>
-                                        <del class="g-del-price">US $20.95</del>
+                                                             src="./index_files/HTB1EFqSNXXXXXb7XXXX760XFXXXy.png"
+                                                             width="210"></span> <span class="g-price">US $87.57 </span>
+                                        <del class="g-del-price">US $139</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1U73sMVXXXXalaFXX760XFXXXB.png"
-                                                             width="210"></span> <span class="g-price">US $62.99</span>
-                                        <del class="g-del-price">US $89.99</del>
+                                                             src="./index_files/HTB1TpKINXXXXXaXXpXX760XFXXXX.png"
+                                                             width="210"></span> <span class="g-price">US $50.18 </span>
+                                        <del class="g-del-price">US $62.73</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB17VwCMVXXXXavaFXX760XFXXXf.png"
-                                                             width="210"></span> <span class="g-price">US $88.9</span>
-                                        <del class="g-del-price">US $127</del>
+                                                             src="./index_files/HTB1AZuUNXXXXXXAXXXX760XFXXXY.png"
+                                                             width="210"></span> <span
+                                            class="g-price">US $110.39 </span>
+                                        <del class="g-del-price">US $183.99</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1Dm.RMVXXXXXEaXXX760XFXXXf.png"
-                                                             width="210"></span> <span class="g-price">US $3.15</span>
-                                        <del class="g-del-price">US $6.99</del>
+                                                             src="./index_files/HTB1oNOqNXXXXXXXaXXX760XFXXXK.png"
+                                                             width="210"></span> <span class="g-price">US $29.00 </span>
+                                        <del class="g-del-price">US $50</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1NCQCMVXXXXayaFXX760XFXXXB.png"
-                                                             width="210"></span> <span class="g-price">US $34.99</span>
-                                        <del class="g-del-price">US $69.98</del>
+                                                             src="./index_files/HTB1oNSmNXXXXXcfaXXX760XFXXXe.png"
+                                                             width="210"></span> <span class="g-price">US $13.99 </span>
+                                        <del class="g-del-price">US $19.99</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1HclgNXXXXXb7XXXX760XFXXXk.png"
-                                                             width="210"></span> <span class="g-price">US $39.75</span>
-                                        <del class="g-del-price">US $79.5</del>
+                                                             src="./index_files/HTB1pN9bNXXXXXXMaFXX760XFXXXV.png"
+                                                             width="210"></span> <span class="g-price">US $4.50 </span>
+                                        <del class="g-del-price">US $7.5</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB17boOMVXXXXb_apXX760XFXXXK.png"
-                                                             width="210"></span> <span class="g-price">US $35.9</span>
-                                        <del class="g-del-price">US $45.44</del>
+                                                             src="./index_files/HTB1JWyPNXXXXXXhXpXX760XFXXXP.png"
+                                                             width="210"></span> <span
+                                            class="g-price">US $140.79 </span>
+                                        <del class="g-del-price">US $319.98</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1ztw2MVXXXXbZXFXX760XFXXX0.png"
-                                                             width="210"></span> <span class="g-price">US $161.9</span>
-                                        <del class="g-del-price">US $199.88</del>
+                                                             src="./index_files/HTB1ehOwNXXXXXaFXVXX760XFXXXM.png"
+                                                             width="210"></span> <span class="g-price">US $26.34 </span>
+                                        <del class="g-del-price">US $30.99</del>
                                     </a></div>
                                 </li>
                                 <li style="width: 218px; visibility: visible;">
                                     <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
                                             class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1HFZ2MVXXXXcXXFXX760XFXXXY.png"
-                                                             width="210"></span> <span class="g-price">US $12.89</span>
-                                        <del class="g-del-price">US $17.66</del>
-                                    </a></div>
-                                </li>
-                                <li style="width: 218px; visibility: visible;">
-                                    <div class="item-inner"><a href="http://techdiscovery.aliexpress.com/"><span
-                                            class="pic"><img alt="" height="210"
-                                                             src="./index_files/HTB1QH35MVXXXXa6XFXX760XFXXXZ.png"
-                                                             width="210"></span> <span class="g-price">US $20.06</span>
-                                        <del class="g-del-price">US $41.8</del>
+                                                             src="./index_files/HTB16gqENXXXXXalXFXX760XFXXXE.png"
+                                                             width="210"></span> <span class="g-price">US $1.78 </span>
+                                        <del class="g-del-price">US $2.97</del>
                                     </a></div>
                                 </li>
                             </ul>
@@ -842,7 +977,6 @@
     <div class="container industry-floor-recommend" data-spm="888" id="ae-recommend-floor-tpp"
          data-widget-cid="widget-24">
         <div class="container-inner" data-role="content"></div>
-
     </div>
     <!--ams-region-end 21-->
 
@@ -880,18 +1014,38 @@
                 </div>
 
                 <div class="recommend-box col-lg-20 col-md-24 hidden-sm">
-                    <div class="recommend-slider-box" data-widget-cid="widget-26">
+                    <div class="recommend-slider-box" data-widget-cid="widget-27">
                         <div class="recommend-slider-wrapper">
                             <div class="recommend-slider-container" style="width: 480px;">
                                 <ul class="recommend-slider-list" data-role="slider"
                                     style="transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-duration: 800ms; transform: translate3d(-2400px, 0px, 0px); width: 3840px;">
                                     <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/0718womenclothing.htm"><img
-                                                alt="" src="./index_files/HTB1K86JKVXXXXb.aXXXq6xXFXXXI.jpg"></a></div>
+                                        <div class="pic"><a href="http://www.aliexpress.com/store/1192351"><img alt=""
+                                                                                                                src="./index_files/HTB1l1.7LXXXXXbtXFXXq6xXFXXXT.jpg"></a>
+                                        </div>
+
+                                        <div class="event-info"><a href="http://www.aliexpress.com/store/1192351"><span
+                                                class="main-title">Stellar styles</span> <span class="sub-title">The 2016 autumn collection</span>
+                                        </a></div>
+                                    </li>
+                                    <li style="width: 480px;">
+                                        <div class="pic"><a
+                                                href="http://sale.aliexpress.com/__pc/0905womanclothing.htm"><img alt=""
+                                                                                                                  src="./index_files/HTB1U59_NXXXXXcvXFXXq6xXFXXXp.jpg"></a>
+                                        </div>
 
                                         <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/0718womenclothing.htm"><span
-                                                class="main-title">Graphic Tees</span> <span class="sub-title">Perfect for summer</span>
+                                                href="http://sale.aliexpress.com/__pc/0905womanclothing.htm"><span
+                                                class="main-title">SWEATER WEATHER</span> <span class="sub-title">Fall's coziest looks</span>
+                                        </a></div>
+                                    </li>
+                                    <li style="width: 480px;">
+                                        <div class="pic"><a href="http://www.aliexpress.com/store/1248036"><img alt=""
+                                                                                                                src="./index_files/HTB1sdZ0MVXXXXXtXpXXq6xXFXXX3.jpg"></a>
+                                        </div>
+
+                                        <div class="event-info"><a href="http://www.aliexpress.com/store/1248036"><span
+                                                class="main-title">FABULOUS IN FALL</span> <span class="sub-title">Vfemage 2016 designs</span>
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
@@ -931,30 +1085,14 @@
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/0725womenclothing.htm"><img
-                                                alt="" src="./index_files/HTB1rMtCLXXXXXavXFXXq6xXFXXX1.jpg"></a></div>
-
-                                        <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/0725womenclothing.htm"><span
-                                                class="main-title">The lace collection</span> <span class="sub-title">From dresses to jumpsuits</span>
-                                        </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/0718womenclothing.htm"><img
-                                                alt="" src="./index_files/HTB1K86JKVXXXXb.aXXXq6xXFXXXI.jpg"></a></div>
-
-                                        <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/0718womenclothing.htm"><span
-                                                class="main-title">Graphic Tees</span> <span class="sub-title">Perfect for summer</span>
-                                        </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a href="http://www.aliexpress.com/store/1604048"><img alt=""
-                                                                                                                src="./index_files/HTB17qm9MVXXXXcbXVXXq6xXFXXXh.jpg"></a>
+                                        <div class="pic"><a
+                                                href="http://sale.aliexpress.com/__pc/0905womanclothing.htm"><img alt=""
+                                                                                                                  src="./index_files/HTB1U59_NXXXXXcvXFXXq6xXFXXXp.jpg"></a>
                                         </div>
 
-                                        <div class="event-info"><a href="http://www.aliexpress.com/store/1604048"><span
-                                                class="main-title">Update your wardrobe </span> <span class="sub-title">Snag these styles</span>
+                                        <div class="event-info"><a
+                                                href="http://sale.aliexpress.com/__pc/0905womanclothing.htm"><span
+                                                class="main-title">SWEATER WEATHER</span> <span class="sub-title">Fall's coziest looks</span>
                                         </a></div>
                                     </li>
                                 </ul>
@@ -972,8 +1110,8 @@
                 </div>
 
                 <div class="rec-industry-list col-lg-20 col-md-24 col-sm-40">
-                    <div class="top-industry-product"><a href="http://www.aliexpress.com/store/614763"><span
-                            class="pic"><img alt="" src="./index_files/HTB1NEW8MVXXXXbGXVXXq6xXFXXX3.jpg"></span></a>
+                    <div class="top-industry-product"><a href="http://evaouxiu.aliexpress.com/store/2340077"><span
+                            class="pic"><img alt="" src="./index_files/HTB1vVuNNXXXXXasapXXq6xXFXXXE.jpg"></span></a>
                     </div>
                     <ul class="clearfix rec-bottom-products">
                         <li>
@@ -1041,20 +1179,36 @@
                 </div>
 
                 <div class="recommend-box col-lg-20 col-md-24 hidden-sm">
-                    <div class="recommend-slider-box" data-widget-cid="widget-27">
+                    <div class="recommend-slider-box" data-widget-cid="widget-26">
                         <div class="recommend-slider-wrapper">
                             <div class="recommend-slider-container" style="width: 480px;">
                                 <ul class="recommend-slider-list" data-role="slider"
                                     style="transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-duration: 800ms; transform: translate3d(-2880px, 0px, 0px); width: 3840px;">
                                     <li style="width: 480px;">
-                                        <div class="pic"><a
-                                                href="http://sale.aliexpress.com/hoodiessweatshirts.htm"><img alt=""
-                                                                                                              src="./index_files/HTB1yry.KVXXXXcgXVXXq6xXFXXXd.jpg"></a>
-                                        </div>
+                                        <div class="pic"><a href="http://sale.aliexpress.com/0725coatsjackets.htm"><img
+                                                alt="" src="./index_files/HTB1z04tLXXXXXa7XVXXq6xXFXXXm.jpg"></a></div>
 
                                         <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/hoodiessweatshirts.htm"><span
-                                                class="main-title">Be warm and snug </span> <span class="sub-title">Fleece Hoodies </span>
+                                                href="http://sale.aliexpress.com/0725coatsjackets.htm"><span
+                                                class="main-title">Stay warm</span> <span class="sub-title">Modern meets classic: Men's coats </span>
+                                        </a></div>
+                                    </li>
+                                    <li style="width: 480px;">
+                                        <div class="pic"><a href="http://ams.alibaba-inc.com/page/preview/5241"><img
+                                                alt="" src="./index_files/HTB13oOONXXXXXcpapXXq6xXFXXX6.jpg"></a></div>
+
+                                        <div class="event-info"><a
+                                                href="http://ams.alibaba-inc.com/page/preview/5241"><span
+                                                class="main-title">SNUGGLE UP</span> <span class="sub-title">Fleece sweaters</span>
+                                        </a></div>
+                                    </li>
+                                    <li style="width: 480px;">
+                                        <div class="pic"><a href="http://sale.aliexpress.com/__pc/0829coatsjackets.htm"><img
+                                                alt="" src="./index_files/HTB1AHkVMVXXXXbjXpXXq6xXFXXXB.jpg"></a></div>
+
+                                        <div class="event-info"><a
+                                                href="http://sale.aliexpress.com/__pc/0829coatsjackets.htm"><span
+                                                class="main-title">BRAVE THE ELEMENTS</span> <span class="sub-title">Cozy designs for the great outdoors</span>
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
@@ -1095,32 +1249,12 @@
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/0718coatsjackets.htm"><img
-                                                alt="" src="./index_files/HTB19Dr9KVXXXXX1XpXXq6xXFXXXT.jpg"></a></div>
+                                        <div class="pic"><a href="http://ams.alibaba-inc.com/page/preview/5241"><img
+                                                alt="" src="./index_files/HTB13oOONXXXXXcpapXXq6xXFXXX6.jpg"></a></div>
 
                                         <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/0718coatsjackets.htm"><span
-                                                class="main-title">Men's Jackets</span> <span class="sub-title">Discover our latest selection</span>
-                                        </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a
-                                                href="http://sale.aliexpress.com/hoodiessweatshirts.htm"><img alt=""
-                                                                                                              src="./index_files/HTB1yry.KVXXXXcgXVXXq6xXFXXXd.jpg"></a>
-                                        </div>
-
-                                        <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/hoodiessweatshirts.htm"><span
-                                                class="main-title">Be warm and snug </span> <span class="sub-title">Fleece Hoodies </span>
-                                        </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/0822coatsjackets.htm"><img
-                                                alt="" src="./index_files/HTB12d12MVXXXXX9aXXXq6xXFXXXf.jpg"></a></div>
-
-                                        <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/0822coatsjackets.htm"><span
-                                                class="main-title">New arrival alert</span> <span class="sub-title">Warm winter wear</span>
+                                                href="http://ams.alibaba-inc.com/page/preview/5241"><span
+                                                class="main-title">SNUGGLE UP</span> <span class="sub-title">Fleece sweaters</span>
                                         </a></div>
                                     </li>
                                 </ul>
@@ -1138,8 +1272,8 @@
                 </div>
 
                 <div class="rec-industry-list col-lg-20 col-md-24 col-sm-40">
-                    <div class="top-industry-product"><a href="http://icebear.aliexpress.com/store/1432059"><span
-                            class="pic"><img alt="" src="./index_files/HTB1uqfdMVXXXXXeXVXXq6xXFXXXs.jpg"></span></a>
+                    <div class="top-industry-product"><a href="http://ja.aliexpress.com/store/2229052"><span
+                            class="pic"><img alt="" src="./index_files/HTB1dTi5NXXXXXbLXVXXq6xXFXXXT.jpg"></span></a>
                     </div>
                     <ul class="clearfix rec-bottom-products">
                         <li><a href="http://sale.aliexpress.com/menclothing.htm"><span class="subject">Tops &amp; Tees, Shorts</span>
@@ -1217,13 +1351,22 @@
                                 <ul class="recommend-slider-list" data-role="slider"
                                     style="transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-duration: 800ms; transform: translate3d(-2400px, 0px, 0px); width: 3840px;">
                                     <li style="width: 480px;">
+                                        <div class="pic"><a href="http://sale.aliexpress.com/lenovo.htm"><img alt=""
+                                                                                                              src="./index_files/HTB1yvLGLXXXXXbTXXXXq6xXFXXXY.jpg"></a>
+                                        </div>
+
+                                        <div class="event-info"><a href="http://sale.aliexpress.com/lenovo.htm"><span
+                                                class="main-title">Lenovo Phones</span> <span class="sub-title">Everyone's fave models, on sale</span>
+                                        </a></div>
+                                    </li>
+                                    <li style="width: 480px;">
                                         <div class="pic"><a
-                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160720082110&amp;origin=y&amp;SearchText=Nubia+Z11"><img
-                                                alt="" src="./index_files/HTB1UODcLXXXXXcwXFXXq6xXFXXXk.jpg"></a></div>
+                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160824195301&amp;SearchText=meizu"><img
+                                                alt="" src="./index_files/HTB1N95ZNXXXXXbGaXXXq6xXFXXX5.jpg"></a></div>
 
                                         <div class="event-info"><a
-                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160720082110&amp;origin=y&amp;SearchText=Nubia+Z11"><span
-                                                class="main-title">New &amp; Now</span> <span class="sub-title">Nubia Mobile Phones</span>
+                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160824195301&amp;SearchText=meizu"><span
+                                                class="main-title">MUST HAVE BRAND</span> <span class="sub-title">Meizu phones</span>
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
@@ -1276,23 +1419,13 @@
                                     </li>
                                     <li style="width: 480px;">
                                         <div class="pic"><a
-                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160720082110&amp;origin=y&amp;SearchText=Nubia+Z11"><img
-                                                alt="" src="./index_files/HTB1UODcLXXXXXcwXFXXq6xXFXXXk.jpg"></a></div>
+                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160824195301&amp;SearchText=meizu"><img
+                                                alt="" src="./index_files/HTB1N95ZNXXXXXbGaXXXq6xXFXXX5.jpg"></a></div>
 
                                         <div class="event-info"><a
-                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160720082110&amp;origin=y&amp;SearchText=Nubia+Z11"><span
-                                                class="main-title">New &amp; Now</span> <span class="sub-title">Nubia Mobile Phones</span>
+                                                href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160824195301&amp;SearchText=meizu"><span
+                                                class="main-title">MUST HAVE BRAND</span> <span class="sub-title">Meizu phones</span>
                                         </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a
-                                                href="http://www.aliexpress.com/wholesale?minPrice=4.9&amp;maxPrice=&amp;isBigSale=n&amp;isFreeShip=n&amp;isFavorite=n&amp;isRtl=n&amp;isLocalReturn=n&amp;isMobileExclusive=n&amp;shipCountry=us&amp;shipFromCountry=&amp;shipCompanies=&amp;SearchText=lightning+cable+mfi&amp;CatId=0&amp;g=y&amp;initiative_id=AS_20160720225910&amp;needQuery=y"><img
-                                                alt="" src="./index_files/HTB1CVa5MVXXXXc3XVXXq6xXFXXXP.jpg"></a></div>
-
-                                        <div class="event-info"><a
-                                                href="http://www.aliexpress.com/wholesale?minPrice=4.9&amp;maxPrice=&amp;isBigSale=n&amp;isFreeShip=n&amp;isFavorite=n&amp;isRtl=n&amp;isLocalReturn=n&amp;isMobileExclusive=n&amp;shipCountry=us&amp;shipFromCountry=&amp;shipCompanies=&amp;SearchText=lightning+cable+mfi&amp;CatId=0&amp;g=y&amp;initiative_id=AS_20160720225910&amp;needQuery=y"><span
-                                                class="main-title">For your Apple devices</span> <span
-                                                class="sub-title">Mfi certified lightning cable </span> </a></div>
                                     </li>
                                 </ul>
 				<span class="ui-banner-slider-nav">
@@ -1309,8 +1442,8 @@
                 </div>
 
                 <div class="rec-industry-list col-lg-20 col-md-24 col-sm-40">
-                    <div class="top-industry-product"><a href="http://qialino.aliexpress.com/store/1876392"><span
-                            class="pic"><img alt="" src="./index_files/HTB1kJq1MVXXXXaNaXXXq6xXFXXXf.jpg"></span></a>
+                    <div class="top-industry-product"><a href="http://mofi.aliexpress.com/store/2162111"><span
+                            class="pic"><img alt="" src="./index_files/HTB1mwbfNXXXXXcvXpXXq6xXFXXXz.jpg"></span></a>
                     </div>
                     <ul class="clearfix rec-bottom-products">
                         <li>
@@ -1350,115 +1483,104 @@
             <!--ams-region-end 51-->
         </div>
         <!--ams-region-end 51-->
-        <!--ams-region-start 52-->
-        <div class="container industry-floor industry-floor-computer" id="j-industry-floor-computer"
-             data-path="industry-computer-floor">
+        <div class="container industry-floor industry-floor-wedding" id="j-industry-floor-wedding"
+             data-path="industry-wedding-floor">
 
 
-            <!--ams-region-start 52-->
-            <div class="container-inner clearfix" data-spm="4">
+            <!--ams-region-start 61-->
+            <div class="container-inner clearfix" data-spm="12">
                 <div class="indutry-info col-lg-10 col-md-12 col-sm-20">
                     <div class="industry-enter"><a
-                            href="http://www.aliexpress.com/category/7/computer-office.html?isCates=y">COMPUTER
-                        &amp;<br>NETWORKING</a></div>
+                            href="http://www.aliexpress.com/category/100003235/weddings-events.html?isCates=y">WEDDING
+                        &amp;<br>EVENTS</a></div>
 
-                    <div class="keyword-list"><a class="highlight" href="http://kingston.aliexpress.com/store/2174116">kingston</a><a
-                            href="http://www.aliexpress.com/category/70803003/mini-pcs.html?spm=2114.20011208.1.89.JnNDiF&amp;site=glo">Mini
-                        PCs</a><a class="highlight"
-                                  href="http://hz.aliexpress.com/wholesale?catId=380110&amp;initiative_id=AS_20160316005805&amp;SearchText=laptop+backpack">Laptop
-                        Backpacks</a><a
-                            href="http://www.aliexpress.com/category/200182006/pc-tablets.html?spm=2114.20011208.1.130.JnNDiF&amp;site=glo">PC
-                        Tablets</a><a
-                            href="http://www.aliexpress.com/w/wholesale-mouse.html?initiative_id=SB_20150212213515&amp;site=glo&amp;SearchText=mouse&amp;CatId=70805">Mouse</a><a
-                            href="http://www.aliexpress.com/w/wholesale-Keyboard.html?initiative_id=SB_20150212213726&amp;site=glao&amp;SearchText=Keyboard&amp;CatId=70802">Keyboard</a><a
-                            href="http://www.aliexpress.com/category/200215314/memory-cards.html">Memory Cards</a><a
-                            href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=AS_20150701174155&amp;SearchText=xiaomi+router">Xiaomi
-                        Router</a><a
-                            href="http://www.aliexpress.com/category/200004731/laser-pens.html?spm=2114.11010108.104.34.V0AMgz">Laser
-                        Pens</a><a
-                            href="http://www.aliexpress.com/category/200042003/3d-printers.html?spm=2114.11010108.104.31.DYqV6N">3D
-                        Printers</a><a href="http://www.aliexpress.com/category/200004733/printer-supplies.html">Printer
-                        Supplies</a></div>
+                    <div class="keyword-list"><a class="highlight"
+                                                 href="http://www.aliexpress.com/category/100003269/wedding-dresses.html?pvId=100004669-100006419">A-line</a><a
+                            href="http://www.aliexpress.com/category/100003269/wedding-dresses.html?pvId=100004669-100013540">Ball
+                        Gown</a><a
+                            href="http://www.aliexpress.com/category/100003269/wedding-dresses.html?pvId=100004669-200001487">Trumpet/Mermaid</a><a
+                            href="http://www.aliexpress.com/category/100005790/cocktail-dresses.html">Cocktail
+                        Dresses</a><a class="highlight"
+                                      href="http://www.aliexpress.com/category/100005823/mother-of-the-bride-dresses.html">Mother
+                        of the Bride Dresses</a><a
+                            href="http://www.aliexpress.com/category/200001554/homecoming-dresses.html">Homecoming
+                        Dresses</a><a href="http://www.aliexpress.com/category/200001556/quinceanera-dresses.html">Quinceanera
+                        Dresses</a><a href="http://www.aliexpress.com/category/100005832/bridal-veils.html">Veils</a>
+                    </div>
                 </div>
 
                 <div class="recommend-box col-lg-20 col-md-24 hidden-sm">
-                    <div class="recommend-slider-box" data-widget-cid="widget-29">
+                    <div class="recommend-slider-box" data-widget-cid="widget-40">
                         <div class="recommend-slider-wrapper">
                             <div class="recommend-slider-container" style="width: 480px;">
                                 <ul class="recommend-slider-list" data-role="slider"
-                                    style="transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-duration: 800ms; transform: translate3d(-1920px, 0px, 0px); width: 3840px;">
+                                    style="transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.25, 1); transition-duration: 800ms; transform: translate3d(-1920px, 0px, 0px); width: 3360px;">
                                     <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/july_security.htm"><img
-                                                alt="" src="./index_files/HTB1dtenLXXXXXcGaXXXq6xXFXXXw.jpg"></a></div>
-
-                                        <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/july_security.htm"><span
-                                                class="main-title">PLAY IT SAFE</span> <span class="sub-title">High quality home security systems</span>
-                                        </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a href="http://xiaomi-tech.aliexpress.com/store/415488"><img
-                                                alt="" src="./index_files/HTB1n.viMVXXXXaOXpXXq6xXFXXXT.jpg"></a></div>
-
-                                        <div class="event-info"><a
-                                                href="http://xiaomi-tech.aliexpress.com/store/415488"><span
-                                                class="main-title">Xiaomi routers </span> <span class="sub-title">Fast and efficient</span>
-                                        </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/ipcamera.htm"><img alt=""
-                                                                                                                src="./index_files/HTB1eeCGMVXXXXbVaXXXq6xXFXXXH.jpg"></a>
+                                        <div class="pic"><a
+                                                href="http://sale.aliexpress.com/__pc/0815cocktaildress.htm"><img alt=""
+                                                                                                                  src="./index_files/HTB1HTSHLpXXXXayXVXXq6xXFXXXn.jpg"></a>
                                         </div>
 
-                                        <div class="event-info"><a href="http://sale.aliexpress.com/ipcamera.htm"><span
-                                                class="main-title">Secure your space</span> <span class="sub-title">Surveillance cameras on sale</span>
+                                        <div class="event-info"><a
+                                                href="http://sale.aliexpress.com/__pc/0815cocktaildress.htm"><span
+                                                class="main-title">Stunning cocktail dresses</span> <span
+                                                class="sub-title">Jaw-dropping designs</span> </a></div>
+                                    </li>
+                                    <li style="width: 480px;">
+                                        <div class="pic"><a href="http://sale.aliexpress.com/0905weddingdress.htm"><img
+                                                alt="" src="./index_files/HTB1DYqWNXXXXXcBaXXXq6xXFXXXI.jpg"></a></div>
+
+                                        <div class="event-info"><a
+                                                href="http://sale.aliexpress.com/0905weddingdress.htm"><span
+                                                class="main-title">FOR THE BRIDE</span> <span class="sub-title">New wedding dresses on sale</span>
+                                        </a></div>
+                                    </li>
+                                    <li style="width: 480px;">
+                                        <div class="pic"><a href="http://sale.aliexpress.com/pairit.htm"><img alt=""
+                                                                                                              src="./index_files/HTB1zVliNXXXXXcPXFXXq6xXFXXXE.jpg"></a>
+                                        </div>
+
+                                        <div class="event-info"><a href="http://sale.aliexpress.com/pairit.htm"><span
+                                                class="main-title">Pair it up</span> <span class="sub-title">Gorgeous dresses and heels </span>
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
                                         <div class="pic"><a
-                                                href="http://www.aliexpress.com/category/200004733/printer-supplies.html?site=glo&amp;shipCountry=RU&amp;isrefine=y"><img
-                                                alt="" src="./index_files/HTB1fg9HLpXXXXamXVXXq6xXFXXXK.jpg"></a></div>
+                                                href="http://sale.aliexpress.com/__pc/0829bridesmaiddresses.htm"><img
+                                                alt="" src="./index_files/HTB1PZouMVXXXXcBaXXXq6xXFXXX1.jpg"></a></div>
 
                                         <div class="event-info"><a
-                                                href="http://www.aliexpress.com/category/200004733/printer-supplies.html?site=glo&amp;shipCountry=RU&amp;isrefine=y"><span
-                                                class="main-title">Get inked</span> <span class="sub-title">Printer toner on sale</span>
+                                                href="http://sale.aliexpress.com/__pc/0829bridesmaiddresses.htm"><span
+                                                class="main-title">BEAUTIFUL BRIDESMAIDS</span> <span class="sub-title">Sweet looks for the "I Do Crew"</span>
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
-                                        <div class="pic"><a href="http://kingston.aliexpress.com/store/2174116"><img
-                                                alt="" src="./index_files/HTB1QycRLXXXXXcsaXXXq6xXFXXXw.jpg"></a></div>
+                                        <div class="pic"><a href="http://sale.aliexpress.com/__pc/0822eveningdress.htm"><img
+                                                alt="" src="./index_files/HTB1zl2gMVXXXXcfXFXXq6xXFXXXN.jpg"></a></div>
 
                                         <div class="event-info"><a
-                                                href="http://kingston.aliexpress.com/store/2174116"><span
-                                                class="main-title">Kingston</span> <span class="sub-title">Memory cards &amp; accessories</span>
+                                                href="http://sale.aliexpress.com/__pc/0822eveningdress.htm"><span
+                                                class="main-title">Make heads turn</span> <span class="sub-title">Evening dreses for every occasion</span>
                                         </a></div>
                                     </li>
                                     <li style="width: 480px;">
                                         <div class="pic"><a
-                                                href="http://www.aliexpress.com/category/200140002/3d-printers-3d-scanners.html?site=glo&amp;shipCountry=ru&amp;isrefine=y"><img
-                                                alt="" src="./index_files/HTB1Hxa_LXXXXXaWXVXXq6xXFXXX6.jpg"></a></div>
+                                                href="http://sale.aliexpress.com/__pc/0815cocktaildress.htm"><img alt=""
+                                                                                                                  src="./index_files/HTB1HTSHLpXXXXayXVXXq6xXFXXXn.jpg"></a>
+                                        </div>
 
                                         <div class="event-info"><a
-                                                href="http://www.aliexpress.com/category/200140002/3d-printers-3d-scanners.html?site=glo&amp;shipCountry=ru&amp;isrefine=y"><span
-                                                class="main-title">See All The Angles</span> <span class="sub-title">3D printers</span>
-                                        </a></div>
+                                                href="http://sale.aliexpress.com/__pc/0815cocktaildress.htm"><span
+                                                class="main-title">Stunning cocktail dresses</span> <span
+                                                class="sub-title">Jaw-dropping designs</span> </a></div>
                                     </li>
                                     <li style="width: 480px;">
-                                        <div class="pic"><a href="http://sale.aliexpress.com/july_security.htm"><img
-                                                alt="" src="./index_files/HTB1dtenLXXXXXcGaXXXq6xXFXXXw.jpg"></a></div>
+                                        <div class="pic"><a href="http://sale.aliexpress.com/0905weddingdress.htm"><img
+                                                alt="" src="./index_files/HTB1DYqWNXXXXXcBaXXXq6xXFXXXI.jpg"></a></div>
 
                                         <div class="event-info"><a
-                                                href="http://sale.aliexpress.com/july_security.htm"><span
-                                                class="main-title">PLAY IT SAFE</span> <span class="sub-title">High quality home security systems</span>
-                                        </a></div>
-                                    </li>
-                                    <li style="width: 480px;">
-                                        <div class="pic"><a href="http://xiaomi-tech.aliexpress.com/store/415488"><img
-                                                alt="" src="./index_files/HTB1n.viMVXXXXaOXpXXq6xXFXXXT.jpg"></a></div>
-
-                                        <div class="event-info"><a
-                                                href="http://xiaomi-tech.aliexpress.com/store/415488"><span
-                                                class="main-title">Xiaomi routers </span> <span class="sub-title">Fast and efficient</span>
+                                                href="http://sale.aliexpress.com/0905weddingdress.htm"><span
+                                                class="main-title">FOR THE BRIDE</span> <span class="sub-title">New wedding dresses on sale</span>
                                         </a></div>
                                     </li>
                                 </ul>
@@ -1468,7 +1590,6 @@
 		<span data-role="navButton" class=""></span>
 		<span data-role="navButton" class="current"></span>
 		<span data-role="navButton" class=""></span>
-		<span data-role="navButton" class=""></span>
 </span></div>
                             <a class="rec-slider-prev" data-role="prev" style="visibility: visible;">Previous</a> <a
                                 class="rec-slider-next" data-role="next" style="visibility: visible;">Next</a></div>
@@ -1476,46 +1597,44 @@
                 </div>
 
                 <div class="rec-industry-list col-lg-20 col-md-24 col-sm-40">
-                    <div class="top-industry-product"><a
-                            href="http://hz.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160519180251&amp;SearchText=cases+for+Macbook"><span
-                            class="pic"><img alt="" src="./index_files/HTB1zDSWMVXXXXbNaXXXq6xXFXXXw.jpg"></span></a>
+                    <div class="top-industry-product"><a href="http://www.aliexpress.com/store/1085225"><span
+                            class="pic"><img alt="" src="./index_files/HTB1qsOMNXXXXXcbapXXq6xXFXXXq.jpg"></span></a>
                     </div>
                     <ul class="clearfix rec-bottom-products">
-                        <li><a href="http://www.aliexpress.com/category/200002372/digital-tablets.html"><span
-                                class="subject">Digital Tablets</span> <span class="sub-heading">Digital Tablets</span>
-                            <span class="pic"><img alt="" height="195"
-                                                   src="./index_files/HTB1zW4YLXXXXXcdXpXX760XFXXX7.png"
-                                                   width="180"></span> </a></li>
-                        <li><a href="http://kingston.aliexpress.com/store/2174116"><span class="subject">Kingston</span>
-                            <span class="sub-heading">Kingston official store</span> <span class="pic"><img alt=""
-                                                                                                            height="195"
-                                                                                                            src="./index_files/HTB1RCxPLXXXXXcvXFXX760XFXXXu.png"
-                                                                                                            width="180"></span>
+                        <li><a href="http://activities.aliexpress.com/evening_dress.php"><span class="subject">Evening Dresses</span>
+                            <span class="sub-heading">Classy &amp; glamorous</span> <span class="pic"><img alt=""
+                                                                                                           height="195"
+                                                                                                           src="./index_files/TB1uz.ULpXXXXceXVXXFBIMYXXX-180-195.jpg"
+                                                                                                           width="180"></span>
+                        </a></li>
+                        <li><a href="http://activities.aliexpress.com/bridesmaid_dresses.php"><span class="subject">Bridesmaid Dresses</span>
+                            <span class="sub-heading">Only the best will do</span> <span class="pic"><img alt=""
+                                                                                                          height="195"
+                                                                                                          src="./index_files/TB1ybXiLFXXXXcrXXXXFBIMYXXX-180-195.jpg"
+                                                                                                          width="180"></span>
                         </a></li>
                     </ul>
                 </div>
 
                 <div class="rec-industry-right-list col-lg-10 col-md-12 hidden-sm hidden-md">
                     <ul>
-                        <li><a href="http://www.aliexpress.com/store/538857"><span class="subject">Make Safety A Priority</span>
-                            <span class="sub-heading">Video Surveillance</span> <span class="pic"><img alt=""
-                                                                                                       height="195"
-                                                                                                       src="./index_files/TB1TipwMXXXXXXXXpXXXXXXXXXX-180-195.jpg"
-                                                                                                       width="180"></span>
+                        <li><a href="http://activities.aliexpress.com/wedding_events1109.php"><span class="subject">Dream Dresses</span>
+                            <span class="sub-heading">For your perfect day</span> <span class="pic"><img alt=""
+                                                                                                         height="195"
+                                                                                                         src="./index_files/TB1dRUMLXXXXXaSXFXXXXXXXXXX-180-195.jpg"
+                                                                                                         width="180"></span>
                         </a></li>
-                        <li>
-                            <a href="http://www.aliexpress.com/wholesale?catId=0&amp;initiative_id=SB_20160710180352&amp;SearchText=3D+Pen"><span
-                                    class="subject">DEWANG</span> <span class="sub-heading">3D Pen</span> <span
-                                    class="pic"><img alt="" height="195"
-                                                     src="./index_files/TB1A4yhKVXXXXXjXVXXXXXXXXXX-180-195.jpg"
-                                                     width="180"></span> </a></li>
+                        <li><a href="http://activities.aliexpress.com/prom_dresses.php"><span class="subject">Prom Dresses</span>
+                            <span class="sub-heading">Tonight we shine</span> <span class="pic"><img alt="" height="195"
+                                                                                                     src="./index_files/TB1hPE3LpXXXXcjXFXXFBIMYXXX-180-195.jpg"
+                                                                                                     width="180"></span>
+                        </a></li>
                     </ul>
                 </div>
             </div>
-            <!--ams-region-end 52-->
+            <!--ams-region-end 61-->
         </div>
-        <!--ams-region-end 52-->
-
+        <!--ams-region-end 61-->
     </div>
     <!--ams-region-start 22-->
     <div class="container related-recommend" data-language-text="orders" data-spm="1218" id="j-related-recommend"
@@ -1526,152 +1645,154 @@
                 <span class="change-product-btn"><a data-role="change-btn" href="javascript:;">Try Your Luck</a></span>
             </div>
 
-            <div data-role="product-container" data-requestid="20160905072835164-409662496">
+            <div data-role="product-container" data-requestid="20160908123519874-409662496">
                 <ul class="product-list clearfix">
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/2pcs-Infinity-Handmade-Bracelet-Set-Friendship-Bracelet-Set-Infinity-Love-Bracelet-Couples-Bracelet-Set-Infinity-Jewelry/32697750605.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32697750605" target="_blank">
+                            <a href="http://www.aliexpress.com/item/MIEGOFCE-2016-New-Spring-Warm-Cotton-Quilted-Jackets-Stand-Collar-padded-Coat-Women-s-Clothing-Coat/32587668527.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32587668527" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/2pcs-Infinity-Handmade-Bracelet-Set-Friendship-Bracelet-Set-Infinity-Love-Bracelet-Couples-Bracelet-Set-Infinity-Jewelry.jpg_250x250.jpg">
+                                        src="./index_files/MIEGOFCE-2016-New-spring-jacket-women-winter-coat-women-s-clothing-warm-outwear-Cotton-Padded-long.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">184 orders</div>
-                                    <span class="g-price">US $1.99</span>
-                                    <del class="g-del-price">US $3.32</del>
+                                    <div class="g-orders">2785 orders</div>
+                                    <span class="g-price">US $44.52</span>
+                                    <del class="g-del-price">US $159.00</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/Creative-kitchen-accessories-4-a-stainless-steel-mould-tool-Fried-Eggs-heart-shaped-stars-breakfast-cooking/32569868531.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32569868531" target="_blank">
+                            <a href="http://www.aliexpress.com/item/Excelvan-RD-802-Mini-LED-Projector-Portable-Home-Cinema-Theater-LCD-with-HDMI-VGA-USB-Remote/32649489853.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32649489853" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/Creative-kitchen-accessories-4-a-stainless-steel-mould-tool-Fried-Eggs-heart-shaped-stars-breakfast-cooking.jpg_250x250.jpg">
+                                        src="./index_files/Excelvan-RD-802-Mini-LED-Projector-Portable-Home-Cinema-Theater-LCD-with-HDMI-VGA-USB-Remote.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">228 orders</div>
-                                    <span class="g-price">US $1.25</span>
+                                    <div class="g-orders">252 orders</div>
+                                    <span class="g-price">US $41.79</span>
+                                    <del class="g-del-price">US $43.99</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/Vintage-Style-Butterfly-Flower-Brooch-Pin-Pendant-Purple-Austrian-Crystal-Free-Shipping/1993673975.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="1993673975" target="_blank">
+                            <a href="http://www.aliexpress.com/item/ICEbear-Brand-Casual-Fashion-Spring-Autumn-Short-Large-Size-Mens-Jackets-Coats-With-Hat-Zipper-Inside/32699471288.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32699471288" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/Vintage-Style-Butterfly-Flower-Brooch-Pin-Pendant-Purple-Austrian-Crystal-Free-Shipping.jpg_250x250.jpg">
+                                        src="./index_files/ICEbear-Brand-Casual-Fashion-Spring-Autumn-Short-Large-Size-Mens-Jackets-Coats-With-Hat-Zipper-Inside.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">74 orders</div>
-                                    <span class="g-price">US $11.04</span>
-                                    <del class="g-del-price">US $12.27</del>
+                                    <div class="g-orders">88 orders</div>
+                                    <span class="g-price">US $59.08</span>
+                                    <del class="g-del-price">US $211.00</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/2016-Fashion-New-Summer-gas-monkey-garage-dallas-texas-T-shirts-Men-Hip-Top-Tees/32673700340.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32673700340" target="_blank">
+                            <a href="http://www.aliexpress.com/item/BYINTEL-ML213-HD-SMART-LED-HDMI-USB-Video-Digital-portable-Home-Theater-Portable-HDMI-USB-LCD/32658157584.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32658157584" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/2016-Fashion-New-Summer-gas-monkey-garage-dallas-texas-T-shirts-Men-Hip-Top-Tees.jpg_250x250.jpg">
+                                        src="./index_files/BYINTEK-GP70-2016-AM01-New-HD-LED-HDMI-USB-Video-Digital-Home-Theater-Portable-HDMI-USB.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">124 orders</div>
-                                    <span class="g-price">US $9.96</span>
+                                    <div class="g-orders">90 orders</div>
+                                    <span class="g-price">US $90.00</span>
+                                    <del class="g-del-price">US $299.99</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/2016-Hot-Sell-Portable-E-File-Made-in-China-220-230V/32667688925.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32667688925" target="_blank">
+                            <a href="http://www.aliexpress.com/item/Fine-Jewelry-Sets-Wedding-Gold-Crystal-Necklace-Set-Party-Women-African-Beads-Fashion-Bridal-Ring-Bracelet/32392582333.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32392582333" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/2016-Hot-Sell-Portable-E-File-Made-in-China-220-230V.jpg_250x250.jpg">
+                                        src="./index_files/Fine-Jewelry-Sets-Wedding-Crystal-Necklace-Set-Party-Women-African-Beads-Fashion-Bridal-Ring-Bracelet-Earrings.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">15 orders</div>
-                                    <span class="g-price">US $15.99</span>
-                                    <del class="g-del-price">US $19.99</del>
+                                    <div class="g-orders">81 orders</div>
+                                    <span class="g-price">US $5.61</span>
+                                    <del class="g-del-price">US $11.00</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/Original-IMAK-Contracted-Frosted-Cowboy-Quicksand-Back-Cover-Case-For-HTC-One-M10/32657277280.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32657277280" target="_blank">
+                            <a href="http://www.aliexpress.com/item/2016-Fashion-Flats-Shoes-Men-Loafers-air-mesh-breathable-Casual-Shoes-Men-Flats-rubber-Shoes-For/32627758631.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32627758631" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/Original-IMAK-Contracted-Frosted-Cowboy-Quicksand-Back-Cover-Case-For-HTC-M10-HTC-10-Lifestyle-htc.jpg_250x250.jpg">
+                                        src="./index_files/2016-Fashion-Flats-Shoes-Men-Loafers-air-mesh-breathable-Casual-Shoes-Men-Flats-rubber-Shoes-For.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">35 orders</div>
-                                    <span class="g-price">US $6.08</span>
-                                    <del class="g-del-price">US $6.40</del>
+                                    <div class="g-orders">84 orders</div>
+                                    <span class="g-price">US $23.48</span>
+                                    <del class="g-del-price">US $52.18</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/Universal-Phone-Case-Opening-Mouth-Convenient-Card-Wallet-Case-For-Samsung-Galaxy-Plus-S4-S5-S6/32632991372.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32632991372" target="_blank">
+                            <a href="http://www.aliexpress.com/item/Newest-2015-1300Lumens-Ezcast-Miracast-wifi-display-LED-Video-LCD-hd-3D-Home-Theater-Mini-Projector/32268046018.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32268046018" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/Universal-Phone-Case-Opening-Mouth-Convenient-Card-Wallet-Case-For-Samsung-Galaxy-Plus-S4-S5-S6.jpg_250x250.jpg">
+                                        src="./index_files/Newest-BL-35-1000Lumens-LCD-LED-HD-Video-3D-Home-Theater-Mini-TV-DVD-game-Projector.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">27 orders</div>
-                                    <span class="g-price">US $3.67</span>
-                                    <del class="g-del-price">US $3.99</del>
+                                    <div class="g-orders">36 orders</div>
+                                    <span class="g-price">US $65.52</span>
+                                    <del class="g-del-price">US $72.00</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/2015-new-hair-barrettes-fashion-vintage-triangle-claws-hairpin-duck-clips-pins-crystal-rhinestones-accessories-jewelry/32470875829.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32470875829" target="_blank">
+                            <a href="http://www.aliexpress.com/item/2015-New-1300lumen-Cheap-HD-TV-home-cinema-Projector-HDMI-LCD-LED-Game-PC-Digital-Mini/32278498773.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32278498773" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/2015-new-hair-barrettes-fashion-vintage-triangle-claws-hairpin-duck-clips-pins-crystal-rhinestones-accessories-jewelry.jpg_250x250.jpg">
+                                        src="./index_files/Cheaper-1000lumens-HD-TV-home-cinema-Projector-HDMI-LCD-LED-Game-PC-Digital-Mini-Projectors-1080P.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">13 orders</div>
-                                    <span class="g-price">US $4.59</span>
-                                    <del class="g-del-price">US $4.99</del>
+                                    <div class="g-orders">42 orders</div>
+                                    <span class="g-price">US $67.21</span>
+                                    <del class="g-del-price">US $143.00</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/Baking-Tools-Plastic-Revolving-Rotating-Circular-Turntable-Mounted-Baking-Cake-Flower-Bed-Drop-Shipping/32715325295.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32715325295" target="_blank">
+                            <a href="http://www.aliexpress.com/item/ICEbear-2016-Brand-Clothing-Jacket-Fashion-Thick-Casual-cotton-Coat-Winter-Jacket-Men-Bio-Down-Men/32719095875.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32719095875" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/Baking-Tools-Plastic-Revolving-Rotating-Circular-Turntable-Mounted-Baking-Cake-Flower-Bed-Drop-Shipping.jpg_250x250.jpg">
+                                        src="./index_files/ICEbear-2016-Brand-Clothing-Jacket-Fashion-Thick-Casual-cotton-Coat-Winter-Jacket-Men-Bio-Down-Men.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">1 orders</div>
-                                    <span class="g-price">US $7.41</span>
-                                    <del class="g-del-price">US $9.50</del>
+                                    <div class="g-orders">5 orders</div>
+                                    <span class="g-price">US $80.85</span>
+                                    <del class="g-del-price">US $245.00</del>
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li class="col-lg-12 col-md-15 col-sm-20">
                         <div class="item-inner">
-                            <a href="http://www.aliexpress.com/item/Big-Large-Ring-For-Women-Men-Jewelry-Gifts-Made-With-Swarovski-Elements-Crystal-Fine-Jewelry-Wedding/32704962183.html?scm=1007.13562.39355.0&amp;pvid=66583ff8-3239-458d-9b8b-d40cd73174eb&amp;tpp=1"
-                               data-productid="32704962183" target="_blank">
+                            <a href="http://www.aliexpress.com/item/FLOVEME-For-iPhone-6-6s-4-7-plus-5-5-Hard-PC-Full-Protective-Case-Free/32605031432.html?scm=1007.13562.39355.0&amp;pvid=9700b2b0-906e-4151-92af-8ed595a107d1&amp;tpp=1"
+                               data-productid="32605031432" target="_blank">
                                 <div class="pro-img"><i></i><img
-                                        src="./index_files/Big-Large-Ring-For-Women-Men-Jewelry-Gifts-Made-With-Swarovski-Elements-Crystal-Fine-Jewelry-Wedding.jpg_250x250.jpg">
+                                        src="./index_files/Phone-Case-For-Apple-iPhone-6-Plus-6s-Plus-Case-Luxury-Hard-PC-Full-Protective-Cover.jpg_250x250.jpg">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">1 orders</div>
-                                    <span class="g-price">US $9.09</span>
-                                    <del class="g-del-price">US $12.99</del>
+                                    <div class="g-orders">0 orders</div>
+                                    <span class="g-price">US $3.99</span>
+                                    <del class="g-del-price">US $5.32</del>
                                 </div>
                             </a>
                         </div>
@@ -1679,7 +1800,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
     <!--ams-region-end 22-->
 
@@ -1808,8 +1928,7 @@
     <!--ams-region-end 25-->
 
     <!--ams-region-start 571-->
-    <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/me-footer.css'/>">
-    <%--<link href="./index_files/me-footer.css" rel="stylesheet" type="text/css">--%>
+
     <div class="site-footer">
         <div class="container">
             <div class="sf-aliexpressInfo clearfix">
@@ -1903,7 +2022,7 @@
 <div class="floor-fixed-panel" data-spm="19" id="j-floor-fixed-panel"
      style="position: fixed; visibility: hidden; left: 2056px; top: 120px;" data-widget-cid="widget-16">
     <ul class="floor-nav-list">
-        <li class="nav-women"><a href="http://www.aliexpress.com/#j-industry-floor-women" class="current"
+        <li class="nav-women"><a href="http://www.aliexpress.com/#j-industry-floor-women" class=""
                                  data-widget-cid="widget-17"><i>&nbsp;</i><span>Women's Clothing</span></a></li>
         <li class="nav-men"><a href="http://www.aliexpress.com/#j-industry-floor-men" data-widget-cid="widget-17"
                                class=""><i>&nbsp;</i><span>Men's Clothing</span></a></li>
@@ -1930,12 +2049,14 @@
                                        data-widget-cid="widget-17" class=""><i>&nbsp;</i><span>Automobiles &amp; Motorcycles</span></a>
         </li>
         <li class="nav-beauty"><a href="http://www.aliexpress.com/#j-industry-floor-beauty" data-widget-cid="widget-17"
-                                  class=""><i>&nbsp;</i><span>Beauty &amp; Health</span></a></li>
+                                  class="current"><i>&nbsp;</i><span>Beauty &amp; Health</span></a></li>
         <li class="nav-wedding"><a href="http://www.aliexpress.com/#j-industry-floor-wedding"
                                    data-widget-cid="widget-17"><i>&nbsp;</i><span>Wedding &amp; Events</span></a></li>
     </ul>
 </div>
 <!--ams-region-end 26-->
+
+<!-- ws_portal_homepage_feature_words -->
 <div data-widget-cid="widget-2"></div>
 <div id="shopping-history" class="" data-widget-cid="widget-3">
     <div class="container shopping-history-relative">
@@ -1956,13 +2077,13 @@
 </div>
 <div class="ui-fixed-panel" style="position: fixed; visibility: visible; left: 3313px; top: 2074px;"
      data-widget-cid="widget-5">
-    <div class="ui-fixed-panel-shares" data-role="sharesArea" style="visibility: visible;">
+    <div class="ui-fixed-panel-shares" data-role="sharesArea" style="visibility: hidden;">
         <div class="ui-fixed-panel-unit ui-fixed-panel-share ui-fixed-panel-facebook" data-widget-cid="widget-6">
             <a href="https://www.facebook.com/AliExpress" data-role="trigger"></a>
         </div>
     </div>
 
-    <div class="ui-fixed-panel-secondary" data-role="secondaryArea" style="visibility: visible;">
+    <div class="ui-fixed-panel-secondary" data-role="secondaryArea" style="visibility: hidden;">
         <div class="ui-fixed-panel-unit ui-fixed-panel-qr-code" data-widget-cid="widget-7">
             <a data-role="trigger"></a>
 
@@ -1976,49 +2097,19 @@
     <div class="ui-fixed-panel-operation" data-role="operationArea">
         <div class="ui-fixed-panel-unit ui-fixed-panel-toggle" data-widget-cid="widget-11">
             <div class="ui-fixed-panel-unit ui-fixed-panel-toggle">
-                <a class="ui-fixed-panel-collapse" data-role="trigger"></a>
+                <a class="ui-fixed-panel-expand" data-role="trigger"></a>
             </div>
         </div>
         <div class="ui-fixed-panel-unit ui-fixed-panel-go-top" data-role="hide" data-widget-cid="widget-12"
-             style="visibility: hidden; opacity: 1;">
+             style="visibility: visible; opacity: 1;">
             <a href="http://www.aliexpress.com/#" data-role="trigger"></a>
         </div>
     </div>
 </div>
 <div data-widget-cid="widget-14"></div>
 <div data-widget-cid="widget-15"></div>
-
-
-<!-- ws_portal_homepage_feature_words -->
 <div id="criteo-tags-div" style="display: none;">
     <iframe height="0" width="0" src="./index_files/dis.html" style="display: none;"></iframe>
 </div>
-<iframe style="display: none;"
-        src="javascript:&#39;&lt;script src=http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&gt;&lt;/script&gt;&lt;script&gt;var startTime=new Date().getTime();&lt;/script&gt;&lt;script src=http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&gt;&lt;/script&gt;&lt;script&gt;parent.__loadTranslateJs(new Date().getTime()-startTime)&lt;/script&gt;&#39;"
-        src="./index_files/saved_resource.html"></iframe>
-<div id="goog-gt-tt" class="skiptranslate" dir="ltr">
-    <div style="padding: 8px;">
-        <div>
-            <div class="logo"><img src="./index_files/translate_24dp.png" width="20" height="20"></div>
-        </div>
-    </div>
-    <div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div>
-    <div class="middle" style="padding: 8px;">
-        <div class="original-text"></div>
-    </div>
-    <div class="bottom" style="padding: 8px;">
-        <div class="activity-links"><span class="activity-link">Contribute a better translation</span><span
-                class="activity-link"></span></div>
-        <div class="started-activity-container">
-            <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
-            <div class="activity-root"></div>
-        </div>
-    </div>
-    <div class="status-message" style="display: none;"></div>
-</div>
-<div data-widget-cid="widget-4"></div>
-<iframe frameborder="0" class="goog-te-menu-frame skiptranslate"
-        style="visibility: visible; box-sizing: content-box; width: 1003px; height: 263px; display: none;"
-        src="./index_files/saved_resource(3).html"></iframe>
 </body>
 </html>

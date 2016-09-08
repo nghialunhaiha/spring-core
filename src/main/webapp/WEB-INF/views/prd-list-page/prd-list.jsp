@@ -24,17 +24,6 @@
     <%--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>--%>
 
     <meta name="data-spm" content="2114">
-    <link rel="dns-prefetch" href="http://g02.a.alicdn.com/">
-    <link rel="dns-prefetch" href="http://g04.a.alicdn.com/">
-    <link rel="dns-prefetch" href="http://dmtracking2.alibaba.com/">
-    <link rel="dns-prefetch" href="http://g03.a.alicdn.com/">
-    <link rel="dns-prefetch" href="http://i.alicdn.com/">
-    <link rel="dns-prefetch" href="http://ae01.alicdn.com/">
-    <link rel="dns-prefetch" href="http://g01.a.alicdn.com/">
-    <link rel="dns-prefetch" href="http://us.ynuf.alipay.com/">
-    <link rel="shortcut icon" type="image/x-icon"
-          href="http://i00.i.aliimg.com/images/eng/wholesale/icon/aliexpress.ico">
-
 
 </head>
 
