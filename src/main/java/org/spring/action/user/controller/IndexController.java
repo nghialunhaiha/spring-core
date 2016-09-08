@@ -32,4 +32,10 @@ public class IndexController extends BaseController{
     public String getPrdList(){
         return "/prd-list-page/prd-list";
     }
+
+    @RequestMapping(value = "/item/100", method = RequestMethod.GET)
+    public String getPrdById() {
+        return "/prd-detail/prd-detail";
+    }
+
 }
