@@ -10,9 +10,10 @@
     <meta http-equiv="content-language" content="en">
     <title>LEDSimba</title>
 
-    <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/ae-header.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/static/assert/css/ae-header.css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/saved_resource(1).css'/>">
     <link rel="stylesheet" type="text/css" href="<c:url value='/static/home/css/translateelement.css'/>">
+    <link rel="stylesheet" type="text/css" href="<c:url value='/static/assert/css/me-footer.css'/>">
 
 </head>
 <body data-spm="11010108" class="device-desktop">
