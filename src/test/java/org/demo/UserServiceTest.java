@@ -6,8 +6,8 @@ import org.config.BaseTest;
 import org.core.json.JsonUTils;
 import org.junit.Assert;
 import org.junit.Test;
-import org.spring.action.user.User;
-import org.spring.action.user.service.UserService;
+import org.led.simba.user.User;
+import org.led.simba.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class UserServiceTest extends BaseTest {

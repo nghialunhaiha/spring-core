@@ -1,6 +1,6 @@
 package org.config;
 
-import org.spring.action.config.DataSourceConfig;
+import org.led.simba.config.DataSourceConfig;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;

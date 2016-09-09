@@ -6,8 +6,8 @@ import java.util.List;
 import org.config.BaseTest;
 import org.joda.time.LocalDate;
 import org.junit.Test;
-import org.spring.action.user.Employee;
-import org.spring.action.user.service.EmployeeService;
+import org.led.simba.user.Employee;
+import org.led.simba.user.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class EmployeeTest extends BaseTest {

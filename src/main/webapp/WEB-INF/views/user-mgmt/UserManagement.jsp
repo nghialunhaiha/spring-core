@@ -5,9 +5,9 @@
     <title>AngularJS $http Example</title>
 
     <!--      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-    <link href="<c:url value='/static/css/bootstrap.min.css' />" rel="stylesheet"/>
-    <link href="<c:url value='/static/css/app.css' />" rel="stylesheet"/>
-    <link href="<c:url value='/static/css/angular_error_style.css' />" rel="stylesheet"/>
+    <link href="<c:url value='/static/assert/css/bootstrap.min.css' />" rel="stylesheet"/>
+    <link href="<c:url value='/static/user-mgmt/css/app.css' />" rel="stylesheet"/>
+    <link href="<c:url value='/static/user-mgmt/css/angular_error_style.css' />" rel="stylesheet"/>
     <!--      <link href="../static/css/bootstrap.min.css />" rel="stylesheet" type="text/css" /> -->
     <!--      <link href="../static/css/app.css />" rel="stylesheet" type="text/css" /> -->
 </head>
@@ -126,9 +126,9 @@
 </div>
 
 <!--       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script> -->
-<script src="<c:url value='/static/js/angular-1.4.6.js' />"></script>
-<script src="<c:url value='/static/js/app.js' />"></script>
-<script src="<c:url value='/static/js/service/user_service.js' />"></script>
-<script src="<c:url value='/static/js/controller/user_controller.js' />"></script>
+<script src="<c:url value='/static/assert/js/angular-1.4.6.js' />"></script>
+<script src="<c:url value='/static/user-mgmt/js/app.js' />"></script>
+<script src="<c:url value='/static/user-mgmt/js/service/user_service.js' />"></script>
+<script src="<c:url value='/static/user-mgmt/js/controller/user_controller.js' />"></script>
 </body>
 </html>
