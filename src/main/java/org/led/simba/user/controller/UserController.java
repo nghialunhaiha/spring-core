@@ -128,7 +128,7 @@ public class UserController extends BaseController {
         return users;
     }
 
-    @RequestMapping(value = {"/user/names", "/user/names/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/user/names", "/user/names/"}, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public List<UserFilterResponse> getNames() {
         List<UserFilterResponse> values = new ArrayList<>();

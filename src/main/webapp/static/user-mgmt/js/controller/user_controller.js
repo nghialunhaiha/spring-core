@@ -109,24 +109,25 @@ mgmt.controller('UserController', ['$scope', 'UserService', function ($scope, us
     };
 
 // ======================================================
+    $scope.filterOptions = [];
     self.filter = function (filter1, filter2) {
-        // console.log('filter1: '+filter1 +'    filter2: '+filter2);
+        console.log('1 call api');
         userService.getFilterOptions().then(function (dataResponse) {
             $scope.filterOptions = dataResponse;
-            console.log('filterOptions', $scope.filterOptions);
         }, function (errResponse) {
             console.error('An error occured when fet filterOptions. Controller: getFilteroptions()');
         });
-
+        console.log('after call api==> filterOptions', $scope.filterOptions);
         $scope.nameOptions = [];
 
-        angular.forEach($scope.filterOptions, function (key, value) {
+        console.log('2 get name option in loop function');
+        angular.forEach($scope.filterOptions, function (object, key) {
             var test = {uid :'', value:''};
             test.uid=1;
-            test.value = value.userName;
+            test.value = object.userName;
             $scope.nameOptions.push(test);
         });
-        console.log('name options:',$scope.nameOptions);
+        console.log('after get name options in loop:',$scope.nameOptions);
     };
 
     $scope.addrOptions = [
