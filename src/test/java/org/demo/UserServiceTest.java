@@ -66,5 +66,9 @@ public class UserServiceTest extends BaseTest {
         List<User> users = userService.findByName("name2");
         Assert.assertEquals(2, users.get(0).getId());
         Assert.assertEquals(4, users.get(1).getId());
+
+
+        List<User> users1 = userService.findByNameAndAddr("name2", "ajsdfasd");
+        System.out.println(JsonUTils.toJson(user1));
     }
 }

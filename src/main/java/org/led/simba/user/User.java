@@ -1,5 +1,5 @@
 package org.led.simba.user;
-
+import  static  org.led.simba.user.UserConstants.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,21 +8,21 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "USER")
+@Table(name = USER_TABLE)
 public class User {
 
     @Id
-    @Column(name = "UID")
+    @Column(name = USER_ID)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "NAME")
+    @Column(name = USER_NAME)
     private String username;
 
-    @Column(name = "ADDRESS")
+    @Column(name = USER_ADDRESS)
     private String address;
 
-    @Column(name = "EMAIL")
+    @Column(name = USER_EMAIL)
     private String email;
 
     public User() {

@@ -20,16 +20,6 @@ mgmt.controller('UserController', ['$scope','UserService',function($scope, userS
                 });
             };
 
-            self.findWithKey = function(searchText) {
-                userService.findWithKey(searchText).then(function(data) {
-                    // self.fetchAllUsers,
-                    self.users = data;
-                    console.log('data return when using search :' + data);
-                }, function(errResponse) {
-                    console.error('Error when search with key input.')
-                });
-            };
-
             self.createUser = function(user) {
                 userService.createUser(user).then(self.fetchAllUsers,
                         function(errResponse) {
@@ -52,6 +42,11 @@ mgmt.controller('UserController', ['$scope','UserService',function($scope, userS
             };
 
             self.fetchAllUsers();
+            self.findByNameAndAddr = function (addr) {
+                userService.findByNameAndAddr(addr).then(function (data) {
+                    self.users = data;
+                });
+            };
             // in User Registration Form
             /*
              * HANDLE submit, action in form.
@@ -60,7 +55,13 @@ mgmt.controller('UserController', ['$scope','UserService',function($scope, userS
                 if (self.searchText == null || self.searchText == '') {
                     console.error('Search text input is empty.')
                 } else
-                    self.findWithKey(self.searchText);
+                    userService.findWithKey(self.searchText).then(function(data) {
+                        // self.fetchAllUsers,
+                        self.users = data;
+                        console.log('data return when using search :' + data);
+                    }, function(errResponse) {
+                        console.error('Error when search with key input.')
+                    });
             };
 
             self.submit = function() {

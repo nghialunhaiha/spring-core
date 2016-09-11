@@ -1,6 +1,8 @@
 package org.led.simba.user.service;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.led.simba.user.User;
@@ -48,4 +50,11 @@ public class UserServiceImpl implements UserService {
         userRepository.deleteAllUsers();
     }
 
+    @Override
+    public List<User> findByNameAndAddr(String userName, String address) {
+        if (Objects.isNull(userName) || Objects.isNull(address)) {
+            return Collections.emptyList();
+        }
+        return userRepository.findByNameAndAddr(userName, address);
+    }
 }

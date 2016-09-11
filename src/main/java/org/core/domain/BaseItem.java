@@ -1,5 +1,9 @@
 package org.core.domain;
 
+import org.led.simba.product.SubType;
+
+import java.util.Objects;
+
 public class BaseItem {
     private int id;
     private String title;
@@ -12,7 +16,30 @@ public class BaseItem {
     private String deliveryTime;
     private String deliveryNote;
     private String availableStatus;
+    private SubType subType;
+    private String productDescriptions;
 
+    public BaseItem() {
+    }
+
+    public BaseItem(Integer id, String title, String rate, String feedBack, String order, String shipmentInfo, double price, double discountPrice, String deliveryTime, String deliveryNote, String availableStatus, SubType subType, String productDescriptions) {
+
+        if (Objects.nonNull(id)) {
+            this.id = id;
+        }
+        this.title = title;
+        this.rate = rate;
+        this.feedBack = feedBack;
+        this.order = order;
+        this.shipmentInfo = shipmentInfo;
+        this.price = price;
+        this.discountPrice = discountPrice;
+        this.deliveryTime = deliveryTime;
+        this.deliveryNote = deliveryNote;
+        this.availableStatus = availableStatus;
+        this.subType = subType;
+        this.productDescriptions = productDescriptions;
+    }
 
     public String getOrder() {
         return order;

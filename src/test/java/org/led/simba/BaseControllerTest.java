@@ -1,4 +1,4 @@
-package org.led.simba.spittr.web;
+package org.led.simba;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public abstract class BaseControllerTest {
     @Autowired
     private WebApplicationContext webApplicationContext;
 
-    MockMvc mockMvc;
+    protected MockMvc mockMvc;
 
     private List<Object> controllers;
 

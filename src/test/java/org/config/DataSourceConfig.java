@@ -1,4 +1,4 @@
-package org.led.simba.config;
+package org.config;
 
 import java.util.Properties;
 
@@ -17,9 +17,11 @@ import org.springframework.jndi.JndiObjectFactoryBean;
 import org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.security.core.userdetails.User;
 
 @Configuration
 public class DataSourceConfig {
+    private static final String USER_PACKAGE = "org.led.simba.user";
     @Autowired
     private Environment environment;
 
@@ -46,7 +48,7 @@ public class DataSourceConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "org.spring.action.user" });
+        sessionFactory.setPackagesToScan(new String[] {USER_PACKAGE});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
@@ -67,7 +69,6 @@ public class DataSourceConfig {
     // }
 
     @Bean
-    @Profile("dev")
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(environment.getRequiredProperty("jdbc.driverClassName"));

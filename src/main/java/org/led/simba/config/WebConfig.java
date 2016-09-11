@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration // spring configuration on start up
-@ComponentScan("org.spring")
+@ComponentScan("org.led")
 @EnableWebMvc // enable mvc model web
 public class WebConfig extends WebMvcConfigurerAdapter {
     /**

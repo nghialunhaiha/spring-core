@@ -65,7 +65,7 @@ mgmt.factory('UserService', ['$http', '$q', function ($http, $q) {
 //			            params: data,
 //			            headers : {'Accept' : 'application/json'}
 //			           };
-            return $http.get(mgmt_user + '/search/' + searchText).then(
+            return $http.get(mgmt_user + '/user/?name=nghia&addr=HaiHa').then(
                 function (response) {
                     return response.data;
                 }, function (errResponse) {
@@ -74,8 +74,17 @@ mgmt.factory('UserService', ['$http', '$q', function ($http, $q) {
                     return $q.reject(errResponse);
                 }
             );
-        }
+        },
 
+        findByNameAndAddr: function (nameReq, addReq) {
+            return $http.get(mgmt_user + '/user/?name='+nameReq+'&addr='+addReq).then(
+                function (response) {
+                    return response.data;
+                }, function (errResponse) {
+                    return $q.reject(errResponse);
+                }
+            );
+        }
     };
 
 }]);

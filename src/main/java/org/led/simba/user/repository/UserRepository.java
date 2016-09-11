@@ -21,4 +21,5 @@ public interface UserRepository {
 
     public boolean isUserExist(User user);
 
+    List<User> findByNameAndAddr(String userName, String address);
 }

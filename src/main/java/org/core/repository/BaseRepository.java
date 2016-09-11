@@ -1,15 +1,16 @@
 package org.core.repository;
 
-import java.util.List;
-
-import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.hibernate.*;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 @SuppressWarnings("unchecked")
 public abstract class BaseRepository<T> {
+    private static final String AND = "AND";
+    private static final String EQUAL = " = ";
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -108,4 +109,23 @@ public abstract class BaseRepository<T> {
     // public void delete(Object entity) {
     // getCurrentActiveSession().delete(entity);
     // }
+    protected List<T> findByParams(String tableName, Class<T> clazz, LinkedHashMap<String, Object> paramByKey) {
+        StringBuilder sql = new StringBuilder("select * from ");
+        sql.append(tableName);
+        sql.append(" where");
+        for(Map.Entry<String, Object> entry : paramByKey.entrySet()) {
+            sql.append(" ");
+            sql.append(tableName);
+            sql.append(".");
+            sql.append(entry.getKey());
+            sql.append(EQUAL);
+            sql.append("\"" +entry.getValue() + "\" ");
+            sql.append(AND);
+        }
+        sql.delete(sql.length() - AND.length(), sql.length());
+        SQLQuery sqlquery = getCurrentActiveSession().createSQLQuery(sql.toString());
+
+        sqlquery.addEntity(clazz);
+        return sqlquery.list();
+    }
 }

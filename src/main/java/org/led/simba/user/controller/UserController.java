@@ -1,7 +1,5 @@
 package org.led.simba.user.controller;
 
-import java.util.List;
-
 import org.core.controller.BaseController;
 import org.led.simba.user.User;
 import org.led.simba.user.service.UserService;
@@ -10,16 +8,15 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import java.util.List;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/mgmt/")
-public class UserController  extends BaseController{
+public class UserController extends BaseController {
 
     @Autowired
     UserService userService; // Service which will do all data retrieval/manipulation work
@@ -119,7 +116,14 @@ public class UserController  extends BaseController{
         System.out.println("\n\n Searching with key:" + searchText);
         List<User> users = userService.findByName(searchText);
 
-        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+        return response(users);
     }
 
+    @RequestMapping(value = "/user/", params = {"name","addr"},method = RequestMethod.GET)
+    @ResponseBody
+    public List<User> getByNameAndAddr(@RequestParam("name") String userName, @RequestParam("addr") String address) {
+
+        List<User> users = userService.findByNameAndAddr(userName, address);
+        return users;
+    }
 }

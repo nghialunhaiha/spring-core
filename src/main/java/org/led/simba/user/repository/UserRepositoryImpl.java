@@ -1,10 +1,12 @@
 package org.led.simba.user.repository;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 
 import org.core.repository.BaseRepository;
 import org.hibernate.SQLQuery;
 import org.led.simba.user.User;
+import org.led.simba.user.UserConstants;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -61,4 +63,11 @@ public class UserRepositoryImpl extends BaseRepository<User> implements UserRepo
         return false;
     }
 
+    @Override
+    public List<User> findByNameAndAddr(String userName, String address) {
+        LinkedHashMap<String, Object> params = new LinkedHashMap<>(2);
+        params.put(UserConstants.USER_NAME, userName);
+        params.put(UserConstants.USER_ADDRESS, address);
+        return findByParams(UserConstants.USER_TABLE, User.class, params);
+    }
 }

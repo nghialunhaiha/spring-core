@@ -22,10 +22,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @EnableTransactionManagement
 // scans project for Spring components
-@ComponentScan(basePackages = { "org.spring" }, excludeFilters = {
+@ComponentScan(basePackages = { "org.led" }, excludeFilters = {
         @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) })
 @PropertySource(value = { "classpath:application.properties" })
 public class RootConfig {
+    private static final String USER_PACKAGE = "org.led.simba.user";
     @Autowired
     private Environment environment;
 
@@ -33,7 +34,7 @@ public class RootConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "org.spring.action.user" });
+        sessionFactory.setPackagesToScan(new String[] { USER_PACKAGE });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
