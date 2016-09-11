@@ -2,6 +2,7 @@ package org.led.simba.user.controller;
 
 import org.core.controller.BaseController;
 import org.led.simba.user.User;
+import org.led.simba.user.UserFilterResponse;
 import org.led.simba.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -11,8 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @RestController
 @RequestMapping("/mgmt/")
@@ -119,11 +120,24 @@ public class UserController extends BaseController {
         return response(users);
     }
 
-    @RequestMapping(value = "/user/", params = {"name","addr"},method = RequestMethod.GET)
+    @RequestMapping(value = "/user/", params = {"name", "addr"}, method = RequestMethod.GET)
     @ResponseBody
     public List<User> getByNameAndAddr(@RequestParam("name") String userName, @RequestParam("addr") String address) {
 
         List<User> users = userService.findByNameAndAddr(userName, address);
         return users;
+    }
+
+    @RequestMapping(value = {"/user/names", "/user/names/"}, method = RequestMethod.GET)
+    @ResponseBody
+    public List<UserFilterResponse> getNames() {
+        List<UserFilterResponse> values = new ArrayList<>();
+        values.add(new UserFilterResponse(1, "nghia", "HaiHa"));
+        values.add(new UserFilterResponse(2, "nghia2", "HaiHa"));
+        values.add(new UserFilterResponse(3, "nghia3", "HaiHa"));
+        values.add(new UserFilterResponse(4, "nghia4", "HaiHa"));
+        values.add(new UserFilterResponse(5, "nghia5", "HaiHa"));
+
+        return values;
     }
 }

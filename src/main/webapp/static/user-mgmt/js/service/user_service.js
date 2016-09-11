@@ -84,6 +84,13 @@ mgmt.factory('UserService', ['$http', '$q', function ($http, $q) {
                     return $q.reject(errResponse);
                 }
             );
+        },
+        getFilterOptions: function () {
+            return $http.get(mgmt_user + '/user/names').then(function (response) {
+               return response.data;
+            }, function (errResponse) {
+                return $q.reject(errResponse);
+            });
         }
     };
 

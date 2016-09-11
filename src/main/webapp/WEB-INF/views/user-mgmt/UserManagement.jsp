@@ -30,8 +30,31 @@
                 </form>
             </div>
 
-        </div>
 
+        </div>
+        <div class="row">
+            <form name = "filter" class="form-horizontal" >
+                <div class="col-md-3">
+                    <select class="form-control" ng-model="filter1" ng-options="value.id as value.label for value in nameOptions">
+                        <option>---</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <select class="form-control" ng-model="filter2" ng-options="value.id as value.label for value in addrOptions">
+                        <option>---</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <span>ng-model value: {{filter1}}</span>
+                    <span>ng-model value: {{filter2}}</span>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary active" ng-click = "ctrl.filter(filter1, filter2)">Primary button</button>
+                </div>
+            </form>
+        </div>
+        <br>
         <div class="formcontainer">
             <form ng-submit="ctrl.submit()" name="myForm" class="form-horizontal">
                 <input type="hidden" ng-model="ctrl.user.id"/>
@@ -45,7 +68,8 @@
                             <div class="has-error" ng-show="myForm.$dirty">
                                 <span ng-show="myForm.uname.$error.required">This is a required field</span> <span
                                     ng-show="myForm.uname.$error.minlength">Minimum
-                                        length required is 3</span> <span ng-show="myForm.uname.$invalid">This field is invalid </span>
+                                        length required is 3</span> <span
+                                    ng-show="myForm.uname.$invalid">This field is invalid </span>
                             </div>
                         </div>
                     </div>
