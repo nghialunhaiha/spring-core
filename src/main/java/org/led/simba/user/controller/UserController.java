@@ -133,10 +133,10 @@ public class UserController extends BaseController {
     public List<UserFilterResponse> getNames() {
         List<UserFilterResponse> values = new ArrayList<>();
         values.add(new UserFilterResponse(1, "nghia", "HaiHa"));
-        values.add(new UserFilterResponse(2, "nghia2", "HaiHa"));
-        values.add(new UserFilterResponse(3, "nghia3", "HaiHa"));
-        values.add(new UserFilterResponse(4, "nghia4", "HaiHa"));
-        values.add(new UserFilterResponse(5, "nghia5", "HaiHa"));
+        values.add(new UserFilterResponse(2, "nghia2", "HaiHa2"));
+        values.add(new UserFilterResponse(3, "nghia3", "HaiHa3"));
+        values.add(new UserFilterResponse(4, "nghia4", "HaiHa4"));
+        values.add(new UserFilterResponse(5, "nghia5", "HaiHa5"));
 
         return values;
     }

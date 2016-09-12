@@ -35,13 +35,13 @@
         <div class="row">
             <form name = "filter" class="form-horizontal" >
                 <div class="col-md-3">
-                    <select class="form-control" ng-model="filter1" ng-options="value.id as value.label for value in nameOptions">
+                    <select class="form-control" ng-model="filter1" ng-options="name.uid as name.value for name in ctrl.nameOptions">
                         <option>---</option>
                     </select>
                 </div>
 
                 <div class="col-md-3">
-                    <select class="form-control" ng-model="filter2" ng-options="value.id as value.label for value in addrOptions">
+                    <select class="form-control" ng-model="filter2" ng-options="addr.aid as addr.value for addr in ctrl.addrOptions">
                         <option>---</option>
                     </select>
                 </div>

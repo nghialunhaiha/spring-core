@@ -1,6 +1,4 @@
-'use strict';
-
-mgmt.controller('UserController', ['$scope', 'UserService', function ($scope, userService) {
+mgmt.controller('UserController', ['$scope', 'UserService', '$rootScope', function ($scope, userService, $rootScope) {
     var self = this;
     self.user = {
         id: null,
@@ -14,7 +12,7 @@ mgmt.controller('UserController', ['$scope', 'UserService', function ($scope, us
     self.fetchAllUsers = function () {
         userService.fetchAllUsers().then(function (d) {
             self.users = d;
-            console.log('data return when get all data:' + d);
+            console.log('data return when get all data:', d);
         }, function (errResponse) {
             console.error('Error while fetching Currencies');
         });
@@ -44,8 +42,8 @@ mgmt.controller('UserController', ['$scope', 'UserService', function ($scope, us
     self.fetchAllUsers();
 
     self.findByNameAndAddr = function (name, addr) {
-        console.log('name: '+name +'    addr: '+addr);
-        userService.findByNameAndAddr(name,addr).then(function (data) {
+        console.log('name: ' + name + '    addr: ' + addr);
+        userService.findByNameAndAddr(name, addr).then(function (data) {
             self.users = data;
         }, function (errResponse) {
             console.error('Error when search with key input.')
@@ -109,37 +107,55 @@ mgmt.controller('UserController', ['$scope', 'UserService', function ($scope, us
     };
 
 // ======================================================
-    $scope.filterOptions = [];
-    self.filter = function (filter1, filter2) {
-        console.log('1 call api');
-        userService.getFilterOptions().then(function (dataResponse) {
-            $scope.filterOptions = dataResponse;
-        }, function (errResponse) {
-            console.error('An error occured when fet filterOptions. Controller: getFilteroptions()');
-        });
-        console.log('after call api==> filterOptions', $scope.filterOptions);
-        $scope.nameOptions = [];
+    //$scope.filterOptions = [];
 
-        console.log('2 get name option in loop function');
-        angular.forEach($scope.filterOptions, function (object, key) {
-            var test = {uid :'', value:''};
-            test.uid=1;
-            test.value = object.userName;
-            $scope.nameOptions.push(test);
+    self.filterOptions = [];
+    userService.getFilterOptions().then(function (dataResponse) {
+        self.filterOptions = dataResponse;
+        $rootScope.$broadcast('gotData', self.filterOptions); // promise that: filterOptions got data.
+    }, function (errResponse) {
+        console.error('An error occurred when fet filterOptions. Controller: getFilteroptions()');
+    });
+
+    self.nameOptions = [];
+    self.addrOptions = [];
+    $scope.$on('gotData', function (event, data) {
+
+        console.log('event service', event);
+        console.log('data service', data);
+
+        angular.forEach(data, function (object, key) {
+            self.nameOptions.push(self.getNameOption(key, object.userName));
+            self.addrOptions.push(self.getAddrOption(key, object.village));
         });
-        console.log('after get name options in loop:',$scope.nameOptions);
+
+        console.log('name options: ', self.nameOptions);
+        console.log('addr options: ', self.addrOptions);
+    });
+
+    // process filter option
+    self.filter = function (filter1, filter2) {
+
+        console.log('name options: ', filter1);
+        console.log('addr options: ', filter2);
     };
 
-    $scope.addrOptions = [
-        {
-            "id": "HaiHa",
-            "label": "HaiHa"
-        }, {
-            "id": "xxx",
-            "label": "xxxxx2"
-        }, {
-            "id": "aaa",
-            "label": "aaaa3"
-        }
-    ]
+    //  ex: getName option for filter options
+    self.getNameOption = function(id, value) {
+        var nameOption = {uid: '', value: ''};
+        nameOption.uid = value;
+        nameOption.value = value;
+        return nameOption;
+    }
+
+    //  ex: getAddr option for filter options
+    self.getAddrOption = function(id, value) {
+        var addrOption = {aid: '', value: ''};
+        addrOption.aid = value;
+        addrOption.value = value;
+        return addrOption;
+    }
+
 }]);
+
+'use strict';
