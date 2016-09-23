@@ -11,15 +11,15 @@
     <!--      <link href="../static/css/bootstrap.min.css />" rel="stylesheet" type="text/css" /> -->
     <!--      <link href="../static/css/app.css />" rel="stylesheet" type="text/css" /> -->
 </head>
-<body>
+<body ng-app = "ProductManagement">
 <div class="container">
-    <div class="row formcontainer" ng-controller="ProductManagement as prdMgmt" name="prd-form">
+    <div class="row formcontainer" ng-controller="ProductController as productController" name="prd-form">
         <form class="form-horizontal">
-            <input type="hidden" ng-model="prdMgmt.product.id">
+            <input type="hidden" ng-model="productController.product.id">
             <div class="row">
                 <label class="col-md-2 control-label">name</label>
                 <div class="col-md-7">
-                    <input type="text" ng-model="prdMgmt.product.name" name="fName" class="form-control input-sm" placeholder="enter name value"
+                    <input type="text" ng-model="productController.product.name" name="fName" class="form-control input-sm" placeholder="enter name value"
                            required ng-maxlength="100">
                     <div class="has-error" ng-show="prd-form.$dirty">
                         <span ng-show="prd-form.fName.$error.required">This is required field.</span>
@@ -31,9 +31,9 @@
             <!--close name field-->
             <div class="row">
                 <div class="floatRight">
-                    <input type="submit" value="{{!prdMgmt.product.id ? 'Add' : 'Update'}}" class="btn btn-primary btn-sm"
+                    <input type="submit" value="{{!productController.product.id ? 'Add' : 'Update'}}" class="btn btn-primary btn-sm"
                            ng-disabled="prd-form.$invalid">
-                    <button type="button" ng-click="prdMgmt.reset()" class="btn btn-warning btn-sm" ng-disabled="prd-form.$pristine"> Reset form
+                    <button type="button" ng-click="productController.reset()" class="btn btn-warning btn-sm" ng-disabled="prd-form.$pristine"> Reset form
                     </button>
                 </div>
             </div>
@@ -58,14 +58,14 @@
                     </tr>
                 </thread>
                 <tbody>
-                    <tr ng-repeat="productItem in prdMgmt.products">
+                    <tr ng-repeat="productItem in productController.products">
                         <td><span ng-bind="productItem.id"></span></td>
                         <td><span ng-bind="productItem.name"></span></td>
                         <td><span ng-bind="productItem.name"></span></td>
                         <td><span ng-bind="productItem.name"></span></td>
                         <td>
-                            <button type = "button" ng-click = "prdMgmt.edit(productItem.id)" class="btn btn-success custom-width"> Edit</button>
-                            <button type = "button" ng-click = "prdMgmt.remove(productItem.id)" class="btn btn-danger custom-width"> Remove</button>
+                            <button type = "button" ng-click = "productController.edit(productItem.id)" class="btn btn-success custom-width"> Edit</button>
+                            <button type = "button" ng-click = "productController.remove(productItem.id)" class="btn btn-danger custom-width"> Remove</button>
                         </td>
                     </tr>
                 </tbody>

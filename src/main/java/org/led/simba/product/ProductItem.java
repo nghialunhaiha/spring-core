@@ -4,7 +4,7 @@ import org.core.domain.BaseItem;
 
 import java.util.List;
 
-public class LEDProductItem extends BaseItem {
+public class ProductItem extends BaseItem {
     private List<String> colors;
     private LEDType ledType;
     private ColorTemp colorTemp;
@@ -18,10 +18,10 @@ public class LEDProductItem extends BaseItem {
     private PowerSource powerSource;
     private String modelNumber;
 
-    public LEDProductItem() {
+    public ProductItem() {
     }
 
-    public LEDProductItem(int averageLife, List<String> colors, ColorTemp colorTemp, String colorTemperature, String ledsPerMeter, LEDType ledType, String modelNumber, String occasion, String powerGeneration, PowerSource powerSource, int voltage, boolean waterProff) {
+    public ProductItem(int averageLife, List<String> colors, ColorTemp colorTemp, String colorTemperature, String ledsPerMeter, LEDType ledType, String modelNumber, String occasion, String powerGeneration, PowerSource powerSource, int voltage, boolean waterProff) {
         this.averageLife = averageLife;
         this.colors = colors;
         this.colorTemp = colorTemp;
