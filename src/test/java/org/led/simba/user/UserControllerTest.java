@@ -21,6 +21,6 @@ public class UserControllerTest extends BaseControllerTest {
         String userName = "name2";
         String address = "name2";
         mockMvc.perform(MockMvcRequestBuilders.get("/mgmt/?name=" + userName + "&?addr=" + address)
-                );
+        );
     }
 }

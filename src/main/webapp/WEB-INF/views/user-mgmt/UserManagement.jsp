@@ -33,15 +33,17 @@
 
         </div>
         <div class="row">
-            <form name = "filter" class="form-horizontal" >
+            <form name="filter" class="form-horizontal">
                 <div class="col-md-3">
-                    <select class="form-control" ng-model="filter1" ng-options="name.uid as name.value for name in ctrl.nameOptions">
+                    <select class="form-control" ng-model="filter1"
+                            ng-options="name.uid as name.value for name in ctrl.nameOptions">
                         <option>---</option>
                     </select>
                 </div>
 
                 <div class="col-md-3">
-                    <select class="form-control" ng-model="filter2" ng-options="addr.aid as addr.value for addr in ctrl.addrOptions">
+                    <select class="form-control" ng-model="filter2"
+                            ng-options="addr.aid as addr.value for addr in ctrl.addrOptions">
                         <option>---</option>
                     </select>
                 </div>
@@ -50,7 +52,9 @@
                     <span>ng-model value: {{filter2}}</span>
                 </div>
                 <div class="col-md-3">
-                    <button type="button" class="btn btn-primary active" ng-click = "ctrl.filter(filter1, filter2)">Primary button</button>
+                    <button type="button" class="btn btn-primary active" ng-click="ctrl.filter(filter1, filter2)">
+                        Primary button
+                    </button>
                 </div>
             </form>
         </div>
@@ -90,7 +94,7 @@
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-lable" for="file">Email</label>
                         <div class="col-md-7">
-                            <input type="email" ng-model="ctrl.user.email" name="email"
+                            <input type="text" ng-model="ctrl.user.email" name="email"
                                    class="email form-control input-sm" placeholder="Enter your Email"
                                    required/>
                             <div class="has-error" ng-show="myForm.$dirty">
