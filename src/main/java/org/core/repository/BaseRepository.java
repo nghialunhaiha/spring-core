@@ -1,14 +1,18 @@
 package org.core.repository;
 
+import org.apache.log4j.Logger;
 import org.hibernate.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 @SuppressWarnings("unchecked")
 public abstract class BaseRepository<T> {
+    Logger logger = Logger.getLogger(BaseRepository.class);
+
     private static final String AND = "AND";
     private static final String EQUAL = " = ";
     @Autowired
@@ -35,7 +39,12 @@ public abstract class BaseRepository<T> {
     }
 
     protected List<T> list(Session session, Class<T> clazz) {
-        return (List<T>) session.createCriteria(clazz).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
+        try {
+            return (List<T>) session.createCriteria(clazz).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
+        } catch (HibernateException e) {
+            logger.error("Can not connect to MySQL.", e.getCause());
+            return Collections.emptyList();
+        }
     }
 
     // update
