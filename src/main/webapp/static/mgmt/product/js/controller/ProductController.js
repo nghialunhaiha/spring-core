@@ -1,22 +1,73 @@
 'use strict'
-prdManagement.controller('UserController', ['$scope', 'UserService', '$rootScope', function ($scope, userService, $rootScope) {
+var NON_SELECT_DROPDOWN = 'Please Choose...';
+prdManagement.controller('ProductController', ['$scope', '$rootScope', 'ProductService', function ($scope, $rootScope, productService) {
     var self = this;
-    self.SubType = {
-        led: 'LED', matrix: 'MATRIX', board: 'BOARD', power: 'POWER'
-        //  list all sub type of led, power, maxtric, board, ...
-    }
+    
+    self.SubTypes = [
+        {
+            key: 'none',
+            value: NON_SELECT_DROPDOWN
+        },{
+            key: 'LED',
+            value: 'Led dây'
+        }, {
+            key: 'MATRIX',
+            value: 'Led ma trận'
+        }, {
+            key: 'BOARD',
+            value: 'Led bảng mạch'
+        }, {
+            key: 'POWER',
+            value: 'Nguồn'
+        },
 
-    self.LEDType = {
-        LED_5050: 'LED_5050', LED_5730: 'LED_5730'
-    }
+    ];
 
-    self.ColorTemp = {
-        T_3000K: 'T_3000K', T_4500K: 'T_4500K', T_5000K: 'T_5000K', T_6000K: 'T_6000K'
-    }
+    self.LEDTypes = [{
+        key: 'none',
+        value: NON_SELECT_DROPDOWN
+    },
+        {
+            key: 'LED_5050',
+            value: 'LED_5050'
+        }, {
+            key: 'LED_5730',
+            value: 'LED_5730'
+        }
 
-    self.PowerSource = {
-        AC: 'AC', DC: 'DC'
-    }
+    ];
+
+    self.ColorTemps =[{
+        key: 'none',
+        value: NON_SELECT_DROPDOWN
+    },
+        {
+            key: 'T_3000K',
+            value: 'T_3000K'
+        },{
+            key: 'T_4500K',
+            value: 'T_4500K'
+        },{
+            key: 'T_5000K',
+            value: 'T_5000K'
+        },{
+            key: 'T_6000K',
+            value: 'T_6000K'
+        }
+    ];
+
+    self.PowerSources = [{
+        key: 'none',
+        value: NON_SELECT_DROPDOWN
+    },
+        {
+            key: 'AC',
+            value: 'AC'
+        },{
+            key: 'DC',
+            value: 'DC'
+        }
+    ];
     self.product = {
         id: null,
         title: '',
@@ -29,22 +80,63 @@ prdManagement.controller('UserController', ['$scope', 'UserService', '$rootScope
         deliveryTime: '',
         deliveryNote: '',
         availableStatus: '',
-        subType: SubType,
+        subType: 'none',
         productDescriptions: '',
         colors: [],
-        ledType: LEDType,
-        colorTemp: ColorTemp,
+        ledType: 'none',
+        colorTemp: 'none',
         occasion: '',
         powerGeneration: '',
         ledsPerMeter: '',
         averageLife: 0,
-        waterProff: false,
+        waterProff: '',
         voltage: 0,
         colorTemperature: '',
-        powerSource: PowerSource,
+        powerSource: 'none',
         modelNumber: ''
-    }
+    };
     self.products = [];
 
+    self.reset = function () {
+        self.product = {
+            id: null,
+            title: '',
+            rate: '',
+            feedBack: '',
+            order: '',
+            shipmentInfo: '',
+            price: '',
+            discountPrice: '',
+            deliveryTime: '',
+            deliveryNote: '',
+            availableStatus: '',
+            subType: self.SubType,
+            productDescriptions: '',
+            colors: [],
+            ledType: self.LEDType,
+            colorTemp: self.ColorTemp,
+            occasion: '',
+            powerGeneration: '',
+            ledsPerMeter: '',
+            averageLife: 0,
+            waterProff: false,
+            voltage: 0,
+            colorTemperature: '',
+            powerSource: self.PowerSource,
+            modelNumber: ''
+        }
+        $scope.prdForm.$setPristine(); // reset Form
+    };
+    //  close reset form.
 
+    //  submit form.
+    self.submitProductSetting = function () {
+        if (self.product.id == null) {
+            console.log('create product', self.product);
+            productService.createProduct(self.product);
+        } else {
+            console.log('update product', self.product);
+            productService.updateProduct(self.product, self.product.id);
+        }
+    }
 }]);
