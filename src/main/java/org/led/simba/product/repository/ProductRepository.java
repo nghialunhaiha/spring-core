@@ -1,11 +1,12 @@
-package org.led.simba.product.service;
+package org.led.simba.product.repository;
 
+import org.core.repository.BaseRepository;
 import org.led.simba.product.ProductItem;
 
 /**
- * Created by Nghia on 11-09-2016.
+ * Created by Nghia on 27-09-2016.
  */
-public interface ProductService {
+public interface ProductRepository {
     boolean isExist(ProductItem productItem);
 
     ProductItem create(ProductItem productItem);

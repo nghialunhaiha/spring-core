@@ -6,7 +6,7 @@ var mgmt_product = '';
 prdManagement.factory('ProductService', ['$http', '$q', function ($http, $q) {
     return {
         createProduct: function (product) {
-            console.log('create product: ', product);
+            console.log('service call create product: ', product);
             /*return $http.post(mgmt_product + '/nghiadaica', product).then(
                 function (response) {
                     return response.data;

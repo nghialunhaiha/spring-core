@@ -1,4 +1,4 @@
-package org.led.simba.user.repository;
+package org.led.simba.user.repository.impl;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.core.repository.BaseRepository;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.criterion.Restrictions;
+import org.led.simba.user.repository.EmployeeRepository;
 import org.springframework.stereotype.Repository;
 
 import org.led.simba.user.Employee;

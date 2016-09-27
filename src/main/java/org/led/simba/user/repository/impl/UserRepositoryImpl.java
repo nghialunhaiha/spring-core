@@ -1,4 +1,4 @@
-package org.led.simba.user.repository;
+package org.led.simba.user.repository.impl;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -7,6 +7,7 @@ import org.core.repository.BaseRepository;
 import org.hibernate.SQLQuery;
 import org.led.simba.user.User;
 import org.led.simba.user.UserConstants;
+import org.led.simba.user.repository.UserRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
