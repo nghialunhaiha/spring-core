@@ -26,7 +26,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
         @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) })
 @PropertySource(value = { "classpath:application.properties" })
 public class RootConfig {
-    private static final String USER_PACKAGE = "org.led.simba.user";
+    private static final String USER_PACKAGE = "org.led.simba";
     @Autowired
     private Environment environment;
 
