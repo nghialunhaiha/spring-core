@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 @WebAppConfiguration
 @EnableWebMvc
-@ComponentScan(basePackages= {"org.spring.action.spittr.web"})
-public class WebConfigTest extends WebMvcConfigurationSupport{
+@ComponentScan(basePackages = {BaseTest.BASE_PACKAGE})
+public class WebConfigTest extends WebMvcConfigurationSupport {
 
 }

@@ -5,6 +5,7 @@ import java.util.Properties;
 import javax.sql.DataSource;
 
 import org.hibernate.SessionFactory;
+import org.led.simba.config.RootConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
@@ -17,11 +18,9 @@ import org.springframework.jndi.JndiObjectFactoryBean;
 import org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
-import org.springframework.security.core.userdetails.User;
 
 @Configuration
 public class DataSourceConfig {
-    private static final String USER_PACKAGE = "org.led.simba.user";
     @Autowired
     private Environment environment;
 
@@ -48,7 +47,7 @@ public class DataSourceConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] {USER_PACKAGE});
+        sessionFactory.setPackagesToScan(new String[] {"org.led.simba"});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
@@ -91,9 +90,7 @@ public class DataSourceConfig {
     private Properties hibernateProperties() {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
-        properties.put("hibernate.show_sql", environment.getRequiredProperty("hibernate.show_sql"));
-        properties.put("hibernate.format_sql", environment.getRequiredProperty("hibernate.format_sql"));
-        properties.put("hibernate.hbm2ddl.auto", environment.getRequiredProperty("hibernate.hbm2dll"));
+        properties.put("hibernate.show_sql", true);
         properties.put("hibernate.format_sql", true);
 
         return properties;

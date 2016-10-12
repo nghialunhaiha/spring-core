@@ -26,7 +26,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
         @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) })
 @PropertySource(value = { "classpath:application.properties" })
 public class RootConfig {
-    private static final String USER_PACKAGE = "org.led.simba";
+    public static final String USER_PACKAGE = "org.led.simba.user";
+    public static final String PRODUCT_PACKAGE = "org.led.simba.product";
     @Autowired
     private Environment environment;
 
@@ -34,8 +35,8 @@ public class RootConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { USER_PACKAGE });
-        sessionFactory.setHibernateProperties(hibernateProperties());
+        sessionFactory.setPackagesToScan(new String[] { USER_PACKAGE, PRODUCT_PACKAGE});
+    	sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
 
@@ -54,7 +55,7 @@ public class RootConfig {
         properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
         properties.put("hibernate.show_sql", environment.getRequiredProperty("hibernate.show_sql"));
         properties.put("hibernate.format_sql", environment.getRequiredProperty("hibernate.format_sql"));
-        properties.put("hibernate.hbm2ddl.auto", "create");
+        //	properties.put("hibernate.hbm2ddl.auto", "create");
         return properties;
     }
 

@@ -1,5 +1,7 @@
 package org.led.simba.product.service;
 
+import java.util.List;
+
 import org.led.simba.product.ProductItem;
 
 /**
@@ -11,4 +13,6 @@ public interface ProductService {
     ProductItem create(ProductItem productItem);
 
     ProductItem update(ProductItem productItem);
+    
+    List<ProductItem> list();
 }

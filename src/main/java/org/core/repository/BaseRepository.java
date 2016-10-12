@@ -94,7 +94,7 @@ public abstract class BaseRepository<T> {
             return object;
         } catch (Exception e) {
             getCurrentActiveSession().getTransaction().rollback();
-            throw new HibernateException(e);
+            throw new HibernateException(e.getMessage(), e);
         }
     }
 

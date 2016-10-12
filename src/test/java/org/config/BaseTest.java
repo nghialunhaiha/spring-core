@@ -17,5 +17,5 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @DirtiesContext(classMode = ClassMode.AFTER_EACH_TEST_METHOD)
 @EnableTransactionManagement
 public abstract class BaseTest {
-
+    public static final String BASE_PACKAGE = "org.led.simba";
 }

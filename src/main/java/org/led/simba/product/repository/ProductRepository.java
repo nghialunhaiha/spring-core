@@ -1,6 +1,7 @@
 package org.led.simba.product.repository;
 
-import org.core.repository.BaseRepository;
+import java.util.List;
+
 import org.led.simba.product.ProductItem;
 
 /**
@@ -12,4 +13,6 @@ public interface ProductRepository {
     ProductItem create(ProductItem productItem);
 
     ProductItem update(ProductItem productItem);
+
+	List<ProductItem> list();
 }

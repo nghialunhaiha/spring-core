@@ -1,14 +1,15 @@
 package org.led.simba.product.controller;
 
 import org.core.controller.BaseController;
+import org.core.json.JsonUTils;
 import org.led.simba.product.ProductItem;
 import org.led.simba.product.service.ProductService;
+import org.led.simba.user.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -30,10 +31,11 @@ public class ProductItemController extends BaseController {
 
     @RequestMapping(value = {"item/", "item"}, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     //TODO  create annotation validate admin user.
-    public ResponseEntity<ProductItem> createProductItem(@RequestBody ProductItem productItem, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<ProductItem> createProductItem(@RequestBody ProductItem productItem, @RequestBody UserInfo userInfo, UriComponentsBuilder uriBuilder) {
         //TODO check exist
         //TODO  validate user, validate productItem.
-        if( productService.isExist(productItem)) {
+        System.out.println("call in create item" + JsonUTils.toJson(userInfo));
+        if (productService.isExist(productItem)) {
             return null;
         }
 
@@ -45,7 +47,7 @@ public class ProductItemController extends BaseController {
 
     @RequestMapping(value = {"item/{id}/", "item/{id}"}, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ProductItem> updateProductItem(@PathVariable("id") String productId, @RequestBody ProductItem productItem, UriComponentsBuilder uriBuilder) {
-        if( productService.isExist(productItem)) {
+        if (productService.isExist(productItem)) {
             return null;
         }
         ProductItem updatedItem = productService.update(productItem);

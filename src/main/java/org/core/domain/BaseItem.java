@@ -1,58 +1,51 @@
 package org.core.domain;
 
+import org.led.simba.common.BaseDomain;
 import org.led.simba.product.SubType;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
-import static org.led.simba.user.UserConstants.USER_ID;
-
-public class BaseItem {
-    @Id
-    @Column(name = USER_ID)
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+@Entity
+public class BaseItem extends BaseDomain{
 
     @Column(name = "title")
-    private String title;
+    protected String title;
 
     @Column(name = "rate")
-    private String rate;
+    protected String rate;
 
     @Column(name = "feed_back")
-    private String feedBack;
+    protected String feedBack;
 
     @Column(name = "order")
-    private String order;
+    protected String order;
 
     @Column(name = "ship_info")
-    private String shipmentInfo;
+    protected String shipmentInfo;
 
     @Column(name = "price")
-    private double price;
+    protected double price;
 
     @Column(name = "dcount_price")
-    private double discountPrice;
+    protected double discountPrice;
 
     @Column(name = "delivery_time")
-    private String deliveryTime;
+    protected String deliveryTime;
 
     @Column(name = "delivery_note")
-    private String deliveryNote;
+    protected String deliveryNote;
 
     @Column(name = "avaiable_stt")
-    private String availableStatus;
+    protected String availableStatus;
 
     @NotNull
     @Column(name = "sub_type")
-    private SubType subType;
+    protected SubType subType;
 
     @Column(name = "prd_desc")
-    private String productDescriptions;
+    protected String productDescriptions;
 
     public BaseItem() {
     }
