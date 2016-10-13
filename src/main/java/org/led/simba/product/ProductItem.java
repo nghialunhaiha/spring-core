@@ -1,17 +1,15 @@
 package org.led.simba.product;
 
-import static org.led.simba.user.UserConstants.USER_ID;
-
-import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -54,20 +52,21 @@ public class ProductItem {
 
     @NotNull
     @Column(name = "sub_type")
-    private String subType;
+    @Enumerated(EnumType.STRING)
+    private SubType subType;
 
     @Column(name = "prd_desc")
     private String productDescriptions;
 
-    @Transient
-//    @Column(name = "colors")
-//    @ElementCollection(targetClass = String.class)
-    private List<String> colors;
+    @Column(name = "colors")
+    private String colors;
 
     @Column(name = "led_type")
+    @Enumerated(EnumType.STRING)
     private LEDType ledType;
 
     @Column(name = "color_tmp")
+    @Enumerated(EnumType.STRING)
     private ColorTemp colorTemp;
 
     @Column(name = "occasion")
@@ -80,18 +79,19 @@ public class ProductItem {
     private String ledsPerMeter;
 
     @Column(name = "avg_life")
-    private int averageLife;
+    private long averageLife;
 
     @Column(name = "water_prf")
     private boolean waterProff;
 
     @Column(name = "vol")
-    private int voltage;
+    private long voltage;
 
     @Column(name = "cl_temp")
     private String colorTemperature;
 
     @Column(name = "p_source")
+    @Enumerated(EnumType.STRING)
     private PowerSource powerSource;
 
     @Column(name = "md_no")
@@ -100,7 +100,9 @@ public class ProductItem {
     public ProductItem() {
     }
 
-    public ProductItem(int averageLife, List<String> colors, ColorTemp colorTemp, String colorTemperature, String ledsPerMeter, LEDType ledType, String modelNumber, String occasion, String powerGeneration, PowerSource powerSource, int voltage, boolean waterProff) {
+    public ProductItem(int averageLife, String colors, ColorTemp colorTemp, String colorTemperature,
+            String ledsPerMeter, LEDType ledType, String modelNumber, String occasion, String powerGeneration,
+            PowerSource powerSource, int voltage, boolean waterProff) {
         this.averageLife = averageLife;
         this.colors = colors;
         this.colorTemp = colorTemp;
@@ -127,6 +129,15 @@ public class ProductItem {
         AC, DC
     }
 
+    public enum Type {
+        LED, POWER, MAXTRIX,
+    }
+
+    public enum SubType {
+        // list all sub type of led, power, maxtric, board, ...
+        LED_MODULE, LED_STRIP, LED_MAXTRIX, BOARD, POWER_SOURCE
+    }
+
     public boolean isWaterProff() {
         return waterProff;
     }
@@ -135,20 +146,12 @@ public class ProductItem {
         this.waterProff = waterProff;
     }
 
-    public int getAverageLife() {
+    public long getAverageLife() {
         return averageLife;
     }
 
-    public void setAverageLife(int averageLife) {
+    public void setAverageLife(long averageLife) {
         this.averageLife = averageLife;
-    }
-
-    public List<String> getColors() {
-        return colors;
-    }
-
-    public void setColors(List<String> colors) {
-        this.colors = colors;
     }
 
     public ColorTemp getColorTemp() {
@@ -215,11 +218,11 @@ public class ProductItem {
         this.powerSource = powerSource;
     }
 
-    public int getVoltage() {
+    public long getVoltage() {
         return voltage;
     }
 
-    public void setVoltage(int voltage) {
+    public void setVoltage(long voltage) {
         this.voltage = voltage;
     }
 
@@ -304,11 +307,13 @@ public class ProductItem {
     }
 
     public SubType getSubType() {
-        return SubType.valueOf(subType);
+//        return SubType.valueOf(subType);
+        return subType;
     }
 
     public void setSubType(SubType subType) {
-        this.subType = subType.name();
+//        this.subType = subType.name();
+        this.subType = subType;
     }
 
     public String getProductDescriptions() {
@@ -327,15 +332,17 @@ public class ProductItem {
         this.id = id;
     }
 
+    public void setColors(String colors) {
+        this.colors = colors;
+    }
+
     /**
      * When create each product, subType is required field
+     * 
      * @return true : not defined type yet.
      */
     public boolean notDefineType() {
         return Objects.isNull(this.subType);
     }
 
-    public static enum Type {
-        LED, POWER, MAXTRIX,
-    }
 }

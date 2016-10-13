@@ -9,11 +9,14 @@ import java.util.Comparator;
  * Created by nghialun on 12/10/2016.
  */
 public class CSVException extends DomainException {
+    private static final long serialVersionUID = 4422876296587951620L;
     private static final int domainCode = Type.csv.getDomainCode();
     public static final int CSV_FILE_ERROR = 10;
     public static final int CSV_USER_EMPTY_DATA = 11;
     public static final int CSV_COLUMN_INVALID = 12;
     public static final int CSV_FILE_NOT_FOUND = 14;
+    public static final int S3_READ_FILE_ERROR = 15;
+    public static final int CSV_EXPORT_CSV_FAILED = 16;
 
     public CSVException(int errorCode) {
         super(domainCode, errorCode);
@@ -30,6 +33,7 @@ public class CSVException extends DomainException {
     public CSVException(String message, Throwable cause, int errorCode) {
         super(message, cause, domainCode, errorCode);
     }
+
     public static class CSVError {
 
         public static Comparator<CSVError> comparator = new Comparator<CSVError>() {

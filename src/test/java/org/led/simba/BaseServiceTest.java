@@ -22,4 +22,5 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @ContextConfiguration(classes = {RepositoryConfigTest.class , DataSourceConfig.class})
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class BaseServiceTest {
+    public static final String BASE_DIR = "src/test/resources";
 }

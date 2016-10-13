@@ -1,15 +1,18 @@
 package org.led.simba.csv;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.led.simba.csv.CSVException.CSVError;
+import org.springframework.util.StringUtils;
 import org.supercsv.cellprocessor.CellProcessorAdaptor;
 import org.supercsv.util.CsvContext;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.led.simba.csv.CSVException.CSVError;
 /**
  * Created by nghialun on 12/10/2016.
  */
-public abstract class CSVProcessors extends CellProcessorAdaptor{
+public abstract class CSVProcessors extends CellProcessorAdaptor {
+
     protected boolean require;
     protected List<CSVError> errors = new ArrayList<>();
 
@@ -23,10 +26,10 @@ public abstract class CSVProcessors extends CellProcessorAdaptor{
 
     @Override
     public <T> T execute(Object value, CsvContext context) {
-        return null;
+        return next.execute(value, context);
     }
 
-    public class CSVOptional extends CellProcessorAdaptor {
+    public class CSVOptional extends CSVProcessors {
 
         @Override
         public <T> T execute(Object value, CsvContext context) {
@@ -36,8 +39,29 @@ public abstract class CSVProcessors extends CellProcessorAdaptor{
             return next.execute(value, context);
         }
 
+        @Override
+        public CSVProcessors[] getProccessors() {
+            return null;
+        }
+
     }
 
-    public abstract  List<CSVProcessors> getProccessors();
+    public class CSVBool extends CSVProcessors {
+        @Override
+        public Object execute(Object value, CsvContext context) {
+            if (StringUtils.isEmpty(value) || value.toString().equalsIgnoreCase("false")) {
+                return next.execute(false, context);
+            }
+            return next.execute(true, context);
+        }
+
+        @Override
+        public CSVProcessors[] getProccessors() {
+            return null;
+        }
+
+    }
+
+    public abstract CSVProcessors[] getProccessors();
 
 }

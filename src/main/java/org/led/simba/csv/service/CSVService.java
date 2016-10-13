@@ -10,5 +10,5 @@ import java.util.List;
  */
 public interface CSVService {
     <P extends CellProcessor, T> List<T> parseFromCSVToBean(String[] header, String[] nameMapping, String pathToFile,
-                                                            String charset, String protocol, List<CSVException.CSVError> csvErrors, P[] processors, Class<T> clazz);
+            String charset, String protocol, List<CSVException.CSVError> csvErrors, P[] processors, Class<T> clazz);
 }
