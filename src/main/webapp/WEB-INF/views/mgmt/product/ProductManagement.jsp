@@ -99,21 +99,7 @@
                         </div>
                     </div>
                     <!--close delivery note-->
-                    <!--productDescriptions -->
-                    <div class="row prd-field">
-                        <label class="col-md-4 control-label">Product Descriptions</label>
-                        <div class="col-md-8">
-                            <input type="text" ng-model="productController.product.productDescriptions" name="fProductDescriptions"
-                                   class="form-control input-sm" placeholder="cái này cho vào multitex"
-                                   required ng-maxlength="100">
-                            <div class="has-error" ng-show="prdForm.$dirty">
-                                <span ng-show="prdForm.fProductDescriptions.$error.required">This is  field.</span>
-                                <span ng-show="prdForm.fProductDescriptions.$error.maxlength">Maximum length  is 100.</span>
-                                <span ng-show="prdForm.fProductDescriptions.$invalid">This field is invalid.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--close productDescriptions-->
+
                     <!--colors -->
                     <div class="row prd-field">
                         <label class="col-md-4 control-label">colors</label>
@@ -243,7 +229,7 @@
                             <select class="form-control" ng-model="productController.product.colorTemp"
                                     ng-options="type.key as type.value for type in productController.ColorTemps">
                             </select>
-                        </div>
+                        </div >
                     </div>
                     <!--close colorTemp-->
                     <!--powerSource -->
@@ -256,6 +242,22 @@
                         </div>
                     </div>
                     <!--close powerSource-->
+
+                    <!--productDescriptions -->
+                    <div class="row prd-field">
+                        <label class="col-md-4 control-label">Product Descriptions</label>
+                        <div class="col-md-8">
+                            <input type="text" ng-model="productController.product.productDescriptions" name="fProductDescriptions"
+                                   class="form-control input-sm" placeholder="cái này cho vào multitex"
+                                   required ng-maxlength="100">
+                            <div class="has-error" ng-show="prdForm.$dirty">
+                                <span ng-show="prdForm.fProductDescriptions.$error.required">This is  field.</span>
+                                <span ng-show="prdForm.fProductDescriptions.$error.maxlength">Maximum length  is 100.</span>
+                                <span ng-show="prdForm.fProductDescriptions.$invalid">This field is invalid.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--close productDescriptions-->
                 </div>
                 <!--close right column setting-->
             </div>
@@ -310,6 +312,7 @@
         </div>
     </div>
 </div>
+
 <script src="<c:url value='/static/assert/js/angular-1.4.6.js' />"></script>
 <script src="<c:url value='/static/user-mgmt/js/app.js' />"></script>
 <script src="<c:url value='/static/mgmt/product/js/ProductManagement.js' />"></script>

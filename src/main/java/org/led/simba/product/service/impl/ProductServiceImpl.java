@@ -30,13 +30,8 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public ProductItem create(ProductItem productItem) {
 		if (productItem.notDefineType()) {
-			// throw exception
 		}
-//		if (StringUtils.isEmpty(productItem.getId()) || productItem.getId() == 0) {
-			return productRepository.create(productItem);
-//		} else {
-//			return this.update(productItem);
-//		}
+		return productRepository.create(productItem);
 	}
 
 	@Override
@@ -54,4 +49,9 @@ public class ProductServiceImpl implements ProductService {
 
 	}
 
+	@Override
+	public List<ProductItem> importProduct() {
+
+		return null;
+	}
 }

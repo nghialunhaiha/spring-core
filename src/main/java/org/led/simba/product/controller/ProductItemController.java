@@ -13,11 +13,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.util.Map;
+
 /**
  * Created by Nghia on 11-09-2016.
  */
 @RestController
-@RequestMapping(value = "/mgmgt/prd/")
+@RequestMapping(value = "/mgmt/prd/")
 public class ProductItemController extends BaseController {
 
     @Autowired
@@ -31,10 +33,14 @@ public class ProductItemController extends BaseController {
 
     @RequestMapping(value = {"item/", "item"}, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     //TODO  create annotation validate admin user.
-    public ResponseEntity<ProductItem> createProductItem(@RequestBody ProductItem productItem, @RequestBody UserInfo userInfo, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<ProductItem> createProductItem(@RequestParam Map<String,Object> requestObject, UriComponentsBuilder uriBuilder) {
         //TODO check exist
         //TODO  validate user, validate productItem.
-        System.out.println("call in create item" + JsonUTils.toJson(userInfo));
+        System.out.println("call into create productitem in server2");
+        UserInfo userInfo = (UserInfo) requestObject.get("userInfo");
+        ProductItem productItem = (ProductItem) requestObject.get("product");
+        System.out.println("call in create userInfo: " + JsonUTils.toJson(userInfo));
+        System.out.println("call in create productItem: " + JsonUTils.toJson(productItem));
         if (productService.isExist(productItem)) {
             return null;
         }

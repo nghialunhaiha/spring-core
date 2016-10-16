@@ -2,7 +2,7 @@
  * Created by Nghia on 26-09-2016.
  */
 'use strict'
-var mgmt_product = '/mgmgt/prd/';
+var mgmt_product = 'http://localhost:8080/mgmt/prd/';
 prdManagement.factory('ProductService', ['$http', '$q', function ($http, $q) {
     return {
         createProduct: function (product) {
@@ -12,7 +12,11 @@ prdManagement.factory('ProductService', ['$http', '$q', function ($http, $q) {
                 loginId : 'nghialun',
                 token : '123123123'
             }
-            return $http.post(mgmt_product + 'item/', product, userInfo).then(
+
+
+            var requestObject = {'product': product, 'userInfo': self.userInfo };
+            console.log("request data: ", requestObject)
+            return $http.post(mgmt_product + 'item/', requestObject).then(
                 function (response) {
                     return response.data;
                 },

@@ -111,13 +111,6 @@ public abstract class BaseRepository<T> {
         return (T) getCurrentActiveSession().get(clazz, id);
     }
 
-    // public void persist(Object entity) {
-    // getCurrentActiveSession().persist(entity);
-    // }
-
-    // public void delete(Object entity) {
-    // getCurrentActiveSession().delete(entity);
-    // }
     protected List<T> findByParams(String tableName, Class<T> clazz, LinkedHashMap<String, Object> paramByKey) {
         StringBuilder sql = new StringBuilder("select * from ");
         sql.append(tableName);

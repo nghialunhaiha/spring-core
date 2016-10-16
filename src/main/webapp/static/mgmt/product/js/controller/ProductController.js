@@ -132,7 +132,37 @@ prdManagement.controller('ProductController', ['$scope', '$rootScope', 'ProductS
     //  submit form.
     self.submitProductSetting = function () {
         if (self.product.id == null) {
-            console.log('create product', self.product);
+
+            var reqProduct = {
+                title: 'Led chiếu sáng 5050 ',
+                rate: 'chưa có thông tin đánh giá',
+                feedBack: 'Chưa có phản hồi',
+                order: '10000000',
+                shipmentInfo: 'Giao hàng trong ng',
+                price: '123132',
+                discountPrice: '12311',
+                deliveryTime: '111111',
+                deliveryNote: 'GIao hàng trong giờ hành chính.',
+                availableStatus: 'còn hàng',
+                subType: 'none',
+                productDescriptions: '',
+                colors: [],
+                ledType: 'none',
+                colorTemp: 'none',
+                occasion: '',
+                powerGeneration: '',
+                ledsPerMeter: '',
+                averageLife: 0,
+                waterProff: '',
+                voltage: 0,
+                colorTemperature: '',
+                powerSource: 'none',
+                modelNumber: ''
+            }
+            self.product = reqProduct;
+            console.log('[controller]: create product', self.product);
+
+
             productService.createProduct(self.product);
         } else {
             console.log('update product', self.product);

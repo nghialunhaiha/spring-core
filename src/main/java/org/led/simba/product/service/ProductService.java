@@ -15,4 +15,6 @@ public interface ProductService {
     ProductItem update(ProductItem productItem);
     
     List<ProductItem> list();
+
+    List<ProductItem> importProduct();
 }
