@@ -23,8 +23,8 @@ public class UserRepositoryImpl extends BaseRepository<User> implements UserRepo
     public List<User> findByName(String name) {
         // Criteria criteria = getCurrentActiveSession().createCriteria(User.class);
         // criteria.add(org.hibernate.criterion.Expression.gt)
-
-        String sql = "select * from user where user.NAME = ?";
+        System.out.println("\n\n asjdfasjkdflsjkdghlsdfjkgh");
+        String sql = "select * from USER as us where us.NAME = ?";
         SQLQuery query = getCurrentActiveSession().createSQLQuery(sql);
         query.setString(0, name);
         query.addEntity(User.class);

@@ -144,9 +144,9 @@ prdManagement.controller('ProductController', ['$scope', '$rootScope', 'ProductS
                 deliveryTime: '111111',
                 deliveryNote: 'GIao hàng trong giờ hành chính.',
                 availableStatus: 'còn hàng',
-                subType: 'none',
+                subType: 'LED_STRIP',
                 productDescriptions: '',
-                colors: [],
+                colors: 'RED',
                 ledType: 'none',
                 colorTemp: 'none',
                 occasion: '',
@@ -165,6 +165,7 @@ prdManagement.controller('ProductController', ['$scope', '$rootScope', 'ProductS
 
             productService.createProduct(self.product);
         } else {
+            console.log('[controller]: udpate product', self.product);
             console.log('update product', self.product);
             productService.updateProduct(self.product, self.product.id);
         }

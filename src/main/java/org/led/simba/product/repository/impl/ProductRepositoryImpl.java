@@ -2,6 +2,7 @@ package org.led.simba.product.repository.impl;
 
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.core.repository.BaseRepository;
 import org.hibernate.SQLQuery;
 import org.led.simba.product.ProductConstant;
@@ -21,12 +22,16 @@ public class ProductRepositoryImpl extends BaseRepository<ProductItem> implement
 
 	@Override
 	public boolean isExist(ProductItem productItem) {
+		if (StringUtils.isEmpty(productItem.getModelNumber())) {
+			return false;
+		}
 		// TODO: kiem tra exist hay chua thi theo tung loai se kiem tra khac
 		// nhau,
 		// co le nen check theo type. LEDTYPE = 5050 thi exist. :))
+		System.out.println("axxxxxxx");
 		StringBuilder sql = new StringBuilder();
-		sql.append("Select [column_name] from " + ProductConstant.PRD_TABLE + " where " + ProductConstant.PRD_TABLE
-				+ "." + "ten truong = " + "data so sanh");
+		sql.append("Select md_no from " 	+ ProductConstant.PRD_TABLE + " where " + ProductConstant.PRD_TABLE
+				+ "." + "md_no = " + productItem.getModelNumber());
 
 		SQLQuery sqlquery = getCurrentActiveSession().createSQLQuery(sql.toString());
 		sqlquery.addEntity(ProductItem.class);

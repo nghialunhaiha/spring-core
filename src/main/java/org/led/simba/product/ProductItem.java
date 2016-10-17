@@ -1,5 +1,7 @@
 package org.led.simba.product;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -53,6 +55,7 @@ public class ProductItem {
     @NotNull
     @Column(name = "sub_type")
     @Enumerated(EnumType.STRING)
+    @JsonDeserialize(using = SubTypeDeserialize.class)
     private SubType subType;
 
     @Column(name = "prd_desc")
@@ -63,10 +66,12 @@ public class ProductItem {
 
     @Column(name = "led_type")
     @Enumerated(EnumType.STRING)
+    @JsonDeserialize(using = LEDTypeDeserialize.class)
     private LEDType ledType;
 
     @Column(name = "color_tmp")
     @Enumerated(EnumType.STRING)
+    @JsonDeserialize(using = ColorTempDeserialize.class)
     private ColorTemp colorTemp;
 
     @Column(name = "occasion")
@@ -92,6 +97,7 @@ public class ProductItem {
 
     @Column(name = "p_source")
     @Enumerated(EnumType.STRING)
+    @JsonDeserialize(using = PowerSourceDeserialize.class)
     private PowerSource powerSource;
 
     @Column(name = "md_no")

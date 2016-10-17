@@ -9,14 +9,14 @@ prdManagement.factory('ProductService', ['$http', '$q', function ($http, $q) {
             console.log('service call create product: ', product);
             var self = this;
             self.userInfo = {
-                loginId : 'nghialun',
-                token : '123123123'
+                loginId: 'nghialun',
+                token: '123123123'
             }
-
-
-            var requestObject = {'product': product, 'userInfo': self.userInfo };
-            console.log("request data: ", requestObject)
-            return $http.post(mgmt_product + 'item/', requestObject).then(
+            var req = {
+                'product': product, 'userInfo': self.userInfo
+            }
+            console.log("request info: ", req);
+            return $http.post('http://localhost:8080/mgmt/prd/item/', req).then(
                 function (response) {
                     return response.data;
                 },
@@ -26,7 +26,7 @@ prdManagement.factory('ProductService', ['$http', '$q', function ($http, $q) {
             )
         }, //   close create product
         updateProduct: function (product, id) {
-            return $http.put(mgmt_product + 'item/'+ id, product)
+            return $http.put(mgmt_product + 'item/' + id, product)
                 .then(
                     function (response) {
                         return response.data;
