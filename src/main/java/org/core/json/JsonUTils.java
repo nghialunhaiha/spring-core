@@ -1,14 +1,13 @@
 package org.core.json;
 
-import java.io.IOException;
-import java.util.Map;
-
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import org.led.simba.product.ProductItem;
+
+import java.io.IOException;
+import java.util.Map;
 
 public class JsonUTils {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();

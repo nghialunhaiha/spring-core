@@ -1,8 +1,8 @@
 package org.led.simba.user.service;
 
-import java.util.List;
-
 import org.led.simba.user.User;
+
+import java.util.List;
 
 public interface UserService {
 

@@ -1,15 +1,7 @@
 package org.demo;
 
-import java.util.List;
-import java.util.Map;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.fasterxml.jackson.databind.util.JSONWrappedObject;
 import org.config.BaseTest;
 import org.core.json.JsonUTils;
-import org.core.json.JsonUtils_BackUp;
 import org.junit.Assert;
 import org.junit.Test;
 import org.led.simba.product.ProductItem;
@@ -17,6 +9,9 @@ import org.led.simba.product.service.ProductService;
 import org.led.simba.user.User;
 import org.led.simba.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
+import java.util.Map;
 
 public class UserServiceTest extends BaseTest {
     @Autowired

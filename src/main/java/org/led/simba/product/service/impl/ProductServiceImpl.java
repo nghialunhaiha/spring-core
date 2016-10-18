@@ -1,7 +1,5 @@
 package org.led.simba.product.service.impl;
 
-import java.util.List;
-
 import org.led.simba.product.ProductItem;
 import org.led.simba.product.ProductItemException;
 import org.led.simba.product.repository.ProductRepository;
@@ -9,6 +7,8 @@ import org.led.simba.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 /**
  * Created by Nghia on 11-09-2016.

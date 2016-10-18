@@ -1,7 +1,5 @@
 package org.led.simba.product.repository.impl;
 
-import java.util.List;
-
 import org.apache.commons.lang3.StringUtils;
 import org.core.repository.BaseRepository;
 import org.hibernate.SQLQuery;
@@ -9,6 +7,8 @@ import org.led.simba.product.ProductConstant;
 import org.led.simba.product.ProductItem;
 import org.led.simba.product.repository.ProductRepository;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * Created by Nghia on 27-09-2016.

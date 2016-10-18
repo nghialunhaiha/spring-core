@@ -1,12 +1,12 @@
 package org.led.simba.csv;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.led.simba.csv.CSVException.CSVError;
 import org.springframework.util.StringUtils;
 import org.supercsv.cellprocessor.CellProcessorAdaptor;
 import org.supercsv.util.CsvContext;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by nghialun on 12/10/2016.

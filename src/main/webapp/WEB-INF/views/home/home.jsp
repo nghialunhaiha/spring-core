@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page session="false" %>
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 

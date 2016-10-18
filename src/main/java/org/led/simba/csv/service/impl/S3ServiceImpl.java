@@ -1,28 +1,16 @@
 package org.led.simba.csv.service.impl;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.Date;
-import java.util.UUID;
-
+import com.amazonaws.HttpMethod;
+import com.amazonaws.services.s3.model.*;
 import org.led.simba.csv.CSVException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
-import com.amazonaws.HttpMethod;
-import com.amazonaws.services.s3.model.CannedAccessControlList;
-import com.amazonaws.services.s3.model.GeneratePresignedUrlRequest;
-import com.amazonaws.services.s3.model.GetObjectRequest;
-import com.amazonaws.services.s3.model.ObjectMetadata;
-import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.amazonaws.services.s3.model.PutObjectResult;
-import com.amazonaws.services.s3.model.S3Object;
+import java.io.*;
+import java.net.URLEncoder;
+import java.util.Date;
+import java.util.UUID;
 
 @Service
 public class S3ServiceImpl {

@@ -1,8 +1,5 @@
 package org.led.simba.csv;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.core.json.JsonUTils;
 import org.junit.Test;
 import org.led.simba.BaseServiceTest;
@@ -13,6 +10,9 @@ import org.led.simba.product.ProductConstant;
 import org.led.simba.product.ProductItem;
 import org.led.simba.product.ProductProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CSVServiceImplTest extends BaseServiceTest {
     @Autowired

@@ -7,8 +7,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.nio.charset.Charset;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-
 public class UserControllerTest extends BaseControllerTest {
 
     private MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),

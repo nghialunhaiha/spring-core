@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>Hot Sale LED strip 5050 12V flexible light 60led/m,5m/lot ,RGB, White,Warm white, Cold white,Blue,Green,Red,Yellow,Free shipping-in LED Strips from Lights &amp; Lighting on Aliexpress.com | Alibaba Group</title>
     <meta name="data-spm" content="2114">

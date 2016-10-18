@@ -1,10 +1,12 @@
 package org.led.simba.user;
+
 import org.led.simba.common.BaseDomain;
 
-import  static  org.led.simba.user.UserConstants.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
+import static org.led.simba.user.UserConstants.*;
 
 @Entity
 @Table(name = USER_TABLE)
